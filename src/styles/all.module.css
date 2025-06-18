@@ -1,0 +1,6 @@
+.dropbox {
+    flex-grow: 0;  /* 横に広がらないように設定 */
+    flex-shrink: 1;  /* 必要に応じて縮小可能にする */
+    width: auto;
+    color:rgb(255,0,0);
+}
