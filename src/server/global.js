@@ -3,8 +3,8 @@
 // どこからでも呼び出す、環境変数の役割
 import supabase from "../supabaseClient";
 
-export const server = URL;
-export const token = TOKEN;
+export const server = process.env.REACT_APP_ARTIFACTS_URL;
+export const token = process.env.REACT_APP_ARTIFACTS_URL;
 
 export const CHAR1 = 'laplus';
 export const CHAR2 = 'rui';
