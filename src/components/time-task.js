@@ -1,14 +1,16 @@
 import { Flex, Box, Grid, Text } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import supabase from "../supabaseClient";
-import { useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton } from "@chakra-ui/react";
+import { useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody } from "@chakra-ui/react";
+import Conversation from "./conversation";
 
 export default function TimeTask(props) {
-    const playTime = 60;
+    const playTime = 20;
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [timeLeft, setTimeLeft] = useState(playTime);
     const [startTime, setStartTime] = useState(null);
     const [isRunning, setIsRunning] = useState(false);
+    const [conversationStartTime, setConversationStartTime] = useState(null);
 
     useEffect(() => {
         const channel = supabase
@@ -63,11 +65,60 @@ export default function TimeTask(props) {
         return () => clearInterval(interval);
     }, [isRunning, startTime]);
 
+    const [hasOpened, setHasOpened] = useState(false);
+
     useEffect(() => {
-        if (timeLeft === 0) {
-            onOpen(); // モーダルを開く
+        if (timeLeft === 0 && !hasOpened) {
+            const fetchAndStartConversation = async () => {
+                // まず、id=2のタイマー情報を取得
+                const { data, error } = await supabase
+                    .from('timer')
+                    .select('*')
+                    .eq('id', 2)
+                    .single();
+    
+                if (error) {
+                    console.error('タイマー取得エラー:', error);
+                    return;
+                }
+    
+                // まだis_runningがfalseならtrueに更新する
+                if (!data.is_running) {
+                    const { error: updateError } = await supabase
+                        .from('timer')
+                        .update({
+                            is_running: true,
+                            start_time: new Date().toISOString(),
+                            updated_at: new Date().toISOString(),
+                        })
+                        .eq('id', 2);
+    
+                    if (updateError) {
+                        console.error('タイマー開始更新エラー:', updateError);
+                        return;
+                    }
+                }
+    
+                // 再度取得してstart_timeをセットしモーダルを開く
+                const { data: newData, error: newError } = await supabase
+                    .from('timer')
+                    .select('*')
+                    .eq('id', 2)
+                    .single();
+    
+                if (!newError && newData.is_running && newData.start_time) {
+                    setConversationStartTime(new Date(newData.start_time));
+                    onOpen();
+                    setHasOpened(true);
+                }
+            };
+    
+            fetchAndStartConversation();
         }
-    }, [timeLeft, onOpen]);
+    }, [timeLeft, onOpen, hasOpened]);
+    
+    
+    
     
     const minutes = Math.floor((timeLeft % 3600) / 60);
     const seconds = timeLeft % 60;
@@ -90,14 +141,14 @@ export default function TimeTask(props) {
             </Box>
 
             {/* モーダルの描画 */}
-            <Modal isOpen={isOpen} onClose={onClose} size="6xl">
+            <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose} size="6xl">
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>時間切れ</ModalHeader>
-                    <ModalCloseButton />
+                    <ModalHeader textAlign="center"fontSize="2xl" fontWeight="bold">
+                        会話 TIME
+                    </ModalHeader>
                     <ModalBody>
-                    {props.player === 'player1' && <Text>Player1用の内容</Text>}
-                    {props.player === 'player2' && <Text>Player2用の内容</Text>}
+                        <Conversation player = {props.player} conversationStartTime={conversationStartTime}/>
                     </ModalBody>
                 </ModalContent>
             </Modal>

@@ -61,3 +61,5 @@ export const playerToCharName = async (player) => {
         return "master";
     }
 }
+
+export const pilot = ["player1", "player2", "npc1", "npc2", "npc3"];

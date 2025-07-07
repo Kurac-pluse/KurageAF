@@ -9,7 +9,7 @@ import TimeTask from './time-task.js';
 const Operation = (props) => {
 
     const [ viewChar, setViewChar ] = useState('');
-    const [isTimerRunning] = useState(false);
+    const [isTimerRunning, setIsTimerRunning] = useState(false);
 
     return (
         <>
@@ -32,7 +32,12 @@ const Operation = (props) => {
                 <Flex flex="1" direction="row">
                 {(() => {
                     if (props.player === 'master') {
-                        return <Control player={props.player} />
+                        return (
+                            <Control
+                                player={props.player}
+                                setIsTimerRunning={setIsTimerRunning}
+                            />
+                        );
                     } else {
                         return (
                             <TimeTask
