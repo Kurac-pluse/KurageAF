@@ -1,9 +1,10 @@
 import { HStack, Button } from '@chakra-ui/react';
-import { names } from '../server/global';
+import { names, pilot } from '../server/global';
 import { game_restart, initial_setting } from '../server/game-setting';
 import supabase from '../supabaseClient';
 
-const Control = ({ setIsTimerRunning }) => {
+const Control = () => {
+
     const shuffle = async () => {
         try {
             const { data, error } = await supabase.from('characters').select('conversation');
@@ -28,7 +29,7 @@ const Control = ({ setIsTimerRunning }) => {
             }
 
             // 会話順と先攻を決めて Supabase に保存
-            const allParticipants = ['player1', 'player2', 'npc1', 'npc2', 'npc3'];
+            const allParticipants = pilot;
             const pairs = [];
 
             const shuffledOthers = [...allParticipants];
@@ -70,21 +71,19 @@ const Control = ({ setIsTimerRunning }) => {
 
     const startGame = async () => {
         try {
-            const { error } = await supabase
-                .from('timer')
-                .update({
-                    start_time: new Date().toISOString(),
-                    is_running: true,
-                    updated_at: new Date().toISOString(),
-                })
-                .eq('id', 1);
-
-            if (error) throw error;
-            setIsTimerRunning(true);
+          const now = new Date().toISOString();
+      
+          const { error } = await supabase.from('timer').update({
+            is_running: true,
+            start_time: now,
+            updated_at: now
+          }).eq('id', 1);
+      
+          if (error) throw error;
         } catch (error) {
-            console.error('ゲーム開始エラー:', error.message);
+          console.error('ゲーム開始エラー:', error.message);
         }
-    };
+      };
 
     return (
         <HStack spacing={4} wrap="wrap">

@@ -9,7 +9,6 @@ import TimeTask from './time-task.js';
 const Operation = (props) => {
 
     const [ viewChar, setViewChar ] = useState('');
-    const [isTimerRunning, setIsTimerRunning] = useState(false);
 
     return (
         <>
@@ -35,14 +34,12 @@ const Operation = (props) => {
                         return (
                             <Control
                                 player={props.player}
-                                setIsTimerRunning={setIsTimerRunning}
                             />
                         );
                     } else {
                         return (
                             <TimeTask
                                 player={props.player}
-                                isRunning={isTimerRunning}
                             />
                         );
                     }
