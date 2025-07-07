@@ -1,13 +1,11 @@
 import { Flex, Box, Grid, Text } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import supabase from "../supabaseClient";
-import { useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, Button } from "@chakra-ui/react";
+import { useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton } from "@chakra-ui/react";
 
 export default function TimeTask(props) {
     const playTime = 60;
     const { isOpen, onOpen, onClose } = useDisclosure();
-
-
     const [timeLeft, setTimeLeft] = useState(playTime);
     const [startTime, setStartTime] = useState(null);
     const [isRunning, setIsRunning] = useState(false);
@@ -69,7 +67,7 @@ export default function TimeTask(props) {
         if (timeLeft === 0) {
             onOpen(); // モーダルを開く
         }
-    }, [timeLeft]);
+    }, [timeLeft, onOpen]);
     
     const minutes = Math.floor((timeLeft % 3600) / 60);
     const seconds = timeLeft % 60;

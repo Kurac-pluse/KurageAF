@@ -57,5 +57,7 @@ export const playerToCharName = async (player) => {
         return await player1;
     } else if (player === 'player2') {
         return await player2;
+    } else {
+        return "master";
     }
 }
