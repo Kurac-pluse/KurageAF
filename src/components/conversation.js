@@ -1,97 +1,222 @@
-import { HStack, Button } from '@chakra-ui/react';
-import { names, pilot } from '../server/global';
-import { game_restart, initial_setting } from '../server/game-setting';
+import { useEffect, useState, useRef } from 'react';
+import {
+    Box, Button, Input, VStack, Text, HStack, Flex
+} from '@chakra-ui/react';
+import { player_make } from '../server/global';
 import supabase from '../supabaseClient';
 
-const Control = () => {
+const TURN_DURATION = 10 * 1000;
+const TURNS_PER_PHASE = 4;
+const DELAY_BEFORE_CLOSE = 2 * 1000;
 
-    const shuffle = async () => {
-        try {
-            const { data, error } = await supabase.from('characters').select('conversation');
-            if (error) throw error;
+// プレイヤー視点に変換
+function convertOrderForPlayer(order, player) {
+    if (player === 'player1') return order;
+    return order.map(([p1, p2]) => {
+        const swap = (p) => (p === 'player1' ? 'player2' : p === 'player2' ? 'player1' : p);
+        return [swap(p1), swap(p2)];
+    });
+}
 
-            if (data.some((row) => row.conversation !== 0)) return;
+export default function Conversation({ player, convStartTime }) {
+    const [messages, setMessages] = useState([]);
+    const [phase, setPhase] = useState(0);
+    const [turn, setTurn] = useState(0);
+    const [input, setInput] = useState('');
+    const [order, setOrder] = useState([]);
+    const [initiatives, setInitiatives] = useState([]);
+    const [charNameMap, setCharNameMap] = useState({});
+    const [remainingTime, setRemainingTime] = useState(TURN_DURATION / 1000);
+	const [ totalTurns, setTotalTurns ] = useState();
+    const messagesEndRef = useRef(null);
 
-            const storedData = [];
-            while (storedData.length < 5) {
-                const name = names[Math.floor(Math.random() * 5)];
-                if (!storedData.includes(name)) storedData.push(name);
-            }
-
-            const playerNames = ['player1', 'player2', 'npc1', 'npc2', 'npc3'];
-            for (let i = 0; i < 5; i++) {
-                const { error } = await supabase
-                    .from('characters')
-                    .update({ role: storedData[i] })
-                    .eq('name', playerNames[i]);
-
-                if (error) throw error;
-            }
-
-            // 会話順と先攻を決めて Supabase に保存
-            const allParticipants = pilot;
-            const pairs = [];
-
-            const shuffledOthers = [...allParticipants];
-            for (let i = shuffledOthers.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [shuffledOthers[i], shuffledOthers[j]] = [shuffledOthers[j], shuffledOthers[i]];
-            }
-
-            // プレイヤーが自分以外と1対1で会話する形（player1主体）
-            for (const other of shuffledOthers) {
-                if (other !== 'player1') {
-                    pairs.push(['player1', other]);
-                }
-            }
-
-            // 各会話に対して先攻(0 or 1)をランダムに決定
-            const initiatives = pairs.map(() => Math.round(Math.random()));
-
-            // Supabase に保存
-            const { error: convError } = await supabase
+    // 会話順と先攻を初期化
+    useEffect(() => {
+        const fetchConversationSetup = async () => {
+            const { data, error } = await supabase
                 .from('conversation_setups')
-                .upsert([
-                    {
-                        session_id: 'default_session',
-                        conversation_order: pairs,
-                        initiatives,
-                        created_by: 'master',
-                    },
-                ])
-                .eq('session_id', 'default_session');
+                .select('conversation_order, initiatives')
+                .eq('session_id', 'default_session')
+                .single();
 
-            if (convError) throw convError;
+            if (error) {
+                console.error('会話セットアップの取得に失敗しました:', error);
+                return;
+            }
 
-            window.location.reload();
-        } catch (error) {
-            console.error('シャッフルエラー:', error.message);
-        }
+            const baseOrder = data.conversation_order;
+            const baseInitiatives = data.initiatives;
+
+            const adjustedOrder = convertOrderForPlayer(baseOrder, player);
+            const adjustedInitiatives = baseInitiatives;
+
+            setOrder(adjustedOrder);
+            setInitiatives(adjustedInitiatives);
+        };
+
+        fetchConversationSetup();
+    }, [player]);
+
+	// 名前の配列を作成
+    useEffect(() => {
+        const fetchAllNames = async () => {
+            if (order.length === 0) return;
+
+            const idsSet = new Set();
+            order.forEach(([p1, p2]) => {
+                idsSet.add(p1);
+                idsSet.add(p2);
+            });
+            const ids = Array.from(idsSet);
+
+            const entries = await Promise.all(
+                ids.map(async (id) => {
+                    const name = await player_make(id);
+                    return [id, name || id];
+                })
+            );
+
+            setCharNameMap(Object.fromEntries(entries));
+        };
+
+        fetchAllNames();
+    }, [order]);
+
+    // タイマー更新とフェーズ・ターンの計算
+    useEffect(() => {
+        if (!convStartTime || order.length === 0 || initiatives.length === 0) return;
+
+        const interval = setInterval(() => {
+            const elapsed = new Date() - new Date(convStartTime);
+            const total = Math.floor(elapsed / TURN_DURATION);
+			setTotalTurns(total);
+
+            const newPhase = Math.floor(total / TURNS_PER_PHASE);
+            const newTurnInPhase = total % TURNS_PER_PHASE;
+            const phaseIndex = newPhase % order.length;
+
+            setPhase(phaseIndex);
+            setTurn(newTurnInPhase);
+
+            const turnElapsed = elapsed % TURN_DURATION;
+            setRemainingTime(Math.ceil((TURN_DURATION - turnElapsed) / 1000));
+        }, 250);
+
+        return () => clearInterval(interval);
+    }, [convStartTime, order, initiatives]);
+
+	// モーダルの終了条件
+	useEffect(() => {
+		if(!order.length) return;
+		const maxTurns = order.length * TURNS_PER_PHASE;
+		if ( player === 'player1' && totalTurns >= maxTurns ) {
+			const switchTimers2 = async () => {
+				try {
+					// 現在の状態を取得
+					const { data: timers, error } = await supabase
+						.from('timer')
+						.select('id, is_running')
+						.eq('id', 2);
+			
+					if (error) throw error;
+					if (!timers || timers.length === 0) return;
+			
+					const timer2 = timers[0];
+			
+					// すでに切り替わっていたら何もしない
+					if (timer2 && timer2.is_running === false) {
+						return;
+					}
+					console.log("max: ", maxTurns);
+					console.log("total: ", totalTurns);
+					const { error: error2 } = await supabase
+						.from('timer')
+						.update({ is_running: false })
+						.eq('id', 2);
+					
+					if (error2) throw error2;
+				} catch (error) {
+					console.error('タイマー切り替えエラー:', error.message);
+				}
+			};
+			switchTimers2();
+		}
+	}, [totalTurns, player]);
+
+    // メッセージ自動スクロール
+    useEffect(() => {
+        messagesEndRef.current?.scrollTo(0, messagesEndRef.current.scrollHeight);
+    }, [messages, phase]);
+
+    const currentPair = order[phase] || [];
+    const currentSpeaker = initiatives[phase]?.[turn % TURNS_PER_PHASE] || null;
+
+    const filteredMessages = messages.filter(
+        (msg) => msg.phase === phase
+    );
+
+    const handleSend = () => {
+        if (!input.trim()) return;
+
+        const newMessage = {
+            phase,
+            turn,
+            sender: player,
+            content: input,
+            created_at: new Date().toISOString(),
+        };
+
+        setMessages((prev) => [...prev, newMessage]);
+        setInput('');
     };
 
-    const startGame = async () => {
-        try {
-          const now = new Date().toISOString();
-      
-          const { error } = await supabase.from('timer').update({
-            is_running: true,
-            start_time: now
-          }).eq('id', 1);
-      
-          if (error) throw error;
-        } catch (error) {
-          console.error('ゲーム開始エラー:', error.message);
-        }
-      };
-
     return (
-        <HStack spacing={4} wrap="wrap">
-            <Button onClick={shuffle}>キャラクターシャッフル</Button>
-            <Button onClick={startGame}>GAME START</Button>
-            <Button onClick={game_restart}>GAME RESET</Button>
-            <Button onClick={initial_setting}>INITIAL</Button>
-        </HStack>
-    );
-};
+        <VStack spacing={4} align="stretch" p={4}>
+            <Box
+                border="1px solid gray"
+                borderRadius="md"
+                p={4}
+                h="500px"
+                overflowY="auto"
+                ref={messagesEndRef}
+            >
+                {filteredMessages.map((msg, i) => (
+                    <Box key={i} mb={2}>
+                        <Text fontWeight="bold">{charNameMap[msg.sender] || msg.sender}:</Text>
+                        <Text ml={4}>{msg.content}</Text>
+                    </Box>
+                ))}
+            </Box>
 
-export default Control;
+            <HStack>
+                <Input
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    placeholder={player === currentSpeaker ? 'メッセージを入力' : `${charNameMap[currentSpeaker] || currentSpeaker} のターンです`}
+                    isDisabled={player !== currentSpeaker}
+                />
+                <Button onClick={handleSend} isDisabled={player !== currentSpeaker}>
+                    送信
+                </Button>
+            </HStack>
+
+            <Flex fontSize="sm" color="gray.500" align="center" gap={2}>
+                <Text>
+                    フェーズ: {phase + 1} / ターン: {turn + 1} / 会話相手: {charNameMap[currentPair.find((p) => p !== player)] || ''} /
+                    現在の発言者: {charNameMap[currentSpeaker] || currentSpeaker}
+                </Text>
+                <Box
+                    px={2}
+                    bg="blue.100"
+                    borderRadius="md"
+                    fontWeight="bold"
+                    color="blue.700"
+                    minW="30px"
+                    textAlign="center"
+                >
+                    {remainingTime}s
+                </Box>
+            </Flex>
+        </VStack>
+    );
+}

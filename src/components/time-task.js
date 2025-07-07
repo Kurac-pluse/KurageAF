@@ -1,97 +1,235 @@
-import { HStack, Button } from '@chakra-ui/react';
-import { names, pilot } from '../server/global';
-import { game_restart, initial_setting } from '../server/game-setting';
-import supabase from '../supabaseClient';
+import { useState, useEffect, useRef } from "react";
+import {
+    Flex,
+    Box,
+    Grid,
+    Text,
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalBody,
+    useDisclosure
+} from "@chakra-ui/react";
+import supabase from "../supabaseClient";
+import Conversation from "./conversation";
 
-const Control = () => {
+export default function TimeTask({ player }) {
+    const playTime = 10;
 
-    const shuffle = async () => {
-        try {
-            const { data, error } = await supabase.from('characters').select('conversation');
-            if (error) throw error;
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    const [ timeLeft, setTimeLeft ] = useState(playTime);
+    const [ playStartTime, setPlayStartTime ] = useState(null);
+    const [ convStartTime, setConvStartTime] = useState(null);
+    const [ playIsRunning, setPlayIsRunning ] = useState(false);
+    const [ convIsRunning, setConvIsRunning] = useState(false);
 
-            if (data.some((row) => row.conversation !== 0)) return;
-
-            const storedData = [];
-            while (storedData.length < 5) {
-                const name = names[Math.floor(Math.random() * 5)];
-                if (!storedData.includes(name)) storedData.push(name);
+    // タイマー状態購読（id:1）
+    useEffect(() => {
+        const fetchTimer = async () => {
+            const { data, error } = await supabase
+                .from('timer')
+                .select('start_time, is_running')
+                .eq('id', 1)
+                .single();
+    
+            if (error) {
+                console.error('Failed to fetch timer (id=1):', error.message);
+            } else {
+                setPlayStartTime(data.start_time);
+                setPlayIsRunning(data.is_running);
             }
+        };
+        fetchTimer();
 
-            const playerNames = ['player1', 'player2', 'npc1', 'npc2', 'npc3'];
-            for (let i = 0; i < 5; i++) {
-                const { error } = await supabase
-                    .from('characters')
-                    .update({ role: storedData[i] })
-                    .eq('name', playerNames[i]);
+        const channel = supabase
+            .channel('play-timer-updates')
+            .on(
+                'postgres_changes',
+                {
+                    event: 'UPDATE',
+                    schema: 'public',
+                    table: 'timer',
+                    filter: 'id=eq.1',
+                },
+                (payload) => {
+                    const newData = payload.new
+                    const oldData = payload.old
 
-                if (error) throw error;
-            }
-
-            // 会話順と先攻を決めて Supabase に保存
-            const allParticipants = pilot;
-            const pairs = [];
-
-            const shuffledOthers = [...allParticipants];
-            for (let i = shuffledOthers.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [shuffledOthers[i], shuffledOthers[j]] = [shuffledOthers[j], shuffledOthers[i]];
-            }
-
-            // プレイヤーが自分以外と1対1で会話する形（player1主体）
-            for (const other of shuffledOthers) {
-                if (other !== 'player1') {
-                    pairs.push(['player1', other]);
+                    // start_time または is_running に変更があった場合のみ更新
+                    if (
+                        newData.start_time !== oldData.start_time ||
+                        newData.is_running !== oldData.is_running
+                    ) {
+                        setPlayStartTime(newData.start_time)
+                        setPlayIsRunning(newData.is_running)
+                    }
                 }
+            )
+            .subscribe()
+
+        return () => {
+            supabase.removeChannel(channel)
+        }
+    }, [])
+
+    // モーダル状態購読（id:2）
+    useEffect(() => {
+        const fetchTimer = async () => {
+            const { data, error } = await supabase
+                .from('timer')
+                .select('start_time, is_running')
+                .eq('id', 2)
+                .single();
+    
+            if (error) {
+                console.error('Failed to fetch timer (id=2):', error.message);
+            } else {
+                setConvStartTime(data.start_time);
+                setConvIsRunning(data.is_running);
             }
+        };
+        fetchTimer();
 
-            // 各会話に対して先攻(0 or 1)をランダムに決定
-            const initiatives = pairs.map(() => Math.round(Math.random()));
+        const channel = supabase
+            .channel('conv-timer-updates')
+            .on(
+                'postgres_changes',
+                {
+                    event: 'UPDATE',
+                    schema: 'public',
+                    table: 'timer',
+                    filter: 'id=eq.2',
+                },
+                (payload) => {
+                    const newData = payload.new
+                    const oldData = payload.old
 
-            // Supabase に保存
-            const { error: convError } = await supabase
-                .from('conversation_setups')
-                .upsert([
-                    {
-                        session_id: 'default_session',
-                        conversation_order: pairs,
-                        initiatives,
-                        created_by: 'master',
-                    },
-                ])
-                .eq('session_id', 'default_session');
+                    // start_time または is_running に変更があった場合のみ更新
+                    if (
+                        newData.start_time !== oldData.start_time ||
+                        newData.is_running !== oldData.is_running
+                    ) {
+                        setConvStartTime(newData.start_time)
+                        setConvIsRunning(newData.is_running)
+                    }
+                }
+            )
+            .subscribe()
 
-            if (convError) throw convError;
-
-            window.location.reload();
-        } catch (error) {
-            console.error('シャッフルエラー:', error.message);
+        return () => {
+            supabase.removeChannel(channel)
         }
-    };
+    }, [])
 
-    const startGame = async () => {
-        try {
-          const now = new Date().toISOString();
-      
-          const { error } = await supabase.from('timer').update({
-            is_running: true,
-            start_time: now
-          }).eq('id', 1);
-      
-          if (error) throw error;
-        } catch (error) {
-          console.error('ゲーム開始エラー:', error.message);
+    // 残り時間のカウントダウン処理
+    useEffect(() => {
+        if (!playStartTime) return;
+
+        const interval = setInterval(() => {
+            const now = new Date();
+            const elapsed = Math.floor((now - new Date(playStartTime)) / 1000);
+            const remaining = playTime - elapsed;
+            setTimeLeft(remaining);
+
+            if (remaining < 0) {
+                clearInterval(interval);
+            }
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, [playStartTime]);
+
+    // タイマー終了時、id:1のis_runningをfalseに、id:2をtrueに
+    useEffect(() => {
+        if (
+            player === 'player1' &&
+            timeLeft === 0
+        ) {
+            const switchTimers1 = async () => {
+                try {
+                    // 現在の状態を取得
+                    const { data: timers, error } = await supabase
+                        .from('timer')
+                        .select('id, is_running')
+                        .in('id', [1, 2]);
+            
+                    if (error) throw error;
+            
+                    const timer1 = timers.find(t => t.id === 1);
+                    const timer2 = timers.find(t => t.id === 2);
+            
+                    // すでに切り替わっていたら何もしない
+                    if (timer1 && timer2 && timer1.is_running === false && timer2.is_running === true) {
+                        return;
+                    }
+            
+                    const now = new Date().toISOString();
+
+                    // 切り替え処理
+                    const { error: error1 } = await supabase
+                        .from('timer')
+                        .update({ is_running: false })
+                        .eq('id', 1);
+                    if (error1) throw error1;
+            
+                    const { error: error2 } = await supabase
+                        .from('timer')
+                        .update({ is_running: true, start_time: now })
+                        .eq('id', 2);
+                    if (error2) throw error2;
+                    // console.log('タイマーの切り替え完了');
+                } catch (error) {
+                    console.error('タイマー切り替えエラー:', error.message);
+                }
+            };
+            switchTimers1();
         }
-      };
+    }, [timeLeft, player]);
+
+    // convIsRunning の変化に応じてモーダルを開閉
+    useEffect(() => {
+        if (!playIsRunning && convIsRunning) {
+            onOpen();
+        } else {
+            onClose();
+        }
+    }, [convIsRunning]);
+
+    const formattedTime =
+        timeLeft > 0
+            ? `${String(Math.floor(timeLeft / 60)).padStart(2, "0")}:${String(
+                timeLeft % 60
+            ).padStart(2, "0")}`
+            : "終了";
 
     return (
-        <HStack spacing={4} wrap="wrap">
-            <Button onClick={shuffle}>キャラクターシャッフル</Button>
-            <Button onClick={startGame}>GAME START</Button>
-            <Button onClick={game_restart}>GAME RESET</Button>
-            <Button onClick={initial_setting}>INITIAL</Button>
-        </HStack>
-    );
-};
+        <Flex direction="row" justify="center" align="stretch" h="100%" w="100%">
+            <Box flex="3" border="1px solid black">
+                <Grid p={3} placeItems="center" h="100%">
+                    <Text fontSize="7xl" fontWeight="bold">
+                        {formattedTime}
+                    </Text>
+                </Grid>
+            </Box>
+            <Box flex="5" border="1px solid black" bg="gray.200">
+                <Grid p={3}>{/* 右側の表示等 */}</Grid>
+            </Box>
 
-export default Control;
+            <Modal closeOnOverlayClick={false} isOpen={isOpen} size="6xl">
+                <ModalOverlay />
+                <ModalContent>
+                    <ModalHeader textAlign="center" fontSize="2xl" fontWeight="bold">
+                        会話 TIME
+                    </ModalHeader>
+                    <ModalBody>
+                        <Conversation
+                            player={player}
+                            convStartTime={convStartTime}
+                        />
+                    </ModalBody>
+                </ModalContent>
+            </Modal>
+        </Flex>
+    );
+}

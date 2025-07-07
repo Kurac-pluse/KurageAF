@@ -71,18 +71,18 @@ const Control = () => {
 
     const startGame = async () => {
         try {
-          const now = new Date().toISOString();
+            const now = new Date().toISOString();
       
-          const { error } = await supabase.from('timer').update({
-            is_running: true,
-            start_time: now
-          }).eq('id', 1);
+            const { error } = await supabase.from('timer').update({
+                is_running: true,
+                start_time: now
+            }).eq('id', 1);
       
-          if (error) throw error;
+            if (error) throw error;
         } catch (error) {
-          console.error('ゲーム開始エラー:', error.message);
+            console.error('ゲーム開始エラー:', error.message);
         }
-      };
+    };
 
     return (
         <HStack spacing={4} wrap="wrap">
