@@ -9,7 +9,7 @@ import TimeTask from './time-task.js';
 const Operation = (props) => {
 
     const [ viewChar, setViewChar ] = useState('');
-    const [isTimerRunning, setIsTimerRunning] = useState(false);
+    const [isTimerRunning] = useState(false);
 
     return (
         <>

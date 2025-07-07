@@ -58,18 +58,10 @@ function Status(props) {
         return (
             <>
                 <Text>名前: {status.data.name}</Text>
-                <Text>体力: {status.data.hp}</Text>
-                <Text>LV.: {status.data.level}</Text>
-                <Text>所持金: {status.data.gold}</Text>
-                <Text>座標: [{status.data.x}, {status.data.y}]</Text>
-                <Text>武器: {status.data.weapon_slot}</Text>
-                <Text>盾: {status.data.shield_slot}</Text>
-                <Text>頭装備: {status.data.helmet_slot}</Text>
-                <Text>胴装備: {status.data.body_armor_slot}</Text>
-                <Text>足装備: {status.data.leg_armor_slot}</Text>
-                <Text>指輪: {status.data.ring1_slot} {status.data.ring2_slot}</Text>
-                <Text>消耗品: {status.data.consumable1_slot} {status.data.consumable2_slot}</Text>
-                <Text>インベントリ: ...</Text>
+                <Text>体力: {status.data.hp} &emsp; LV.: {status.data.level} &emsp; 所持金: {status.data.gold} &emsp; 座標: [{status.data.x}, {status.data.y}]</Text>
+                <Text>武器: {status.data.weapon_slot} &emsp; 盾: {status.data.shield_slot}</Text>
+                <Text>頭装備: {status.data.helmet_slot} &emsp; 胴装備: {status.data.body_armor_slot} &emsp; 足装備: {status.data.leg_armor_slot}</Text>
+                <Text>指輪: {status.data.ring1_slot} {status.data.ring2_slot} &emsp; インベントリ: ...</Text>
             </>
         );
     };
