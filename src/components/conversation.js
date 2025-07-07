@@ -201,7 +201,7 @@ export default function Conversation({ player, convStartTime }) {
 		setMessages(msgs);
 	};
 	fetchMessages();
-	}, [player]);
+	}, [player, sessionId]);
 
 	// メッセージ送信処理
     const handleSend = async () => {
