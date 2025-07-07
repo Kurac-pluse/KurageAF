@@ -2,178 +2,200 @@ import { useEffect, useState, useRef } from 'react';
 import {
     Box, Button, Input, VStack, Text, HStack, Flex
 } from '@chakra-ui/react';
-import { player_make } from '../server/global';
+import { pilot, player_make } from '../server/global';
 import supabase from '../supabaseClient';
 
-// 会話順序をplayer視点に合わせて変換する関数
-function convertOrderForPlayer(order, player) {
-    if (player === 'player1') return order;
-
-    return order.map(([p1, p2]) => {
-        const swapPlayer = (p) => (p === 'player1' ? 'player2' : p === 'player2' ? 'player1' : p);
-
-        const np1 = swapPlayer(p1);
-        const np2 = swapPlayer(p2);
-
-        if (np1 === player) return [np1, np2];
-        if (np2 === player) return [np2, np1];
-
-        return [np1, np2];
-    });
-}
-
-const TURN_DURATION = 5 * 1000; // 20秒
+const TURN_DURATION = 10 * 1000;
 const TURNS_PER_PHASE = 4;
-const DELAY_BEFORE_CLOSE = 2000;
+const PHASE_END_BUFFER = 5 * 1000;
 
-export default function Conversation({ player, conversationStartTime, resetKey, onClose }) {
-    const [messages, setMessages] = useState([]);
-    const [phase, setPhase] = useState(0);
-    const [turn, setTurn] = useState(0);
-    const [input, setInput] = useState('');
-    const [order, setOrder] = useState([]);
-    const [initiatives, setInitiatives] = useState([]);
-    const [charNameMap, setCharNameMap] = useState({}); // ID -> 名前マップ
+// プレイヤー視点に変換
+function convertOrderForPlayer(order, initiatives, player) {
+    if (player === 'player1') return [order, initiatives];
+
+    const swap = (p) => {
+        if (p === 'player1') return 'player2';
+        if (p === 'player2') return 'player1';
+        return p;
+    };
+    const convertedOrder = order.map(([p1, p2]) => [swap(p1), swap(p2)]);
+    const convertedInitiatives = order.map((_, i) => 
+        initiatives[i] === 0 ? 1 : 0
+    );
+    return [convertedOrder, convertedInitiatives];
+}  
+
+export default function Conversation({ player, convStartTime }) {
+    const [ messages, setMessages ] = useState([]);
+    const [ phase, setPhase ] = useState(0);
+    const [ turn, setTurn ] = useState(0);
+    const [ input, setInput ] = useState('');
+    const [ order, setOrder ] = useState([]);
+    const [ initiatives, setInitiatives ] = useState([]);
+    const [ charNameMap, setCharNameMap ] = useState({});
+    const [ remainingTime, setRemainingTime ] = useState(TURN_DURATION / 1000);
+	const [ totalTurns, setTotalTurns ] = useState();
     const messagesEndRef = useRef(null);
-	const [remainingTime, setRemainingTime] = useState(TURN_DURATION / 1000);
 
-    // 1. player視点のorderをセットし、先攻ランダム決定
+    // 会話順と先攻を初期化
     useEffect(() => {
-        const player1Order = [
-            ['player1', 'npc1'],
-            ['player1', 'npc3'],
-            ['player1', 'player2'],
-            ['player1', 'npc2'],
-        ];
+        const fetchConversationSetup = async () => {
+            const { data, error } = await supabase
+                .from('conversation_setups')
+                .select('conversation_order, initiatives')
+                .eq('session_id', 'default_session')
+                .single();
 
-        const newOrder = convertOrderForPlayer(player1Order, player);
-        const whoStarts = newOrder.map(() => Math.round(Math.random()));
+            if (error) {
+                console.error('会話セットアップの取得に失敗しました:', error);
+                return;
+            }
+			// console.log('[Setup]', { order: data.conversation_order, initiatives: data.initiatives });
+            const baseOrder = data.conversation_order;
+            const baseInitiatives = data.initiatives;
 
-        setOrder(newOrder);
-        setInitiatives(whoStarts);
-    }, [player]);
-
-    // 2. orderに出てくる全IDの名前をまとめて取得しマップ作成
-    useEffect(() => {
-        const fetchAllNames = async () => {
-            if (order.length === 0) return;
-
-            // order内の全IDを一意抽出
-            const idsSet = new Set();
-            order.forEach(([p1, p2]) => {
-                idsSet.add(p1);
-                idsSet.add(p2);
-            });
-            const ids = Array.from(idsSet);
-
-            // 全IDに対してplayer_makeを呼ぶ（名前取得）
-            const entries = await Promise.all(
-                ids.map(async (id) => {
-                    const name = await player_make(id);
-                    return [id, name || id]; // 名前がなければIDを表示用に
-                })
-            );
-
-            setCharNameMap(Object.fromEntries(entries));
+            const [adjustedOrder, adjustedInitiatives] = convertOrderForPlayer(
+				baseOrder,
+				baseInitiatives,
+				player
+			);
+			// console.log('[Adjusted]', { adjustedOrder, adjustedInitiatives });
+            setOrder(adjustedOrder);
+            setInitiatives(adjustedInitiatives);
         };
 
-        fetchAllNames();
-    }, [order]);
+        fetchConversationSetup();
+    }, [player]);
 
-    // 3. フェーズ・ターンの更新（タイマー処理）に合わせて残り時間を計算
+	// 名前の配列を作成
     useEffect(() => {
-        if (!conversationStartTime || order.length === 0 || initiatives.length === 0) return;
+		const fetchAllNames = async () => {
+		  if (order.length === 0) return;
+	
+		  const entries = await Promise.all(
+			pilot.map(async (id) => {
+			  const name = await player_make(id);
+			  return [id, name || id];
+			})
+		  );
+	
+		  setCharNameMap(Object.fromEntries(entries));
+		};
+	
+		fetchAllNames();
+	  }, [order.length]);
 
-        const interval = setInterval(() => {
-            const elapsed = new Date() - new Date(conversationStartTime);
-            const totalTurns = Math.floor(elapsed / TURN_DURATION);
+    // タイマー更新とフェーズ・ターンの計算
+    useEffect(() => {
+		if (!convStartTime || order.length === 0 || initiatives.length === 0) return;
+	
+		const PHASE_DURATION = TURNS_PER_PHASE * TURN_DURATION + PHASE_END_BUFFER;
+	
+		const interval = setInterval(() => {
+			const elapsed = new Date() - new Date(convStartTime);
+	
+			// フェーズ内の経過時間
+			const elapsedInPhase = elapsed % PHASE_DURATION;
+	
+			// バッファ期間内ならターン更新をスキップ
+			if (elapsedInPhase >= TURNS_PER_PHASE * TURN_DURATION) return;
+	
+			// フェーズ番号は経過したフェーズ数で求める
+			const phaseIndex = Math.floor(elapsed / PHASE_DURATION) % order.length;
+	
+			// フェーズ内のターン番号
+			const turnInPhase = Math.floor(elapsedInPhase / TURN_DURATION);
+	
+			setPhase(phaseIndex);
+			setTurn(turnInPhase);
+	
+			const turnElapsed = elapsedInPhase % TURN_DURATION;
+			setRemainingTime(Math.ceil((TURN_DURATION - turnElapsed) / 1000));
+	
+			// 総ターン数（バッファ含まず、実ターンのみ）
+			const totalTurns = Math.floor(elapsed / TURN_DURATION) - Math.floor(elapsed / PHASE_DURATION) * (PHASE_END_BUFFER / TURN_DURATION);
+			setTotalTurns(totalTurns);
+	
+		}, 250);
+	
+		return () => clearInterval(interval);
+	}, [convStartTime, order.length, initiatives]);
 
-            const newPhase = Math.floor(totalTurns / TURNS_PER_PHASE);
-            const newTurnInPhase = totalTurns % TURNS_PER_PHASE;
+	// モーダルの終了条件
+	useEffect(() => {
+		if(!order.length) return;
+		const maxTurns = order.length * TURNS_PER_PHASE;
+		if ( player === 'player1' && totalTurns >= maxTurns ) {
+			const switchTimers2 = async () => {
+				try {
+					// 現在の状態を取得
+					const { data: timers, error } = await supabase
+						.from('timer')
+						.select('id, is_running')
+						.eq('id', 2);
+			
+					if (error) throw error;
+					if (!timers || timers.length === 0) return;
+			
+					const timer2 = timers[0];
+			
+					// すでに切り替わっていたら何もしない
+					if (timer2 && timer2.is_running === false) {
+						return;
+					}
+					// console.log("max: ", maxTurns);
+					// console.log("total: ", totalTurns);
+					const { error: error2 } = await supabase
+						.from('timer')
+						.update({ is_running: false })
+						.eq('id', 2);
+					
+					if (error2) throw error2;
+				} catch (error) {
+					console.error('タイマー切り替えエラー:', error.message);
+				}
+			};
+			switchTimers2();
+		}
+	}, [totalTurns, player, order.length]);
 
-            // フェーズがorderの範囲外ならループ
-            const phaseIndex = newPhase % order.length;
+    // メッセージ自動スクロール
+    useEffect(() => {
+        messagesEndRef.current?.scrollTo(0, messagesEndRef.current.scrollHeight);
+    }, [messages, phase]);
 
-            setPhase(phaseIndex);
-            setTurn(newTurnInPhase);
-
-            // ターン内の経過時間を計算し残り時間をセット（秒）
-            const turnElapsed = elapsed % TURN_DURATION;
-            setRemainingTime(Math.ceil((TURN_DURATION - turnElapsed) / 1000));
-        }, 250); // 250msごとに更新しておくと滑らか
-
-        return () => clearInterval(interval);
-    }, [conversationStartTime, order, initiatives]);
-
-    // 4. 現在の会話ペアと先攻判定
+    // 現在の会話ペアと先攻判定
     const currentPair = order[phase] || [];
     const initiative = initiatives[phase] ?? 0;
 
-    // 5. ターン判定（先攻・後攻）
+    // ターン判定（先攻・後攻）
     const isPlayerFirst = initiative === 0;
     const isPlayerTurn =
         (turn % 2 === 0 && isPlayerFirst) ||
         (turn % 2 === 1 && !isPlayerFirst);
 
-    // 6. 発言者決定
+    // 発言者決定
     const currentSpeaker = isPlayerTurn ? player : currentPair.find((p) => p !== player);
 
-    // 7. メッセージの自動スクロール
-    useEffect(() => {
-        if (messagesEndRef.current) {
-            messagesEndRef.current.scrollTop = messagesEndRef.current.scrollHeight;
-        }
-    }, [messages, phase]);
+    const filteredMessages = messages.filter(
+        (msg) => msg.phase === phase
+    );
 
-    // 8. メッセージ送信処理
+	// メッセージ送信処理
     const handleSend = () => {
         if (!input.trim()) return;
 
         const newMessage = {
-            sender: player,
-            content: input.trim(),
             phase,
             turn,
-            pair: currentPair,
+            sender: player,
+            content: input,
+            created_at: new Date().toISOString(),
         };
 
         setMessages((prev) => [...prev, newMessage]);
         setInput('');
     };
-
-	// 9. phase と turnを親がリセット出来るようにする
-	useEffect(() => {
-		// console.log('Reset triggered with resetKey:', resetKey);
-		setPhase(0);
-		setTurn(0);
-		setRemainingTime(TURN_DURATION / 1000);
-	}, [resetKey]);
-
-	// 10. フェーズ・ターン終了時にモーダルを閉じる
-	useEffect(() => {
-		if (order.length === 0) return;
-	
-		const isLastPhase = phase >= order.length - 1;
-		const isLastTurn = turn >= TURNS_PER_PHASE - 1;
-	
-		if (isLastPhase && isLastTurn) {
-			const timeout = setTimeout(() => {
-				// timer(id=2) を停止
-				const stopTimer = async () => {
-					await supabase.from('timer').update({
-						is_running: false,
-						updated_at: new Date().toISOString()
-					}).eq('id', 2);
-				};
-	
-				stopTimer();
-				onClose();
-			}, DELAY_BEFORE_CLOSE);
-	
-			// クリーンアップ（phase/turnが変わったらキャンセル）
-			return () => clearTimeout(timeout);
-		}
-	}, [phase, turn, onClose, order]);
 
     return (
         <VStack spacing={4} align="stretch" p={4}>
@@ -185,20 +207,12 @@ export default function Conversation({ player, conversationStartTime, resetKey, 
                 overflowY="auto"
                 ref={messagesEndRef}
             >
-                {messages
-                    .filter((msg) =>
-                        msg.phase === phase &&
-                        msg.pair &&
-                        msg.pair.includes(player) &&
-                        msg.pair.includes(currentPair.find((p) => p !== player))
-                    )
-                    .map((msg, i) => (
-                        <Box key={i} mb={2}>
-                            {/* IDではなく名前で表示 */}
-                            <Text fontWeight="bold">{charNameMap[msg.sender] || msg.sender}:</Text>
-                            <Text ml={4}>{msg.content}</Text>
-                        </Box>
-                    ))}
+                {filteredMessages.map((msg, i) => (
+                    <Box key={i} mb={2}>
+                        <Text fontWeight="bold">{charNameMap[msg.sender] || msg.sender}:</Text>
+                        <Text ml={4}>{msg.content}</Text>
+                    </Box>
+                ))}
             </Box>
 
             <HStack>
@@ -213,23 +227,23 @@ export default function Conversation({ player, conversationStartTime, resetKey, 
                 </Button>
             </HStack>
 
-			<Flex fontSize="sm" color="gray.500" alignItems="center" gap={2}>
-				<Text>
-					フェーズ: {phase + 1} / ターン: {turn + 1} / 会話相手: {charNameMap[currentPair.find((p) => p !== player)] || ''} / 
-					現在の発言者: {charNameMap[currentSpeaker] || currentSpeaker}
-				</Text>
-				<Box
-					px={2}
-					bg="blue.100"
-					borderRadius="md"
-					fontWeight="bold"
-					color="blue.700"
-					minW="30px"
-					textAlign="center"
-				>
-					{remainingTime}s
-				</Box>
-			</Flex>
-		</VStack>
+            <Flex fontSize="sm" color="gray.500" align="center" gap={2}>
+                <Text>
+                    フェーズ: {phase + 1} / ターン: {turn + 1} / 会話相手: {charNameMap[currentPair.find((p) => p !== player)] || ''} /
+                    現在の発言者: {charNameMap[currentSpeaker] || currentSpeaker}
+                </Text>
+                <Box
+                    px={2}
+                    bg="blue.100"
+                    borderRadius="md"
+                    fontWeight="bold"
+                    color="blue.700"
+                    minW="30px"
+                    textAlign="center"
+                >
+                    {remainingTime}s
+                </Box>
+            </Flex>
+        </VStack>
     );
 }
