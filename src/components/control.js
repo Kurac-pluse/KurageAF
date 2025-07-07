@@ -2,6 +2,7 @@ import { HStack, Button } from '@chakra-ui/react';
 import { names, pilot } from '../server/global';
 import { game_restart, initial_setting } from '../server/game-setting';
 import supabase from '../supabaseClient';
+import { createSession } from '../server/chat';
 
 const Control = () => {
 
@@ -79,6 +80,12 @@ const Control = () => {
             }).eq('id', 1);
       
             if (error) throw error;
+            const session = await createSession('default_session');
+            if (!session) {
+                console.error('セッション作成に失敗しました');
+                return;
+            }
+            localStorage.setItem('session_id', session);
         } catch (error) {
             console.error('ゲーム開始エラー:', error.message);
         }

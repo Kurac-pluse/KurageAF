@@ -4,6 +4,7 @@ import {
 } from '@chakra-ui/react';
 import { pilot, player_make } from '../server/global';
 import supabase from '../supabaseClient';
+import { fetchMessagesBySession, saveMessage } from '../server/chat';
 
 const TURN_DURATION = 10 * 1000;
 const TURNS_PER_PHASE = 4;
@@ -23,7 +24,7 @@ function convertOrderForPlayer(order, initiatives, player) {
         initiatives[i] === 0 ? 1 : 0
     );
     return [convertedOrder, convertedInitiatives];
-}  
+}
 
 export default function Conversation({ player, convStartTime }) {
     const [ messages, setMessages ] = useState([]);
@@ -35,6 +36,7 @@ export default function Conversation({ player, convStartTime }) {
     const [ charNameMap, setCharNameMap ] = useState({});
     const [ remainingTime, setRemainingTime ] = useState(TURN_DURATION / 1000);
 	const [ totalTurns, setTotalTurns ] = useState();
+	const [sessionId, setSessionId] = useState(() => localStorage.getItem('session_id') || null);
     const messagesEndRef = useRef(null);
 
     // 会話順と先攻を初期化
@@ -177,25 +179,78 @@ export default function Conversation({ player, convStartTime }) {
     // 発言者決定
     const currentSpeaker = isPlayerTurn ? player : currentPair.find((p) => p !== player);
 
-    const filteredMessages = messages.filter(
-        (msg) => msg.phase === phase
-    );
+	// セッションIDの更新
+	useEffect(() => {
+		const handleStorage = (e) => {
+		  	if (e.key === 'session_id') {
+				setSessionId(e.newValue);
+		  	}
+		};
+		window.addEventListener('storage', handleStorage);
+	  
+		return () => {
+		  	window.removeEventListener('storage', handleStorage);
+		};
+	}, []);
+
+	// メッセージのDB登録
+	useEffect(() => {
+	const fetchMessages = async () => {
+		if (!player) return;
+		const msgs = await fetchMessagesBySession(sessionId, player);
+		setMessages(msgs);
+	};
+	fetchMessages();
+	}, [player, sessionId]);
 
 	// メッセージ送信処理
-    const handleSend = () => {
-        if (!input.trim()) return;
+    const handleSend = async () => {
+		if (!input.trim()) return;
+		
+		const newMessage = {
+			session_id: sessionId,
+			phase: phase,
+			turn: turn,
+			sender: player,
+			receiver: currentPair.find((p) => p !== player),
+			content: input,
+		};
+	
+		try {
+			const success = await saveMessage(newMessage);
+			if (success) {
+				setInput('');
+			}
+		} catch (err) {
+			console.error('送信処理中に例外が発生しました:', err);
+		}
+	};
 
-        const newMessage = {
-            phase,
-            turn,
-            sender: player,
-            content: input,
-            created_at: new Date().toISOString(),
-        };
-
-        setMessages((prev) => [...prev, newMessage]);
-        setInput('');
-    };
+	// リアルタイム処理
+	useEffect(() => {
+		if (!player) return;
+	
+		const channel = supabase
+			.channel('messages_realtime')
+			.on(
+				'postgres_changes',
+				{
+					event: 'INSERT',
+					schema: 'public',
+					table: 'messages',
+				},
+				(payload) => {
+					const newMsg = payload.new;
+					// 最新セッションのメッセージか確認（必要に応じてsession_idのチェックを追加）
+					setMessages((prev) => [...prev, newMsg]);
+				}
+			)
+			.subscribe();
+	
+		return () => {
+			supabase.removeChannel(channel);
+		};
+	}, [player]);
 
     return (
         <VStack spacing={4} align="stretch" p={4}>
@@ -207,7 +262,7 @@ export default function Conversation({ player, convStartTime }) {
                 overflowY="auto"
                 ref={messagesEndRef}
             >
-                {filteredMessages.map((msg, i) => (
+                {messages.map((msg, i) => (
                     <Box key={i} mb={2}>
                         <Text fontWeight="bold">{charNameMap[msg.sender] || msg.sender}:</Text>
                         <Text ml={4}>{msg.content}</Text>
