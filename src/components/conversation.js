@@ -83,7 +83,7 @@ export default function Conversation({ player, convStartTime }) {
 		};
 	
 		fetchAllNames();
-	  }, [order]);
+	  }, [order.length]);
 
     // タイマー更新とフェーズ・ターンの計算
     useEffect(() => {
@@ -119,7 +119,7 @@ export default function Conversation({ player, convStartTime }) {
 		}, 250);
 	
 		return () => clearInterval(interval);
-	}, [convStartTime, order, initiatives]);
+	}, [convStartTime, order.length, initiatives]);
 
 	// モーダルの終了条件
 	useEffect(() => {
@@ -157,7 +157,7 @@ export default function Conversation({ player, convStartTime }) {
 			};
 			switchTimers2();
 		}
-	}, [totalTurns, player]);
+	}, [totalTurns, player, order.length]);
 
     // メッセージ自動スクロール
     useEffect(() => {

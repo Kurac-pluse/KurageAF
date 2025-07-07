@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import {
     Flex,
     Box,
@@ -194,7 +194,7 @@ export default function TimeTask({ player }) {
         } else {
             onClose();
         }
-    }, [convIsRunning]);
+    }, [onClose, onOpen, playIsRunning, convIsRunning]);
 
     const formattedTime =
         timeLeft > 0
