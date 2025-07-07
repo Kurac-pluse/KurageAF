@@ -30,11 +30,11 @@ export const addSkins = () => {
 export const skins = addSkins();
 
 export const player_make = async (name) => {
-    try{
+    try {
         const { data, error } = await supabase
-        .from('characters')
-        .select('role')
-        .eq('name', name);
+            .from('characters')
+            .select('role')
+            .eq('name', name);
         if (error) throw error;
         if (data.length > 0) {
             //console.log('取得した値:', data[0]['role']);
@@ -61,3 +61,5 @@ export const playerToCharName = async (player) => {
         return "master";
     }
 }
+
+export const pilot = ["player1", "player2", "npc1", "npc2", "npc3"];
