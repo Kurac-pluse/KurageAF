@@ -4,6 +4,7 @@ import {
 } from '@chakra-ui/react';
 import { pilot, player_make } from '../server/global';
 import supabase from '../supabaseClient';
+import { saveMessage } from '../server/chat';
 
 const TURN_DURATION = 10 * 1000;
 const TURNS_PER_PHASE = 4;
@@ -23,7 +24,7 @@ function convertOrderForPlayer(order, initiatives, player) {
         initiatives[i] === 0 ? 1 : 0
     );
     return [convertedOrder, convertedInitiatives];
-}  
+}
 
 export default function Conversation({ player, convStartTime }) {
     const [ messages, setMessages ] = useState([]);
@@ -182,20 +183,29 @@ export default function Conversation({ player, convStartTime }) {
     );
 
 	// メッセージ送信処理
-    const handleSend = () => {
-        if (!input.trim()) return;
-
-        const newMessage = {
-            phase,
-            turn,
-            sender: player,
-            content: input,
-            created_at: new Date().toISOString(),
-        };
-
-        setMessages((prev) => [...prev, newMessage]);
-        setInput('');
-    };
+    const handleSend = async () => {
+		if (!input.trim()) return;
+		
+		const newMessage = {
+			phase: phase,
+			turn: turn,
+			sender: player,
+			receiver: currentPair.find((p) => p !== player),
+			content: input,
+		};
+	
+		try {
+			const success = await saveMessage(newMessage);
+			if (success) {
+				setMessages((prev) => [...prev, newMessage]);
+				setInput('');
+			}
+			setMessages((prev) => [...prev, newMessage]);
+			setInput('');
+		} catch (err) {
+			console.error('送信処理中に例外が発生しました:', err);
+		}
+	};
 
     return (
         <VStack spacing={4} align="stretch" p={4}>
