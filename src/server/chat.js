@@ -30,26 +30,17 @@ export const createSession = async (name) => {
  * @param {string} params.content
  */
 export const saveMessage = async ({
+    session_id,
     phase,
     turn,
     sender,
     receiver,
     content,
 }) => {
-    // sessions テーブルから最新のセッションを1件取得
-    const { data: sessionData, error: sessionError } = await supabase
-        .from('sessions')
-        .select('id')
-        .order('created_at', { ascending: false })
-        .limit(1)
-        .single();
-
-    if (sessionError || !sessionData) {
-        console.error('セッション取得エラー:', sessionError?.message || 'セッションが見つかりません');
-        return;
+    if (!session_id) {
+        console.log('session_idが指定されていません');
+        return false;
     }
-    const session_id = sessionData.id;
-    console.log(session_id);
 
     const newMessage = {
         session_id,
@@ -65,21 +56,23 @@ export const saveMessage = async ({
 
     if (error) {
         console.error('メッセージ保存エラー:', error.message);
+        return false;
     }
+    return true;
 };
 
 /**
- * 特定セッションの中で自分と関連のあるメッセージを取得（フェーズ順・ターン順でソート）
- * @param {string} session_id - セッションUUID
+ * 自分に関係あるメッセージを取得（最新セッションの中から取得）
  * @param {string} player - 自分のプレイヤー名
  * @returns {Array} - メッセージリスト（自分が sender または receiver のもの）
  */
 export const fetchMessagesBySession = async (session_id, player) => {
+
     const { data, error } = await supabase
         .from('messages')
         .select('*')
         .eq('session_id', session_id)
-        .or(`sender.eq.${player},receiver.eq.${player}`)  // ← ここで sender か receiver が自分のものだけ
+        .or(`sender.eq.${player},receiver.eq.${player}`)
         .order('phase')
         .order('turn');
 

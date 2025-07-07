@@ -224,6 +224,7 @@ export default function TimeTask({ player }) {
                     </ModalHeader>
                     <ModalBody>
                         <Conversation
+                            key={convStartTime}
                             player={player}
                             convStartTime={convStartTime}
                         />

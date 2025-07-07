@@ -85,6 +85,7 @@ const Control = () => {
                 console.error('セッション作成に失敗しました');
                 return;
             }
+            localStorage.setItem('session_id', session);
         } catch (error) {
             console.error('ゲーム開始エラー:', error.message);
         }
