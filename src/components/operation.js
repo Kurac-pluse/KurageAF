@@ -1,14 +1,15 @@
 import { Box, Grid, Flex } from '@chakra-ui/react';
 import ChangeChar from './change-character.js';
 import Status from './status.js';
-import Move from './move.js';
 import Control from './control.js';
 import React from 'react';
 import { useState } from 'react';
+import TimeTask from './time-task.js';
 
 const Operation = (props) => {
 
     const [ viewChar, setViewChar ] = useState('');
+    const [isTimerRunning, setIsTimerRunning] = useState(false);
 
     return (
         <>
@@ -27,13 +28,18 @@ const Operation = (props) => {
             </Grid>
         </Box>
         <Box flex="3" border="1px solid black">
-            <Grid p={3}>
+            <Grid p={3} height="100%">
                 <Flex flex="1" direction="row">
                 {(() => {
                     if (props.player === 'master') {
                         return <Control player={props.player} />
                     } else {
-                        return <Move player={props.player} />;
+                        return (
+                            <TimeTask
+                                player={props.player}
+                                isRunning={isTimerRunning}
+                            />
+                        );
                     }
                 })()}
                 </Flex>
