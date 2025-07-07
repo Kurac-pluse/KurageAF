@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
 import {
-    Box, Button, Input, VStack, Text, HStack,
+    Box, Button, Input, VStack, Text, HStack, Flex
 } from '@chakra-ui/react';
 import { player_make } from '../server/global';
+import supabase from '../supabaseClient';
 
 // 会話順序をplayer視点に合わせて変換する関数
 function convertOrderForPlayer(order, player) {
@@ -21,20 +22,11 @@ function convertOrderForPlayer(order, player) {
     });
 }
 
-// シャッフル関数（今回は未使用）
-const shuffle = (arr) => {
-    const copy = [...arr];
-    for (let i = copy.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [copy[i], copy[j]] = [copy[j], copy[i]];
-    }
-    return copy;
-};
+const TURN_DURATION = 5 * 1000; // 20秒
+const TURNS_PER_PHASE = 4;
+const DELAY_BEFORE_CLOSE = 2000;
 
-const TURN_DURATION = 20 * 1000; // 20秒
-const TURNS_PER_PHASE = 6;
-
-export default function Conversation({ player, conversationStartTime }) {
+export default function Conversation({ player, conversationStartTime, resetKey, onClose }) {
     const [messages, setMessages] = useState([]);
     const [phase, setPhase] = useState(0);
     const [turn, setTurn] = useState(0);
@@ -43,6 +35,7 @@ export default function Conversation({ player, conversationStartTime }) {
     const [initiatives, setInitiatives] = useState([]);
     const [charNameMap, setCharNameMap] = useState({}); // ID -> 名前マップ
     const messagesEndRef = useRef(null);
+	const [remainingTime, setRemainingTime] = useState(TURN_DURATION / 1000);
 
     // 1. player視点のorderをセットし、先攻ランダム決定
     useEffect(() => {
@@ -87,7 +80,7 @@ export default function Conversation({ player, conversationStartTime }) {
         fetchAllNames();
     }, [order]);
 
-    // 3. フェーズ・ターンの更新（タイマー処理）
+    // 3. フェーズ・ターンの更新（タイマー処理）に合わせて残り時間を計算
     useEffect(() => {
         if (!conversationStartTime || order.length === 0 || initiatives.length === 0) return;
 
@@ -103,7 +96,11 @@ export default function Conversation({ player, conversationStartTime }) {
 
             setPhase(phaseIndex);
             setTurn(newTurnInPhase);
-        }, 1000);
+
+            // ターン内の経過時間を計算し残り時間をセット（秒）
+            const turnElapsed = elapsed % TURN_DURATION;
+            setRemainingTime(Math.ceil((TURN_DURATION - turnElapsed) / 1000));
+        }, 250); // 250msごとに更新しておくと滑らか
 
         return () => clearInterval(interval);
     }, [conversationStartTime, order, initiatives]);
@@ -144,6 +141,40 @@ export default function Conversation({ player, conversationStartTime }) {
         setInput('');
     };
 
+	// 9. phase と turnを親がリセット出来るようにする
+	useEffect(() => {
+		// console.log('Reset triggered with resetKey:', resetKey);
+		setPhase(0);
+		setTurn(0);
+		setRemainingTime(TURN_DURATION / 1000);
+	}, [resetKey]);
+
+	// 10. フェーズ・ターン終了時にモーダルを閉じる
+	useEffect(() => {
+		if (order.length === 0) return;
+	
+		const isLastPhase = phase >= order.length - 1;
+		const isLastTurn = turn >= TURNS_PER_PHASE - 1;
+	
+		if (isLastPhase && isLastTurn) {
+			const timeout = setTimeout(() => {
+				// timer(id=2) を停止
+				const stopTimer = async () => {
+					await supabase.from('timer').update({
+						is_running: false,
+						updated_at: new Date().toISOString()
+					}).eq('id', 2);
+				};
+	
+				stopTimer();
+				onClose();
+			}, DELAY_BEFORE_CLOSE);
+	
+			// クリーンアップ（phase/turnが変わったらキャンセル）
+			return () => clearTimeout(timeout);
+		}
+	}, [phase, turn, onClose, order]);
+
     return (
         <VStack spacing={4} align="stretch" p={4}>
             <Box
@@ -182,9 +213,23 @@ export default function Conversation({ player, conversationStartTime }) {
                 </Button>
             </HStack>
 
-            <Text fontSize="sm" color="gray.500">
-                フェーズ: {phase + 1} / ターン: {turn + 1} / 会話相手: {charNameMap[currentPair.find((p) => p !== player)] || ''} / 現在の発言者: {charNameMap[currentSpeaker] || currentSpeaker}
-            </Text>
-        </VStack>
+			<Flex fontSize="sm" color="gray.500" alignItems="center" gap={2}>
+				<Text>
+					フェーズ: {phase + 1} / ターン: {turn + 1} / 会話相手: {charNameMap[currentPair.find((p) => p !== player)] || ''} / 
+					現在の発言者: {charNameMap[currentSpeaker] || currentSpeaker}
+				</Text>
+				<Box
+					px={2}
+					bg="blue.100"
+					borderRadius="md"
+					fontWeight="bold"
+					color="blue.700"
+					minW="30px"
+					textAlign="center"
+				>
+					{remainingTime}s
+				</Box>
+			</Flex>
+		</VStack>
     );
 }

@@ -11,6 +11,7 @@ export default function TimeTask(props) {
     const [startTime, setStartTime] = useState(null);
     const [isRunning, setIsRunning] = useState(false);
     const [conversationStartTime, setConversationStartTime] = useState(null);
+    const [resetKey, setResetKey] = useState(0);
 
     useEffect(() => {
         const channel = supabase
@@ -70,13 +71,14 @@ export default function TimeTask(props) {
     useEffect(() => {
         if (timeLeft === 0 && !hasOpened) {
             const fetchAndStartConversation = async () => {
+                // console.log('fetchAndStartConversation start');
                 // まず、id=2のタイマー情報を取得
                 const { data, error } = await supabase
                     .from('timer')
                     .select('*')
                     .eq('id', 2)
                     .single();
-    
+                // console.log('timer data:', data, 'error:', error);
                 if (error) {
                     console.error('タイマー取得エラー:', error);
                     return;
@@ -92,7 +94,7 @@ export default function TimeTask(props) {
                             updated_at: new Date().toISOString(),
                         })
                         .eq('id', 2);
-    
+                    // console.log('updateError:', updateError);
                     if (updateError) {
                         console.error('タイマー開始更新エラー:', updateError);
                         return;
@@ -105,21 +107,32 @@ export default function TimeTask(props) {
                     .select('*')
                     .eq('id', 2)
                     .single();
+                // console.log('newData:', newData, 'newError:', newError);
     
-                if (!newError && newData.is_running && newData.start_time) {
-                    setConversationStartTime(new Date(newData.start_time));
-                    onOpen();
-                    setHasOpened(true);
-                }
-            };
-    
+                    if (!newError && newData.is_running && newData.start_time) {
+                        setConversationStartTime(new Date(newData.start_time));
+                        setResetKey(prev => prev + 1); // リセットを指示
+                        // console.log(pre);s
+                        setHasOpened(true);
+                        onOpen();
+                        // console.log('Modal opened');
+                    }
+                };
+
             fetchAndStartConversation();
         }
     }, [timeLeft, onOpen, hasOpened]);
+
+    useEffect(() => {
+        const updateTimerState = async () => {
+            await supabase.from('timer')
+                .update({ is_running: !isOpen })
+                .eq('id', 1); // または session_id などの条件に応じて
+        };
     
-    
-    
-    
+        updateTimerState();
+    }, [isOpen]);
+        
     const minutes = Math.floor((timeLeft % 3600) / 60);
     const seconds = timeLeft % 60;
 
@@ -141,14 +154,20 @@ export default function TimeTask(props) {
             </Box>
 
             {/* モーダルの描画 */}
-            <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose} size="6xl">
+            <Modal closeOnOverlayClick={false} isOpen={isOpen} size="6xl">
                 <ModalOverlay />
                 <ModalContent>
                     <ModalHeader textAlign="center"fontSize="2xl" fontWeight="bold">
                         会話 TIME
                     </ModalHeader>
                     <ModalBody>
-                        <Conversation player = {props.player} conversationStartTime={conversationStartTime}/>
+                    <Conversation
+                        key={resetKey}
+                        player={props.player}
+                        conversationStartTime={conversationStartTime}
+                        resetKey={resetKey}
+                        onClose={onClose}
+                    />
                     </ModalBody>
                 </ModalContent>
             </Modal>
