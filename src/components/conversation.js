@@ -2,31 +2,38 @@ import { useEffect, useState, useRef } from 'react';
 import {
     Box, Button, Input, VStack, Text, HStack, Flex
 } from '@chakra-ui/react';
-import { player_make } from '../server/global';
+import { pilot, player_make } from '../server/global';
 import supabase from '../supabaseClient';
 
 const TURN_DURATION = 10 * 1000;
 const TURNS_PER_PHASE = 4;
-const DELAY_BEFORE_CLOSE = 2 * 1000;
+// const DELAY_BEFORE_CLOSE = 2 * 1000;
 
 // プレイヤー視点に変換
-function convertOrderForPlayer(order, player) {
-    if (player === 'player1') return order;
-    return order.map(([p1, p2]) => {
-        const swap = (p) => (p === 'player1' ? 'player2' : p === 'player2' ? 'player1' : p);
-        return [swap(p1), swap(p2)];
-    });
-}
+function convertOrderForPlayer(order, initiatives, player) {
+    if (player === 'player1') return [order, initiatives];
+
+    const swap = (p) => {
+        if (p === 'player1') return 'player2';
+        if (p === 'player2') return 'player1';
+        return p;
+    };
+    const convertedOrder = order.map(([p1, p2]) => [swap(p1), swap(p2)]);
+    const convertedInitiatives = order.map((_, i) => 
+        initiatives[i] === 0 ? 1 : 0
+    );
+    return [convertedOrder, convertedInitiatives];
+}  
 
 export default function Conversation({ player, convStartTime }) {
-    const [messages, setMessages] = useState([]);
-    const [phase, setPhase] = useState(0);
-    const [turn, setTurn] = useState(0);
-    const [input, setInput] = useState('');
-    const [order, setOrder] = useState([]);
-    const [initiatives, setInitiatives] = useState([]);
-    const [charNameMap, setCharNameMap] = useState({});
-    const [remainingTime, setRemainingTime] = useState(TURN_DURATION / 1000);
+    const [ messages, setMessages ] = useState([]);
+    const [ phase, setPhase ] = useState(0);
+    const [ turn, setTurn ] = useState(0);
+    const [ input, setInput ] = useState('');
+    const [ order, setOrder ] = useState([]);
+    const [ initiatives, setInitiatives ] = useState([]);
+    const [ charNameMap, setCharNameMap ] = useState({});
+    const [ remainingTime, setRemainingTime ] = useState(TURN_DURATION / 1000);
 	const [ totalTurns, setTotalTurns ] = useState();
     const messagesEndRef = useRef(null);
 
@@ -43,13 +50,16 @@ export default function Conversation({ player, convStartTime }) {
                 console.error('会話セットアップの取得に失敗しました:', error);
                 return;
             }
-
+			// console.log('[Setup]', { order: data.conversation_order, initiatives: data.initiatives });
             const baseOrder = data.conversation_order;
             const baseInitiatives = data.initiatives;
 
-            const adjustedOrder = convertOrderForPlayer(baseOrder, player);
-            const adjustedInitiatives = baseInitiatives;
-
+            const [adjustedOrder, adjustedInitiatives] = convertOrderForPlayer(
+				baseOrder,
+				baseInitiatives,
+				player
+			);
+			// console.log('[Adjusted]', { adjustedOrder, adjustedInitiatives });
             setOrder(adjustedOrder);
             setInitiatives(adjustedInitiatives);
         };
@@ -59,28 +69,21 @@ export default function Conversation({ player, convStartTime }) {
 
 	// 名前の配列を作成
     useEffect(() => {
-        const fetchAllNames = async () => {
-            if (order.length === 0) return;
-
-            const idsSet = new Set();
-            order.forEach(([p1, p2]) => {
-                idsSet.add(p1);
-                idsSet.add(p2);
-            });
-            const ids = Array.from(idsSet);
-
-            const entries = await Promise.all(
-                ids.map(async (id) => {
-                    const name = await player_make(id);
-                    return [id, name || id];
-                })
-            );
-
-            setCharNameMap(Object.fromEntries(entries));
-        };
-
-        fetchAllNames();
-    }, [order]);
+		const fetchAllNames = async () => {
+		  if (order.length === 0) return;
+	
+		  const entries = await Promise.all(
+			pilot.map(async (id) => {
+			  const name = await player_make(id);
+			  return [id, name || id];
+			})
+		  );
+	
+		  setCharNameMap(Object.fromEntries(entries));
+		};
+	
+		fetchAllNames();
+	  }, [order]);
 
     // タイマー更新とフェーズ・ターンの計算
     useEffect(() => {
@@ -127,8 +130,8 @@ export default function Conversation({ player, convStartTime }) {
 					if (timer2 && timer2.is_running === false) {
 						return;
 					}
-					console.log("max: ", maxTurns);
-					console.log("total: ", totalTurns);
+					// console.log("max: ", maxTurns);
+					// console.log("total: ", totalTurns);
 					const { error: error2 } = await supabase
 						.from('timer')
 						.update({ is_running: false })
@@ -148,13 +151,24 @@ export default function Conversation({ player, convStartTime }) {
         messagesEndRef.current?.scrollTo(0, messagesEndRef.current.scrollHeight);
     }, [messages, phase]);
 
+    // 現在の会話ペアと先攻判定
     const currentPair = order[phase] || [];
-    const currentSpeaker = initiatives[phase]?.[turn % TURNS_PER_PHASE] || null;
+    const initiative = initiatives[phase] ?? 0;
+
+    // ターン判定（先攻・後攻）
+    const isPlayerFirst = initiative === 0;
+    const isPlayerTurn =
+        (turn % 2 === 0 && isPlayerFirst) ||
+        (turn % 2 === 1 && !isPlayerFirst);
+
+    // 発言者決定
+    const currentSpeaker = isPlayerTurn ? player : currentPair.find((p) => p !== player);
 
     const filteredMessages = messages.filter(
         (msg) => msg.phase === phase
     );
 
+	// メッセージ送信処理
     const handleSend = () => {
         if (!input.trim()) return;
 
