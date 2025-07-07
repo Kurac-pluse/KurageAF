@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import {
   Box, Button, Input, VStack, Text, HStack,
 } from '@chakra-ui/react';
@@ -45,6 +45,7 @@ export default function Conversation({ player, conversationStartTime }) {
   const [order, setOrder] = useState([]);
   const [initiatives, setInitiatives] = useState([]);
   const [charName, setCharName] = useState('');
+  const messagesEndRef = useRef(null);
 
   useEffect(() => {
     // player1視点の会話ペア例（本来は外部から渡すかstateで管理）
@@ -116,56 +117,70 @@ export default function Conversation({ player, conversationStartTime }) {
     fetchCharName();
   }, [currentPair, player]);
 
-  // メッセージ送信処理
-  const handleSend = () => {
+  useEffect(() => {
+	if (messagesEndRef.current) {
+	  // スクロールを一番下へ
+	  messagesEndRef.current.scrollTop = messagesEndRef.current.scrollHeight;
+	}
+  }, [messages, phase]);
+
+  	// メッセージ送信処理
+  	const handleSend = () => {
     if (!input.trim()) return;
 
-    const newMessage = {
-      sender: player,
-      content: input.trim(),
-      phase,
-      turn,
-      pair: currentPair,
-    };
+    	const newMessage = {
+      		sender: player,
+      		content: input.trim(),
+      		phase,
+      		turn,
+      		pair: currentPair,
+    	};
 
-    setMessages((prev) => [...prev, newMessage]);
-    setInput('');
-  };
+    	setMessages((prev) => [...prev, newMessage]);
+    	setInput('');
+  	};
 
-  return (
-    <VStack spacing={4} align="stretch" p={4}>
-      <Box border="1px solid gray" borderRadius="md" p={4} h="500px" overflowY="auto">
-        {messages
-          .filter((msg) =>
-            // 表示は現在のペアの会話のみ
-            msg.phase === phase &&
-            msg.pair &&
-            ((msg.pair.includes(player) && msg.pair.includes(charName)) || // 念のためcharNameではなくidで管理すればベター
-              msg.pair.includes(player))
-          )
-          .map((msg, i) => (
-            <Box key={i} mb={2}>
-              <Text fontWeight="bold">{msg.sender}:</Text>
-              <Text ml={4}>{msg.content}</Text>
-            </Box>
-          ))}
-      </Box>
+  	return (
+		<VStack spacing={4} align="stretch" p={4}>
+			<Box
+				border="1px solid gray"
+				borderRadius="md"
+				p={4}
+				h="500px"
+				overflowY="auto"
+				ref={messagesEndRef}  // 自動スクロール
+			>
+			{messages
+			.filter((msg) =>
+				// 表示は現在のペアの会話のみ
+				msg.phase === phase &&
+				msg.pair &&
+				((msg.pair.includes(player) && msg.pair.includes(charName)) || // 念のためcharNameではなくidで管理すればベター
+				msg.pair.includes(player))
+			)
+			.map((msg, i) => (
+				<Box key={i} mb={2}>
+				<Text fontWeight="bold">{msg.sender}:</Text>
+				<Text ml={4}>{msg.content}</Text>
+				</Box>
+			))}
+			</Box>
 
-      <HStack>
-        <Input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder={player === currentSpeaker ? 'メッセージを入力' : `${currentSpeaker} のターンです`}
-          isDisabled={player !== currentSpeaker}
-        />
-        <Button onClick={handleSend} isDisabled={player !== currentSpeaker}>
-          送信
-        </Button>
-      </HStack>
+			<HStack>
+				<Input
+					value={input}
+					onChange={(e) => setInput(e.target.value)}
+					placeholder={player === currentSpeaker ? 'メッセージを入力' : `${currentSpeaker} のターンです`}
+					isDisabled={player !== currentSpeaker}
+				/>
+				<Button onClick={handleSend} isDisabled={player !== currentSpeaker}>
+					送信
+				</Button>
+			</HStack>
 
-      <Text fontSize="sm" color="gray.500">
-        フェーズ: {phase + 1} / ターン: {turn + 1} / 相手: {charName} / 発言者: {currentSpeaker}
-      </Text>
-    </VStack>
-  );
+			<Text fontSize="sm" color="gray.500">
+				フェーズ: {phase + 1} / ターン: {turn + 1} / 相手: {charName} / 発言者: {currentSpeaker}
+			</Text>
+		</VStack>
+  	);
 }
