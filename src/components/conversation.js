@@ -7,7 +7,7 @@ import supabase from '../supabaseClient';
 
 const TURN_DURATION = 10 * 1000;
 const TURNS_PER_PHASE = 4;
-// const DELAY_BEFORE_CLOSE = 2 * 1000;
+const PHASE_END_BUFFER = 5 * 1000;
 
 // プレイヤー視点に変換
 function convertOrderForPlayer(order, initiatives, player) {
@@ -87,26 +87,39 @@ export default function Conversation({ player, convStartTime }) {
 
     // タイマー更新とフェーズ・ターンの計算
     useEffect(() => {
-        if (!convStartTime || order.length === 0 || initiatives.length === 0) return;
-
-        const interval = setInterval(() => {
-            const elapsed = new Date() - new Date(convStartTime);
-            const total = Math.floor(elapsed / TURN_DURATION);
-			setTotalTurns(total);
-
-            const newPhase = Math.floor(total / TURNS_PER_PHASE);
-            const newTurnInPhase = total % TURNS_PER_PHASE;
-            const phaseIndex = newPhase % order.length;
-
-            setPhase(phaseIndex);
-            setTurn(newTurnInPhase);
-
-            const turnElapsed = elapsed % TURN_DURATION;
-            setRemainingTime(Math.ceil((TURN_DURATION - turnElapsed) / 1000));
-        }, 250);
-
-        return () => clearInterval(interval);
-    }, [convStartTime, order, initiatives]);
+		if (!convStartTime || order.length === 0 || initiatives.length === 0) return;
+	
+		const PHASE_DURATION = TURNS_PER_PHASE * TURN_DURATION + PHASE_END_BUFFER;
+	
+		const interval = setInterval(() => {
+			const elapsed = new Date() - new Date(convStartTime);
+	
+			// フェーズ内の経過時間
+			const elapsedInPhase = elapsed % PHASE_DURATION;
+	
+			// バッファ期間内ならターン更新をスキップ
+			if (elapsedInPhase >= TURNS_PER_PHASE * TURN_DURATION) return;
+	
+			// フェーズ番号は経過したフェーズ数で求める
+			const phaseIndex = Math.floor(elapsed / PHASE_DURATION) % order.length;
+	
+			// フェーズ内のターン番号
+			const turnInPhase = Math.floor(elapsedInPhase / TURN_DURATION);
+	
+			setPhase(phaseIndex);
+			setTurn(turnInPhase);
+	
+			const turnElapsed = elapsedInPhase % TURN_DURATION;
+			setRemainingTime(Math.ceil((TURN_DURATION - turnElapsed) / 1000));
+	
+			// 総ターン数（バッファ含まず、実ターンのみ）
+			const totalTurns = Math.floor(elapsed / TURN_DURATION) - Math.floor(elapsed / PHASE_DURATION) * (PHASE_END_BUFFER / TURN_DURATION);
+			setTotalTurns(totalTurns);
+	
+		}, 250);
+	
+		return () => clearInterval(interval);
+	}, [convStartTime, order, initiatives]);
 
 	// モーダルの終了条件
 	useEffect(() => {
