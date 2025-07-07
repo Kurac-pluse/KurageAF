@@ -75,8 +75,7 @@ const Control = () => {
       
           const { error } = await supabase.from('timer').update({
             is_running: true,
-            start_time: now,
-            updated_at: now
+            start_time: now
           }).eq('id', 1);
       
           if (error) throw error;
