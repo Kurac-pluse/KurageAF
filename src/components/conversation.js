@@ -262,12 +262,15 @@ export default function Conversation({ player, convStartTime }) {
                 overflowY="auto"
                 ref={messagesEndRef}
             >
-                {messages.map((msg, i) => (
-                    <Box key={i} mb={2}>
-                        <Text fontWeight="bold">{charNameMap[msg.sender] || msg.sender}:</Text>
-                        <Text ml={4}>{msg.content}</Text>
-                    </Box>
-                ))}
+                {messages
+					.filter((msg) => msg.phase === phase)
+					.map((msg, i) => (
+                    	<Box key={i} mb={2}>
+                        	<Text fontWeight="bold">{charNameMap[msg.sender] || msg.sender}:</Text>
+                        	<Text ml={4}>{msg.content}</Text>
+                    	</Box>
+                	))
+				}
             </Box>
 
             <HStack>
