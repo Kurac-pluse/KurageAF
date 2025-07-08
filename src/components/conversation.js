@@ -5,6 +5,7 @@ import {
 import { pilot, player_make } from '../server/global';
 import supabase from '../supabaseClient';
 import { fetchMessagesBySession, saveMessage } from '../server/chat';
+import { makeResponse } from '../server/generation/llm';
 
 const TURN_DURATION = 10 * 1000;
 const TURNS_PER_PHASE = 4;
@@ -251,6 +252,16 @@ export default function Conversation({ player, convStartTime }) {
 			supabase.removeChannel(channel);
 		};
 	}, [player]);
+
+	// NPCのターンを検知し、推論を行う
+	useEffect(() => {
+		if (!currentSpeaker) return;
+
+		// npc1〜npc3か判定
+		if (['npc1', 'npc2', 'npc3'].includes(currentSpeaker)) {
+			makeResponse(currentSpeaker);
+		}
+	}, [phase, turn, currentSpeaker]);
 
     return (
         <VStack spacing={4} align="stretch" p={4}>
