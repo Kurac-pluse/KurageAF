@@ -1,16 +1,10 @@
 // 推論を行う関数
 export async function makeResponse(currentSpeaker) {
-    const url = process.env.REACT_APP_LLAMA_SERVER_URL;
+    const url = process.env.REACT_APP_SERVER_URL;
 
-    const body = {
-        prompt: 'Hello I am ' + currentSpeaker,
-        max_tokens: 256,
-        temperature: 0.7,
-        top_p: 0.9,
-    };
+    const body = { prompt: 'このドキュメントに書かれている内容を要約して' };
 
     try {
-        console.log(process.env.REACT_APP_LLAMA_SERVER_URL);
         const res = await fetch(url, {
             method: "POST",
             headers: {
@@ -25,7 +19,7 @@ export async function makeResponse(currentSpeaker) {
 
         const data = await res.json();
 
-        console.log(data.content);
+        console.log(currentSpeaker + ' : ' + data.response);
     } catch (e) {
       console.error("Error calling LLM API:", e);
       return "";
