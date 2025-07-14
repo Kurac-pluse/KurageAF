@@ -1,6 +1,6 @@
 // 推論を行う関数
 export async function makeResponse({
-    prompt = '',
+    prompt = '要約',
     sessionId,
     phase,
     turn,
@@ -10,7 +10,7 @@ export async function makeResponse({
     const url = process.env.REACT_APP_SERVER_URL + "/api/llm";
 
     const body = {
-        prompt: '要約',
+        prompt,
         session_id: sessionId,
         phase,
         turn,
