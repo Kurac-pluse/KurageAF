@@ -1,8 +1,22 @@
 // 推論を行う関数
-export async function makeResponse(currentSpeaker) {
-    const url = process.env.REACT_APP_SERVER_URL;
+export async function makeResponse({
+    prompt = '要約',
+    sessionId,
+    phase,
+    turn,
+    sender,
+    receiver,
+}) {
+    const url = process.env.REACT_APP_SERVER_URL + "/api/llm";
 
-    const body = { prompt: 'このドキュメントに書かれている内容を要約して' };
+    const body = {
+        prompt,
+        session_id: sessionId,
+        phase,
+        turn,
+        sender,
+        receiver,
+    };
 
     try {
         const res = await fetch(url, {
@@ -19,7 +33,8 @@ export async function makeResponse(currentSpeaker) {
 
         const data = await res.json();
 
-        console.log(currentSpeaker + ' : ' + data.response);
+        console.log(sender + ' : ' + data.response);
+
     } catch (e) {
       console.error("Error calling LLM API:", e);
       return "";
