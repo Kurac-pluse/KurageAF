@@ -259,9 +259,16 @@ export default function Conversation({ player, convStartTime }) {
 
 		// npc1〜npc3か判定
 		if (['npc1', 'npc2', 'npc3'].includes(currentSpeaker)) {
-			makeResponse(currentSpeaker);
+			makeResponse({
+				prompt: '',
+				sessionId: sessionId,
+				phase: phase,
+				turn: turn,
+				sender: currentSpeaker,
+				receiver: player,
+			});
 		}
-	}, [phase, turn, currentSpeaker]);
+	}, [phase, turn, currentSpeaker, sessionId, player]);
 
     return (
         <VStack spacing={4} align="stretch" p={4}>
