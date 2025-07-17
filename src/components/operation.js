@@ -4,7 +4,7 @@ import Status from './status.js';
 import Control from './control.js';
 import React from 'react';
 import { useState } from 'react';
-import TimeTask from './time-task.js';
+import Time from './time.js';
 
 const Operation = (props) => {
 
@@ -38,7 +38,7 @@ const Operation = (props) => {
                         );
                     } else {
                         return (
-                            <TimeTask
+                            <Time
                                 player={props.player}
                             />
                         );

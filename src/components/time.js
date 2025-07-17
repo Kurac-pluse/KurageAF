@@ -13,8 +13,9 @@ import {
 } from "@chakra-ui/react";
 import supabase from "../supabaseClient";
 import Conversation from "./conversation";
+import Task from "./task";
 
-export default function TimeTask({ player }) {
+export default function Time({ player }) {
     const playTime = 10;
 
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -212,8 +213,10 @@ export default function TimeTask({ player }) {
                     </Text>
                 </Grid>
             </Box>
-            <Box flex="5" border="1px solid black" bg="gray.200">
-                <Grid p={3}>{/* 右側の表示等 */}</Grid>
+            <Box flex="5" border="1px solid black">
+                <Grid p={3}  placeItems="center" h="100%" bg='gray.100'>
+                    <Task player={player} />
+                </Grid>
             </Box>
 
             <Modal closeOnOverlayClick={false} isOpen={isOpen} size="6xl">
