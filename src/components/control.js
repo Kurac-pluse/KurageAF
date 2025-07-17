@@ -6,6 +6,40 @@ import { createSession } from '../server/chat';
 
 const Control = () => {
 
+    const shuffleTaskNumbers = async() => {
+        // 1. 全タスクを取得
+        const { data: tasks, error } = await supabase
+          .from('tasks')
+          .select('id');
+      
+        if (error) {
+          console.error('タスク取得失敗:', error);
+          return;
+        }
+      
+        // 2. シャッフル用の number 配列を作成
+        const count = tasks.length;
+        const shuffledNumbers = Array.from({ length: count }, (_, i) => i + 1)
+          .sort(() => Math.random() - 0.5);
+      
+        // 3. id と number をペアにして UPDATE
+        for (let i = 0; i < count; i++) {
+          const taskId = tasks[i].id;
+          const number = shuffledNumbers[i];
+      
+          const { error: updateError } = await supabase
+            .from('tasks')
+            .update({ number })
+            .eq('id', taskId);
+      
+          if (updateError) {
+            console.error(`タスクID ${taskId} の更新失敗:`, updateError);
+          }
+        }
+        console.log(shuffledNumbers);
+        console.log("完了");
+    }
+
     const shuffle = async () => {
         try {
             const { data, error } = await supabase.from('characters').select('conversation');
@@ -64,6 +98,7 @@ const Control = () => {
 
             if (convError) throw convError;
 
+            await shuffleTaskNumbers();
             window.location.reload();
         } catch (error) {
             console.error('シャッフルエラー:', error.message);
