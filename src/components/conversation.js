@@ -7,8 +7,8 @@ import supabase from '../supabaseClient';
 import { fetchMessagesBySession, saveMessage } from '../server/chat';
 import { makeResponse } from '../server/generation/llm';
 
-const TURN_DURATION = 10 * 1000;
-const TURNS_PER_PHASE = 4;
+const TURN_DURATION = 2 * 1000;
+const TURNS_PER_PHASE = 2;
 const PHASE_END_BUFFER = 5 * 1000;
 
 // プレイヤー視点に変換

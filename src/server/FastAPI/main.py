@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from llama_chain import qa_chain
 from supabase_client import supabase
-from models import QueryRequest
+from models import QueryRequestConv, QueryRequestPlan
 
 app = FastAPI()
 
@@ -14,8 +14,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/api/llm")
-async def call_llm(request: QueryRequest):
+@app.post("/api/conv")
+async def call_llm_conv(request: QueryRequestConv):
     try:
         result = qa_chain.run(request.prompt)
 
@@ -39,6 +39,20 @@ async def call_llm(request: QueryRequest):
                 "error": "Supabase Insert failed",
                 "detail": "No data returned from Supabase."
             }
+
+        return {"response": result}
+
+    except Exception as e:
+        print("[Exception]", e)
+        return {"error": "Internal Server Error", "detail": str(e)}
+
+@app.post("/api/plan")
+async def call_llm_plan(request: QueryRequestPlan):
+    try:
+        result = qa_chain.run(request.prompt)
+
+        if not result:
+            result = "（応答を生成できませんでした）"
 
         return {"response": result}
 
