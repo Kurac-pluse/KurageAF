@@ -12,7 +12,7 @@ export function useNpcAct() {
                 { event: '*', schema: 'public', table: 'timer', filter: 'id=eq.1' },
                 async (payload) => {
                     const isRunning = payload.new?.is_running;
-                    console.log('is_running : ', isRunning);
+                    // console.log('is_running : ', isRunning);
                     if (isRunning) {
                         console.log('[npc-act] isRunning が true になったので処理開始');
                         await Promise.all([
@@ -48,7 +48,6 @@ async function startNpcLoop(npcID) {
             .eq('id', 1)
             .single();
 
-        // break;　// デバック用にストップ
         if (error || !timer?.is_running) {
             console.log(`[${npcID}] isRunning が false のためループ終了`);
             break;
@@ -62,6 +61,8 @@ async function startNpcLoop(npcID) {
         //     break;
         // }
 
-        await callApiWithPlan(npcID, nextPlan);
+        // await callApiWithPlan(npcID, nextPlan);
+        
+        break; // デバック用
     }
 }

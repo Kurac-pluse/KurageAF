@@ -4,6 +4,25 @@
 import fetch from 'node-fetch';
 import { CHAR1, CHAR2, CHAR3, CHAR4, CHAR5, server, token } from '../global.js';
 
+export async function get_character_logs(character) {
+	const url = server + '/my/logs/' + character;
+	const options = {
+        method: 'GET',
+        headers: {
+            Accept: 'application/json',
+            Authorization: 'Bearer ' + token,
+        },
+    };
+
+	try {
+		const response = await fetch(url, options);
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		console.error(error);
+	}
+}
+
 export async function get_character_coordinate(character) {
     try {
         const datas = await get_characters_info();

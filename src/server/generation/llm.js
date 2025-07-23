@@ -75,7 +75,7 @@ export async function makePlan(npcID, task) {
 
         const data = await res.json();
         // console.log(prompt);
-        console.log(data.response);
+        // console.log(data.response);
         return data.response;
 
     } catch (err) {
