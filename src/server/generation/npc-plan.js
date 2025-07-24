@@ -1,7 +1,7 @@
 import supabase from "../../supabaseClient";
 import { get_character_logs } from "../api-call/info";
 import { getCharacterNameById } from "../global";
-import { makePlan } from "./llm";
+import { makePlan, makeTask } from "./llm";
 
 export async function generateInitialPlan(npcID) {
     // supabase から自分のtaskを取得
@@ -26,16 +26,21 @@ export async function generateInitialPlan(npcID) {
     // console.log(task.name);
     
     // taskを元にチートシートから行動順序をLLMで作成
-    const act = makePlan(npcID, task.name);
+    const plan = makePlan(npcID, task.name);
 
-    // 返り値として act:行動順序 を返す
-    return act;
+    // 返り値として plan:行動順序 を返す
+    return plan;
 }
 
 export async function generateNextPlan(npcID, logs){
-    // 行動記録を元にチートシートから行動手順をLLMで作成
-    // 上同様 act:行動順序 を返す
-    // console.log(npcID, logs);
+    // 行動ログから個別で行動目標を定める
+    const task = makeTask(npcID, logs);
+
+    // taskを元にチートシートから行動順序をLLMで作成
+    const plan = makePlan(npcID, task);
+
+    // 返り値として plan:行動順序 を返す
+    return plan;
 }
 
 export async function getLogs(npcID){

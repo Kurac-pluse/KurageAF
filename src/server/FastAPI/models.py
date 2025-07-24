@@ -13,3 +13,7 @@ class QueryRequestConv(BaseModel):
 class QueryRequestPlan(BaseModel):
     prompt: str
     npc_id: str
+
+class QueryRequestTask(BaseModel):
+    prompt: str
+    npc_id: str

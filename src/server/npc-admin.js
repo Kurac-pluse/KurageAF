@@ -56,12 +56,12 @@ async function startNpcLoop(npcID) {
         const logs = await getLogs(npcID);
         const nextPlan = await generateNextPlan(npcID, logs);
 
-        // if (!nextPlan || nextPlan.flag === false) {
-        //     console.log(`[${npcID}] nextPlan が不正または flag が false のためループ終了`);
-        //     break;
-        // }
+        if (!nextPlan || !timer?.is_running) {
+            console.log(`[${npcID}] nextPlan が不正のためループ終了`);
+            break;
+        }
 
-        // await callApiWithPlan(npcID, nextPlan);
+        await callApiWithPlan(npcID, nextPlan);
         
         break; // デバック用
     }
