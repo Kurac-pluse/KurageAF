@@ -8,9 +8,11 @@ import {
 import Operation from '../components/operation.js';
 import Log from '../components/log.js';
 import ChangeAccount from '../components/change-account.js';
+import { useNpcAct } from '../server/npc-admin.js';
 
 const Master = () => {
     const this_player = 'master';
+    useNpcAct(); // キャラクター操作時間にNPCを行動させる
     return (
         <ChakraProvider theme={theme}>
             <Box textAlign="center" fontSize="xl">

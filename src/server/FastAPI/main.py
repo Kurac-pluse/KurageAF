@@ -2,7 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from llama_chain import qa_chain
 from supabase_client import supabase
-from models import QueryRequest
+from models import QueryRequestConv, QueryRequestPlan, QueryRequestTask
+import asyncio
+from typing import Callable, Any
 
 app = FastAPI()
 
@@ -14,8 +16,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/api/llm")
-async def call_llm(request: QueryRequest):
+async def run_with_timeout(
+    func: Callable[..., Any], 
+    *args, 
+    timeout: float = 30.0,
+    **kwargs
+) -> Any:
+    # func を asyncio.to_thread で非同期化し、 timeout秒以内に終わらなければTimeoutErrorを発生
+    return await asyncio.wait_for(
+        asyncio.to_thread(func, *args, **kwargs),
+        timeout=timeout
+    )
+
+@app.post("/api/conv")
+async def call_llm_conv(request: QueryRequestConv):
     try:
         result = qa_chain.run(request.prompt)
 
@@ -42,6 +56,40 @@ async def call_llm(request: QueryRequest):
 
         return {"response": result}
 
+    except Exception as e:
+        print("[Exception]", e)
+        return {"error": "Internal Server Error", "detail": str(e)}
+
+@app.post("/api/plan")
+async def call_llm_plan(request: QueryRequestPlan):
+    try:
+        result = await run_with_timeout(qa_chain.run, request.prompt, timeout=30.0)
+        if not result:
+            result = "（応答を生成できませんでした）"
+        return {"response": result}
+        
+    except asyncio.TimeoutError:
+        return {
+            "status": "processing",
+            "message": "処理に時間がかかっています。しばらく待ってから再度リクエストしてください。"
+        }
+    except Exception as e:
+        print("[Exception]", e)
+        return {"error": "Internal Server Error", "detail": str(e)}
+
+@app.post("/api/task")
+async def call_llm_plan(request: QueryRequestTask):
+    try:
+        result = await run_with_timeout(qa_chain.run, request.prompt, timeout=30.0)
+        if not result:
+            result = "（応答を生成できませんでした）"
+        return {"response": result}
+
+    except asyncio.TimeoutError:
+        return {
+            "status": "processing",
+            "message": "処理に時間がかかっています。しばらく待ってから再度リクエストしてください。"
+        }
     except Exception as e:
         print("[Exception]", e)
         return {"error": "Internal Server Error", "detail": str(e)}
