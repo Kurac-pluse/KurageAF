@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from llama_chain import qa_chain
 from supabase_client import supabase
-from models import QueryRequestConv, QueryRequestPlan, QueryRequestTask
+from models import QueryRequestConv, QueryRequestPlan, QueryRequestJSON, QueryRequestTask
 import asyncio
 from typing import Callable, Any
 
@@ -76,9 +76,26 @@ async def call_llm_plan(request: QueryRequestPlan):
     except Exception as e:
         print("[Exception]", e)
         return {"error": "Internal Server Error", "detail": str(e)}
+    
+@app.post("/api/makeJSON")
+async def call_llm_JSON(request: QueryRequestJSON):
+    try:
+        result = await run_with_timeout(qa_chain.run, request.prompt, timeout=30.0)
+        if not result:
+            result = "（応答を生成できませんでした）"
+        return {"response": result}
+
+    except asyncio.TimeoutError:
+        return {
+            "status": "processing",
+            "message": "処理に時間がかかっています。しばらく待ってから再度リクエストしてください。"
+        }
+    except Exception as e:
+        print("[Exception]", e)
+        return {"error": "Internal Server Error", "detail": str(e)}
 
 @app.post("/api/task")
-async def call_llm_plan(request: QueryRequestTask):
+async def call_llm_task(request: QueryRequestTask):
     try:
         result = await run_with_timeout(qa_chain.run, request.prompt, timeout=30.0)
         if not result:

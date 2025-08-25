@@ -14,6 +14,9 @@ class QueryRequestPlan(BaseModel):
     prompt: str
     npc_id: str
 
+class QueryRequestJSON(BaseModel):
+    prompt: str
+
 class QueryRequestTask(BaseModel):
     prompt: str
     npc_id: str
