@@ -62,7 +62,7 @@ async function startNpcLoop(npcID) {
         }
 
         await callApiWithPlan(npcID, nextPlan);
-        
+
         break; // デバック用
     }
 }

@@ -98,6 +98,65 @@ export async function makePlan(npcID, task) {
     }
 }
 
+export async function refinePlanToJson(rawPlan) {
+    const url = process.env.REACT_APP_SERVER_URL + "/api/makeJSON";
+
+    const prompt = `
+あなたは与えられた行動計画（箇条書きテキスト）を JSON の配列に変換する役割です。
+出力は必ず JSON 配列に変換してください。
+出力は必ず JSON 配列のみを返してください。
+説明文や余計なテキストは一切不要です。
+
+【出力フォーマット】
+[
+  {
+    "type": 0,
+    "info": {
+      "Coordinates": [0, 0],
+      "item": ""
+    }
+  },
+  ...
+]
+
+⚠️注意:
+- 出力は JSON 配列のみ
+- 説明文やコメントは禁止
+- JSON 以外の文字は一切出力しない
+
+入力:
+${rawPlan}
+
+出力（JSON のみ）:
+`;
+
+    const body = {
+        prompt,
+    };
+
+    try {
+        const res = await fetch(url, {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: JSON.stringify(body),
+        });
+
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+
+        const data = await res.json();
+        return data.response;
+
+    } catch (e) {
+      console.error("Error calling LLM API:", e);
+      return "";
+    }
+}
+
+
 // タスクを作成する関数
 export async function makeTask(npcID, logs) {
     const url = process.env.REACT_APP_SERVER_URL + "/api/task";
