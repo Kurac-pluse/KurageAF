@@ -7,8 +7,8 @@ import supabase from '../supabaseClient';
 import { fetchMessagesBySession, saveMessage } from '../server/chat';
 import { makeResponse } from '../server/generation/llm';
 
-const TURN_DURATION = 2 * 1000;
-const TURNS_PER_PHASE = 2;
+const TURN_DURATION = 15 * 1000;
+const TURNS_PER_PHASE = 4;
 const PHASE_END_BUFFER = 5 * 1000;
 
 // プレイヤー視点に変換
@@ -260,7 +260,6 @@ export default function Conversation({ player, convStartTime }) {
 		// npc1〜npc3か判定
 		if (['npc1', 'npc2', 'npc3'].includes(currentSpeaker)) {
 			makeResponse({
-				prompt: '',
 				sessionId: sessionId,
 				phase: phase,
 				turn: turn,

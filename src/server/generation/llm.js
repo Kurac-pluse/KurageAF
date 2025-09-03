@@ -1,12 +1,13 @@
+import supabase from "../../supabaseClient";
 import { get_character_coordinate } from "../api-call/info";
 import { getCharacterNameById, planPromptTemplate} from "../global";
+import { getLogs } from "./npc-plan";
 
 const maxRetries = 5;
 const retryDelayMs = 5000;
 
 // 会話用の推論を行う関数
 export async function makeResponse({
-    prompt = '要約',
     sessionId,
     phase,
     turn,
@@ -15,13 +16,58 @@ export async function makeResponse({
 }) {
     const url = process.env.REACT_APP_SERVER_URL + "/api/conv";
 
+    const { data: latestLogs, error: latestError } = await supabase
+        .from("messages")
+        .select("content")
+        .eq("session_id", sessionId)
+        .eq("phase", phase)
+        .order("turn", { ascending: false })
+        .limit(1);
+
+    if (latestError) {
+        console.error("Error fetching latest message:", latestError);
+        return "";
+    }
+
+    const latestPrompt = latestLogs?.[0]?.content || "";
+    // console.log(latestPrompt);
+
+    const logs = await getLogs(sender);
+    // console.log(logs);
+
+    const sen_char_name = await getCharacterNameById(sender);
+    const rec_char_name = await getCharacterNameById(receiver);
+
+    // supabase から自分のtaskを取得
+    const npcNumberMap = {
+        npc1: 3,
+        npc2: 4,
+        npc3: 5,
+    };
+    const number = npcNumberMap[sender];
+
+    const { data: task, error: taskError } = await supabase
+        .from('tasks')
+        .select('*')
+        .eq('number', number)
+        .single();
+    
+    if (taskError) {
+        console.error(`[${sender}] タスク取得エラー`, taskError);
+        return null;
+    }
+
     const body = {
-        prompt,
+        prompt: latestPrompt,
+        log: logs,
         session_id: sessionId,
         phase,
         turn,
         sender,
         receiver,
+        sen_char_name,
+        rec_char_name,
+        task: task.name,
     };
 
     try {

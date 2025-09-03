@@ -63,6 +63,6 @@ export async function getLogs(npcID){
         .map((entry, i) => `${i + 1}. [${entry.type}] ${entry.description}`)
         .join('\n');
     
-    console.log(logText);
+    // console.log(logText);
     return logText;
 }
