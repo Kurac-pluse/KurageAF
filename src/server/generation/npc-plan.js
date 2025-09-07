@@ -27,6 +27,7 @@ export async function generateInitialPlan(npcID) {
     
     // 1回目: 箇条書きのプランを生成
     const rawPlan = await makePlan(npcID, task.name);
+    console.log(rawPlan);
 
     // 2回目: JSON形式に変換
     const jsonPlan = await refinePlanToJson(rawPlan);

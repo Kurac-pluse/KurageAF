@@ -1,6 +1,6 @@
 import supabase from "../../supabaseClient";
 import { get_character_coordinate } from "../api-call/info";
-import { getCharacterNameById, planPromptTemplate} from "../global";
+import { getCharacterNameById } from "../global";
 import { getLogs } from "./npc-plan";
 
 const maxRetries = 5;
@@ -84,7 +84,6 @@ export async function makeResponse({
         }
 
         const data = await res.json();
-
         console.log(sender + ' : ' + data.response);
 
     } catch (e) {
@@ -102,14 +101,11 @@ export async function makePlan(npcID, task) {
         const coord = await get_character_coordinate(name);
         const [x, y] = coord;
 
-        const prompt = planPromptTemplate
-            .replace('{{x}}', x)
-            .replace('{{y}}', y)
-            .replace('{{task}}', task);
-
         const body = {
-            prompt,
-            npc_id: npcID,
+            // prompt,
+            x: String(x),
+            y: String(y),
+            task,
         };
 
         for (let attempt = 0; attempt < maxRetries; attempt++) {
@@ -144,6 +140,7 @@ export async function makePlan(npcID, task) {
     }
 }
 
+// JSONに変換する関数
 export async function refinePlanToJson(rawPlan) {
     const url = process.env.REACT_APP_SERVER_URL + "/api/makeJSON";
 
