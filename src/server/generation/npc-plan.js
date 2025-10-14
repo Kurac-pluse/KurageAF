@@ -27,9 +27,11 @@ export async function generateInitialPlan(npcID) {
     
     // 1回目: 箇条書きのプランを生成
     const rawPlan = await makePlan(npcID, task.name);
+    console.log(npcID, rawPlan);
 
     // 2回目: JSON形式に変換
     const jsonPlan = await refinePlanToJson(rawPlan);
+    console.log(npcID, jsonPlan);
 
     // 返り値として行動プランをJSONで出力
     return jsonPlan;
@@ -41,9 +43,11 @@ export async function generateNextPlan(npcID, logs){
 
     // 1回目: 箇条書きのプランを生成
     const rawPlan = await makePlan(npcID, task.name);
+    console.log(npcID, rawPlan);
 
     // 2回目: JSON形式に変換
     const jsonPlan = await refinePlanToJson(rawPlan);
+    console.log(npcID, jsonPlan);
 
     // 返り値として行動プランをJSONで出力
     return jsonPlan;
@@ -63,6 +67,6 @@ export async function getLogs(npcID){
         .map((entry, i) => `${i + 1}. [${entry.type}] ${entry.description}`)
         .join('\n');
     
-    console.log(logText);
+    // console.log(logText);
     return logText;
 }

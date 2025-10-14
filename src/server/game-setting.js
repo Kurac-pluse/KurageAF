@@ -8,7 +8,7 @@ import { get_character_names } from './api-call/info.js';
 export async function game_restart() {
     const url1 = server + '/characters/delete';
     const pre_names = await get_character_names();
-    console.log(pre_names);
+    // console.log(pre_names);
     for (let i=0; i<5; i++) {
         const options = {
             method: 'POST',

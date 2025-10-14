@@ -11,6 +11,7 @@
 import supabase from "../../supabaseClient";
 import { equip, unequip } from "../api-call/equipment";
 import { gather } from "../api-call/gathering";
+import { get_character_cooldown } from "../api-call/info";
 import { fight, heal, movement } from "../api-call/moving";
 import { craft } from "../api-call/shop";
 import { getCharacterNameById } from "../global";
@@ -46,39 +47,49 @@ export async function callApiWithPlan(npcID, plan){
     let actions;
 
     try {
-        if (typeof plan === "string") {
-            // plan が JSON文字列の場合
-            actions = JSON.parse(plan);
-        } else if (Array.isArray(plan)) {
-            // 既に配列ならそのまま
-            actions = plan;
-        } else {
-            console.error("plan が不正な形式です:", plan);
-            return;
-        }
+        actions = typeof plan === "string" ? JSON.parse(plan) : plan;
     } catch (err) {
         console.error("plan のパースに失敗しました:", err, plan);
         return;
     }
 
-    const character = getCharacterNameById(npcID);
+    const character = await getCharacterNameById(npcID);
 
     for (const action of actions) {
-        const stillRunning = await isRunning();
-        if (!stillRunning) {
+        if (!(await isRunning())) {
             console.log(`[${npcID}] is_running が false のため中断`);
             break;
         }
 
         const { type , info } = action;
         const { Coordinates = [0, 0], item = "" } = info || {};
-        console.log(`実行中のアクション: type=${type}, info=${JSON.stringify(info)}`);
+        console.log(`[${npcID}] 実行中のアクション: type=${type}, info=${JSON.stringify(info)}`);
+
+        // characterCooldownEnd はクールダウン終了のタイムスタンプ（秒またはミリ秒）
+        let cooldownEndTime = await get_character_cooldown(character);
+
+        // 現在時刻との差を秒で計算
+        let now = Date.now(); // ミリ秒
+        let cooldownSeconds = (cooldownEndTime - now) / 1000;
+
+        if (cooldownSeconds > 0) {
+            console.log(`[${npcID}] 現在クールダウン中: ${cooldownSeconds.toFixed(2)} 秒待機`);
+            while (cooldownSeconds > 0) {
+                if (!(await isRunning())) {
+                    console.log(`[${npcID}] クールダウン中に is_running false 検出、中断`);
+                    return;
+                }
+                await wait(1); // 1秒ごとにチェック
+                cooldownSeconds -= 1;
+            }
+        }
 
         let result;
         try {
+            // kokodewait
             if (type === 1) {
-                result = await movement(Coordinates[0], Coordinates[1]);
-            } else if (type === 2 || type === 3 || type === 4 || type === 5) {
+                result = await movement(character, Coordinates[0], Coordinates[1]);
+            } else if ([2, 3, 4, 5].includes(type)) {
                 result = await gather(character);
             } else if (type === 6) {
                 result = await unequip(character, item);
@@ -86,23 +97,21 @@ export async function callApiWithPlan(npcID, plan){
                 result = await equip(character, item);
             } else if (type === 8) {
                 result = await fight(character);
-            } else if (type === 9 || type === 10) {
+            } else if ([9, 10].includes(type)) {
                 result = await craft(character, item);
             } else if (type === 11) {
                 result = await heal(character);
             }
         } catch (err) {
             console.error(`[${npcID}] アクション実行中にエラーが発生:`, err);
-            continue; // 次の行動へスキップ
         }
 
         // クールダウンの待機
-        const cooldownSeconds = result?.data?.cooldown?.total_seconds ?? 1;
-        console.log(`[${npcID}] クールダウン: ${cooldownSeconds} 秒待機`);
+        const apiCooldown = result?.data?.cooldown?.total_seconds ?? 30;
+        console.log(`[${npcID}] クールダウン: ${apiCooldown} 秒待機`);
 
-        for (let i = 0; i < cooldownSeconds; i++) {
-            const stillRunningDuringCooldown = await isRunning();
-            if (!stillRunningDuringCooldown) {
+        for (let i = 0; i < apiCooldown; i++) {
+            if (!(await isRunning())) {
                 console.log(`[${npcID}] クールダウン中に is_running false 検出、中断`);
                 return;
             }

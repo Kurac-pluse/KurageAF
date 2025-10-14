@@ -11,13 +11,18 @@ export async function equip(character, item) {
             Accept: 'application/json',
             Authorization: 'Bearer ' + token,
         },
-        body: '{"code":' +  item + ',"slot":"weapon","quantity":1}'
+        body: JSON.stringify({
+            code: item,
+            slot: "weapon",
+            quantity: 1
+        })
     };
 
     try {
         const response = await fetch(url, options);
         const  data  = await response.json();
         console.log(data);
+        return data;
     } catch (error) {
         console.log(error);
     }
@@ -39,6 +44,7 @@ export async function unequip(character) {
         const response = await fetch(url, options);
         const data = await response.json();
         console.log(data);
+        return data;
     } catch (error) {
         console.error(error);
     }

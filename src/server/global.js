@@ -68,24 +68,13 @@ export async function getCharacterNameById(npcID) {
       .select('role')
       .eq('name', npcID)
       .single();
-  
+
     if (error) {
       console.error('名前の取得に失敗:', error);
       return null;
     }
-  
+
     return data.role;
 }
 
 export const pilot = ["player1", "player2", "npc1", "npc2", "npc3"];
-
-export const planPromptTemplate = `
-現在の座標は[{{x}}, {{y}}]です。「{{task}}」を達成するまでに必要な操作数はいくつですか？
-箇条書きで操作名のみを回答してください
-それ以外の一切は出力しないでください
-
-以下の形式のみで返してください。
-
-1. Move North  
-2. Move East  
-3. Get Sunflower`.trim();

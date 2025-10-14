@@ -82,7 +82,7 @@ export async function get_character_names() {
         const datas = await get_characters_info();
         console.log(datas[0]);
         const names = datas.slice(0, 5).map(data => data.name);
-        console.log(names);
+        // console.log(names);
         return names;
     } catch (error) {
         console.log(error);

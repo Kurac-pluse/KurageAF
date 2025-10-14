@@ -1,12 +1,13 @@
+import supabase from "../../supabaseClient";
 import { get_character_coordinate } from "../api-call/info";
-import { getCharacterNameById, planPromptTemplate} from "../global";
+import { getCharacterNameById } from "../global";
+import { getLogs } from "./npc-plan";
 
 const maxRetries = 5;
 const retryDelayMs = 5000;
 
 // 会話用の推論を行う関数
 export async function makeResponse({
-    prompt = '要約',
     sessionId,
     phase,
     turn,
@@ -15,13 +16,58 @@ export async function makeResponse({
 }) {
     const url = process.env.REACT_APP_SERVER_URL + "/api/conv";
 
+    const { data: latestLogs, error: latestError } = await supabase
+        .from("messages")
+        .select("content")
+        .eq("session_id", sessionId)
+        .eq("phase", phase)
+        .order("turn", { ascending: false })
+        .limit(1);
+
+    if (latestError) {
+        console.error("Error fetching latest message:", latestError);
+        return "";
+    }
+
+    const latestPrompt = latestLogs?.[0]?.content || "";
+    // console.log(latestPrompt);
+
+    const logs = await getLogs(sender);
+    // console.log(logs);
+
+    const sen_char_name = await getCharacterNameById(sender);
+    const rec_char_name = await getCharacterNameById(receiver);
+
+    // supabase から自分のtaskを取得
+    const npcNumberMap = {
+        npc1: 3,
+        npc2: 4,
+        npc3: 5,
+    };
+    const number = npcNumberMap[sender];
+
+    const { data: task, error: taskError } = await supabase
+        .from('tasks')
+        .select('*')
+        .eq('number', number)
+        .single();
+    
+    if (taskError) {
+        console.error(`[${sender}] タスク取得エラー`, taskError);
+        return null;
+    }
+
     const body = {
-        prompt,
+        prompt: latestPrompt,
+        log: logs,
         session_id: sessionId,
         phase,
         turn,
         sender,
         receiver,
+        sen_char_name,
+        rec_char_name,
+        task: task.name,
     };
 
     try {
@@ -38,7 +84,6 @@ export async function makeResponse({
         }
 
         const data = await res.json();
-
         console.log(sender + ' : ' + data.response);
 
     } catch (e) {
@@ -56,14 +101,11 @@ export async function makePlan(npcID, task) {
         const coord = await get_character_coordinate(name);
         const [x, y] = coord;
 
-        const prompt = planPromptTemplate
-            .replace('{{x}}', x)
-            .replace('{{y}}', y)
-            .replace('{{task}}', task);
-
         const body = {
-            prompt,
-            npc_id: npcID,
+            // prompt,
+            x: String(x),
+            y: String(y),
+            task: String(task ?? ""),
         };
 
         for (let attempt = 0; attempt < maxRetries; attempt++) {
@@ -85,7 +127,7 @@ export async function makePlan(npcID, task) {
                 continue;
             }
 
-            console.log(`[${npcID}] makePlan response:`, data.response);
+            // console.log(`[${npcID}] makePlan response:`, data.response);
             return data.response;
         }
 
@@ -98,14 +140,20 @@ export async function makePlan(npcID, task) {
     }
 }
 
+// JSONに変換する関数
 export async function refinePlanToJson(rawPlan) {
     const url = process.env.REACT_APP_SERVER_URL + "/api/makeJSON";
 
     const prompt = `
-あなたは与えられた行動計画（箇条書きテキスト）を JSON の配列に変換する役割です。
-出力は必ず JSON 配列に変換してください。
-出力は必ず JSON 配列のみを返してください。
-説明文や余計なテキストは一切不要です。
+あなたは与えられた行動計画（箇条書きテキスト）を JSON 配列に変換する役割です。
+
+typeの対応表 
+1:移動, 2:釣り, 3:伐採, 4:採掘, 5:採集, 6:装備解除, 7:装備, 8:Chickenと戦闘 Cowと戦闘, 9:武器制作, 10:調理, 11:回復
+
+必須ルール:
+- 出力は必ず JSON 配列のみ
+- 説明文や余計な文字を入れない
+- コードブロック (...json 等) を絶対に出さない
 
 【出力フォーマット】
 [
@@ -148,11 +196,21 @@ ${rawPlan}
         }
 
         const data = await res.json();
-        return data.response;
+        let cleaned = data.response.trim();
+
+        // コードブロック除去
+        cleaned = cleaned.replace(/```(?:json)?/g, "").trim();
+
+        // JSON 部分だけ抽出
+        const match = cleaned.match(/\[.*\]/s);
+        if (match) cleaned = match[0];
+
+        // 最終チェック
+        JSON.parse(cleaned); // パースできなければ例外
+        return cleaned;
 
     } catch (e) {
-      console.error("Error calling LLM API:", e);
-      return "";
+    console.error("Error calling LLM API:", e);
     }
 }
 
@@ -165,7 +223,6 @@ export async function makeTask(npcID, logs) {
 
     const body = {
         prompt,
-        npc_id: npcID,
     };
 
     for (let attempt = 0; attempt < maxRetries; attempt++) {
