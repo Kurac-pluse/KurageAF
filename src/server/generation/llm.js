@@ -105,7 +105,7 @@ export async function makePlan(npcID, task) {
             // prompt,
             x: String(x),
             y: String(y),
-            task,
+            task: String(task ?? ""),
         };
 
         for (let attempt = 0; attempt < maxRetries; attempt++) {
@@ -127,7 +127,7 @@ export async function makePlan(npcID, task) {
                 continue;
             }
 
-            console.log(`[${npcID}] makePlan response:`, data.response);
+            // console.log(`[${npcID}] makePlan response:`, data.response);
             return data.response;
         }
 
@@ -145,10 +145,15 @@ export async function refinePlanToJson(rawPlan) {
     const url = process.env.REACT_APP_SERVER_URL + "/api/makeJSON";
 
     const prompt = `
-あなたは与えられた行動計画（箇条書きテキスト）を JSON の配列に変換する役割です。
-出力は必ず JSON 配列に変換してください。
-出力は必ず JSON 配列のみを返してください。
-説明文や余計なテキストは一切不要です。
+あなたは与えられた行動計画（箇条書きテキスト）を JSON 配列に変換する役割です。
+
+typeの対応表 
+1:移動, 2:釣り, 3:伐採, 4:採掘, 5:採集, 6:装備解除, 7:装備, 8:Chickenと戦闘 Cowと戦闘, 9:武器制作, 10:調理, 11:回復
+
+必須ルール:
+- 出力は必ず JSON 配列のみ
+- 説明文や余計な文字を入れない
+- コードブロック (...json 等) を絶対に出さない
 
 【出力フォーマット】
 [
@@ -191,11 +196,21 @@ ${rawPlan}
         }
 
         const data = await res.json();
-        return data.response;
+        let cleaned = data.response.trim();
+
+        // コードブロック除去
+        cleaned = cleaned.replace(/```(?:json)?/g, "").trim();
+
+        // JSON 部分だけ抽出
+        const match = cleaned.match(/\[.*\]/s);
+        if (match) cleaned = match[0];
+
+        // 最終チェック
+        JSON.parse(cleaned); // パースできなければ例外
+        return cleaned;
 
     } catch (e) {
-      console.error("Error calling LLM API:", e);
-      return "";
+    console.error("Error calling LLM API:", e);
     }
 }
 
@@ -208,7 +223,6 @@ export async function makeTask(npcID, logs) {
 
     const body = {
         prompt,
-        npc_id: npcID,
     };
 
     for (let attempt = 0; attempt < maxRetries; attempt++) {

@@ -1,3 +1,5 @@
+# OpenAIを使用する場合このファイルは使用しない
+
 import os
 from dotenv import load_dotenv
 from langchain_core.language_models.llms import LLM

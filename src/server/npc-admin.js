@@ -63,6 +63,7 @@ async function startNpcLoop(npcID) {
 
         await callApiWithPlan(npcID, nextPlan);
 
-        break; // デバック用
+        console.log("ONE LOOP END!!!!!!!!!!!!!");
+        // break; // デバック用
     }
 }

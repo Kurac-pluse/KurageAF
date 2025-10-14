@@ -25,4 +25,3 @@ class QueryRequestJSON(BaseModel):
 
 class QueryRequestTask(BaseModel):
     prompt: str
-    npc_id: str

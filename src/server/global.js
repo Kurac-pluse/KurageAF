@@ -68,12 +68,12 @@ export async function getCharacterNameById(npcID) {
       .select('role')
       .eq('name', npcID)
       .single();
-  
+
     if (error) {
       console.error('名前の取得に失敗:', error);
       return null;
     }
-  
+
     return data.role;
 }
 
