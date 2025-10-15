@@ -16,7 +16,7 @@ import Conversation from "./conversation";
 import Task from "./task";
 
 export default function Time({ player }) {
-    const playTime = 30;
+    const playTime = 300;
 
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [ timeLeft, setTimeLeft ] = useState(playTime);
