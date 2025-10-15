@@ -8,7 +8,6 @@
 //         "item":"",
 //     },
 // }
-import supabase from "../../supabaseClient";
 import { equip, unequip } from "../api-call/equipment";
 import { gather } from "../api-call/gathering";
 import { get_character_cooldown } from "../api-call/info";
@@ -16,29 +15,13 @@ import { fight, heal, movement } from "../api-call/moving";
 import { craft } from "../api-call/shop";
 import { getCharacterNameById } from "../global";
 
-// Supabase から is_running を取得
-async function isRunning() {
-    const { data, error } = await supabase
-        .from('timer')
-        .select('is_running')
-        .eq('id', 1)
-        .single();
-
-    if (error) {
-        console.error('is_running チェック時にエラー:', error);
-        return false;
-    }
-
-    return data?.is_running === true;
-}
-
 // 指定秒数待機するヘルパー関数
 function wait(seconds) {
     return new Promise(resolve => setTimeout(resolve, seconds * 1000));
 }
 
 // クールダウン対応 callApiWithPlan
-export async function callApiWithPlan(npcID, plan){
+export async function callApiWithPlan(npcID, plan, isRunningRef){
     if (typeof plan !== 'string') {
         console.error('plan が文字列ではありません:', plan);
         return;
@@ -56,7 +39,7 @@ export async function callApiWithPlan(npcID, plan){
     const character = await getCharacterNameById(npcID);
 
     for (const action of actions) {
-        if (!(await isRunning())) {
+        if (!isRunningRef.current) {
             console.log(`[${npcID}] is_running が false のため中断`);
             break;
         }
@@ -75,7 +58,7 @@ export async function callApiWithPlan(npcID, plan){
         if (cooldownSeconds > 0) {
             console.log(`[${npcID}] 現在クールダウン中: ${cooldownSeconds.toFixed(2)} 秒待機`);
             while (cooldownSeconds > 0) {
-                if (!(await isRunning())) {
+                if (!isRunningRef.current) {
                     console.log(`[${npcID}] クールダウン中に is_running false 検出、中断`);
                     return;
                 }
@@ -111,7 +94,7 @@ export async function callApiWithPlan(npcID, plan){
         console.log(`[${npcID}] クールダウン: ${apiCooldown} 秒待機`);
 
         for (let i = 0; i < apiCooldown; i++) {
-            if (!(await isRunning())) {
+            if (!isRunningRef.current) {
                 console.log(`[${npcID}] クールダウン中に is_running false 検出、中断`);
                 return;
             }
