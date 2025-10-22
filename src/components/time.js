@@ -16,7 +16,8 @@ import Conversation from "./conversation";
 import Task from "./task";
 
 export default function Time({ player }) {
-    const playTime = 300;
+    // const playTime = 300;
+    const playTime = 10;
 
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [ timeLeft, setTimeLeft ] = useState(playTime);
@@ -33,7 +34,7 @@ export default function Time({ player }) {
                 .select('start_time, is_running')
                 .eq('id', 1)
                 .single();
-    
+
             if (error) {
                 console.error('Failed to fetch timer (id=1):', error.message);
             } else {
@@ -82,7 +83,7 @@ export default function Time({ player }) {
                 .select('start_time, is_running')
                 .eq('id', 2)
                 .single();
-    
+
             if (error) {
                 console.error('Failed to fetch timer (id=2):', error.message);
             } else {
@@ -164,7 +165,7 @@ export default function Time({ player }) {
                     if (timer1 && timer2 && timer1.is_running === false && timer2.is_running === true) {
                         return;
                     }
-            
+
                     const now = new Date().toISOString();
 
                     // 切り替え処理
@@ -173,7 +174,7 @@ export default function Time({ player }) {
                         .update({ is_running: false })
                         .eq('id', 1);
                     if (error1) throw error1;
-            
+
                     const { error: error2 } = await supabase
                         .from('timer')
                         .update({ is_running: true, start_time: now })

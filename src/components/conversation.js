@@ -7,7 +7,7 @@ import supabase from '../supabaseClient';
 import { fetchMessagesBySession, saveMessage } from '../server/chat';
 import { makeResponse } from '../server/generation/llm';
 
-const TURN_DURATION = 30 * 1000;
+const TURN_DURATION = 8 * 1000;
 const TURNS_PER_PHASE = 6;
 const PHASE_END_BUFFER = 5 * 1000;
 
@@ -32,6 +32,7 @@ export default function Conversation({ player, convStartTime }) {
     const [ phase, setPhase ] = useState(0);
     const [ turn, setTurn ] = useState(0);
     const [ input, setInput ] = useState('');
+	const [isLocked, setIsLocked] = useState(false);
     const [ order, setOrder ] = useState([]);
     const [ initiatives, setInitiatives ] = useState([]);
     const [ charNameMap, setCharNameMap ] = useState({});
@@ -205,26 +206,39 @@ export default function Conversation({ player, convStartTime }) {
 	}, [player, sessionId]);
 
 	// メッセージ送信処理
-    const handleSend = async () => {
-		if (!input.trim()) return;
-		
-		const newMessage = {
-			session_id: sessionId,
-			phase: phase,
-			turn: turn,
-			sender: player,
-			receiver: currentPair.find((p) => p !== player),
-			content: input,
-		};
-	
-		try {
-			const success = await saveMessage(newMessage);
-			if (success) {
-				setInput('');
+	useEffect(() => {
+		if (remainingTime > 0) return;
+		if (player !== currentSpeaker) return;
+		if (!input.trim()) return; // 入力が空なら送信しない
+
+		console.log(`[AUTO-SEND] ${player} のターン終了 → 自動送信`);
+		const autoSend = async () => {
+			const newMessage = {
+				session_id: sessionId,
+				phase: phase,
+				turn: turn,
+				sender: player,
+				receiver: currentPair.find((p) => p !== player),
+				content: input,
+			};
+
+			try {
+				const success = await saveMessage(newMessage);
+				if (success) {
+					setInput('');
+				}
+			} catch (err) {
+				console.error('自動送信中に例外が発生:', err);
 			}
-		} catch (err) {
-			console.error('送信処理中に例外が発生しました:', err);
-		}
+		};
+
+		autoSend();
+	}, [remainingTime, player, currentSpeaker]);
+
+	// ボタンによるテキストボックスの固定
+    const handleConfirm = async () => {
+        // 編集状態の切り替え
+        setIsLocked(prev => !prev);
 	};
 
 	// リアルタイム処理
@@ -294,12 +308,21 @@ export default function Conversation({ player, convStartTime }) {
                 <Input
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder={player === currentSpeaker ? 'メッセージを入力' : `${charNameMap[currentSpeaker] || currentSpeaker} のターンです`}
-                    isDisabled={player !== currentSpeaker}
+                    placeholder={
+						player === currentSpeaker ? isLocked ?
+						'確定中（編集不可）':
+						'メッセージを入力':
+						`${charNameMap[currentSpeaker] || currentSpeaker} のターンです`
+					}
+                    isDisabled={player !== currentSpeaker || isLocked}
                 />
-                <Button onClick={handleSend} isDisabled={player !== currentSpeaker}>
-                    送信
-                </Button>
+                <Button
+					onClick={handleConfirm}
+					colorScheme={isLocked ? 'gray' : 'blue'}
+					isDisabled={player !== currentSpeaker}
+				>
+					{isLocked ? '編集に戻す' : '確定'}
+				</Button>
             </HStack>
 
             <Flex fontSize="sm" color="gray.500" align="center" gap={2}>
@@ -316,7 +339,7 @@ export default function Conversation({ player, convStartTime }) {
                     minW="30px"
                     textAlign="center"
                 >
-                    {remainingTime}s
+                    {remainingTime}s後に自動送信
                 </Box>
             </Flex>
         </VStack>
