@@ -29,7 +29,7 @@ export default function ChangeAccount(props) {
         }
     }
     const update = () => {
-    window.location.reload(); // ページ更新
+        window.location.reload(); // ページ更新
     };
 
     return (
