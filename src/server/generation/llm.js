@@ -85,6 +85,7 @@ export async function makeResponse({
 
         const data = await res.json();
         console.log(sender + ' : ' + data.response);
+        return data.response || "（応答を生成できませんでした）";
 
     } catch (e) {
       console.error("Error calling LLM API:", e);

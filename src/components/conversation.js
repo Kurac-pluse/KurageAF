@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useMemo } from 'react';
 import {
     Box, Button, Input, VStack, Text, HStack, Flex
 } from '@chakra-ui/react';
@@ -32,6 +32,7 @@ export default function Conversation({ player, convStartTime }) {
     const [ phase, setPhase ] = useState(0);
     const [ turn, setTurn ] = useState(0);
     const [ input, setInput ] = useState('');
+	const [isLocked, setIsLocked] = useState(false);
     const [ order, setOrder ] = useState([]);
     const [ initiatives, setInitiatives ] = useState([]);
     const [ charNameMap, setCharNameMap ] = useState({});
@@ -39,6 +40,7 @@ export default function Conversation({ player, convStartTime }) {
 	const [ totalTurns, setTotalTurns ] = useState();
 	const [sessionId, setSessionId] = useState(() => localStorage.getItem('session_id') || null);
     const messagesEndRef = useRef(null);
+	const npcResponseRef = useRef(null);
 
     // 会話順と先攻を初期化
     useEffect(() => {
@@ -74,53 +76,67 @@ export default function Conversation({ player, convStartTime }) {
     useEffect(() => {
 		const fetchAllNames = async () => {
 		  if (order.length === 0) return;
-	
+
 		  const entries = await Promise.all(
 			pilot.map(async (id) => {
 			  const name = await player_make(id);
 			  return [id, name || id];
 			})
 		  );
-	
+
 		  setCharNameMap(Object.fromEntries(entries));
 		};
-	
+
 		fetchAllNames();
 	  }, [order.length]);
 
     // タイマー更新とフェーズ・ターンの計算
     useEffect(() => {
+		// convStartTime（会話開始時刻）、order（発話順序）、initiatives（先攻情報）
+		// のいずれかが未設定の場合は処理を行わない
 		if (!convStartTime || order.length === 0 || initiatives.length === 0) return;
-	
+
+		// 各フェーズの総時間 = (1ターンの長さ × ターン数) + フェーズ終了時のバッファ時間
 		const PHASE_DURATION = TURNS_PER_PHASE * TURN_DURATION + PHASE_END_BUFFER;
-	
+
+		// 一定間隔（250msごと）で経過時間を監視し、フェーズやターンの状態を更新する
 		const interval = setInterval(() => {
+			// 会話開始からの経過時間（ミリ秒）
 			const elapsed = new Date() - new Date(convStartTime);
-	
-			// フェーズ内の経過時間
-			const elapsedInPhase = elapsed % PHASE_DURATION;
-	
-			// バッファ期間内ならターン更新をスキップ
-			if (elapsedInPhase >= TURNS_PER_PHASE * TURN_DURATION) return;
-	
-			// フェーズ番号は経過したフェーズ数で求める
+
+			// 経過時間から現在のフェーズ番号を算出
+			// 経過時間 ÷ フェーズ時間 でフェーズのインデックスを得る
+			// order.length で割った余りを取ることで、ループにも対応
 			const phaseIndex = Math.floor(elapsed / PHASE_DURATION) % order.length;
-	
-			// フェーズ内のターン番号
+
+			// 現在のフェーズ内で経過した時間（ミリ秒）
+			const elapsedInPhase = elapsed % PHASE_DURATION;
+
+			// バッファ時間中（フェーズ終了から次のフェーズ開始まで）は更新をスキップする
+			if (elapsedInPhase >= TURNS_PER_PHASE * TURN_DURATION) return;
+
+			// 現在フェーズ内のターン番号（0始まり）
 			const turnInPhase = Math.floor(elapsedInPhase / TURN_DURATION);
-	
-			setPhase(phaseIndex);
-			setTurn(turnInPhase);
-	
+
+			// 現在ターン内で経過した時間（ミリ秒）
 			const turnElapsed = elapsedInPhase % TURN_DURATION;
-			setRemainingTime(Math.ceil((TURN_DURATION - turnElapsed) / 1000));
-	
-			// 総ターン数（バッファ含まず、実ターンのみ）
-			const totalTurns = Math.floor(elapsed / TURN_DURATION) - Math.floor(elapsed / PHASE_DURATION) * (PHASE_END_BUFFER / TURN_DURATION);
-			setTotalTurns(totalTurns);
-	
+
+			// フェーズとターンの状態を更新
+			setPhase(phaseIndex);   // 現在のフェーズ番号
+			setTurn(turnInPhase);   // 現在のターン番号
+
+			// 現在ターンの残り時間（秒単位）を計算して更新
+			setRemainingTime(Math.floor((TURN_DURATION - turnElapsed) / 1000));
+
+			// 純粋な経過ターン数を算出
+			// 例: フェーズ1のターン3 → 1×TURNS_PER_PHASE + 3 = 8ターン目
+			const pureTurns = phaseIndex * TURNS_PER_PHASE + turnInPhase;
+
+			// 累積ターン数としてstateを更新
+			setTotalTurns(pureTurns);
 		}, 250);
-	
+
+		// コンポーネントがアンマウントされた際にintervalを解除してメモリリークを防ぐ
 		return () => clearInterval(interval);
 	}, [convStartTime, order.length, initiatives]);
 
@@ -128,7 +144,7 @@ export default function Conversation({ player, convStartTime }) {
 	useEffect(() => {
 		if(!order.length) return;
 		const maxTurns = order.length * TURNS_PER_PHASE;
-		if ( player === 'player1' && totalTurns >= maxTurns ) {
+		if ( player === 'player1' && totalTurns >= maxTurns -1 ) {
 			const switchTimers2 = async () => {
 				try {
 					// 現在の状態を取得
@@ -136,12 +152,12 @@ export default function Conversation({ player, convStartTime }) {
 						.from('timer')
 						.select('id, is_running')
 						.eq('id', 2);
-			
+
 					if (error) throw error;
 					if (!timers || timers.length === 0) return;
-			
+
 					const timer2 = timers[0];
-			
+
 					// すでに切り替わっていたら何もしない
 					if (timer2 && timer2.is_running === false) {
 						return;
@@ -152,7 +168,7 @@ export default function Conversation({ player, convStartTime }) {
 						.from('timer')
 						.update({ is_running: false })
 						.eq('id', 2);
-					
+
 					if (error2) throw error2;
 				} catch (error) {
 					console.error('タイマー切り替えエラー:', error.message);
@@ -168,7 +184,7 @@ export default function Conversation({ player, convStartTime }) {
     }, [messages, phase]);
 
     // 現在の会話ペアと先攻判定
-    const currentPair = order[phase] || [];
+    const currentPair = useMemo(() => order[phase] || [], [order, phase]);
     const initiative = initiatives[phase] ?? 0;
 
     // ターン判定（先攻・後攻）
@@ -188,7 +204,7 @@ export default function Conversation({ player, convStartTime }) {
 		  	}
 		};
 		window.addEventListener('storage', handleStorage);
-	  
+
 		return () => {
 		  	window.removeEventListener('storage', handleStorage);
 		};
@@ -205,32 +221,46 @@ export default function Conversation({ player, convStartTime }) {
 	}, [player, sessionId]);
 
 	// メッセージ送信処理
-    const handleSend = async () => {
-		if (!input.trim()) return;
-		
-		const newMessage = {
-			session_id: sessionId,
-			phase: phase,
-			turn: turn,
-			sender: player,
-			receiver: currentPair.find((p) => p !== player),
-			content: input,
-		};
-	
-		try {
-			const success = await saveMessage(newMessage);
-			if (success) {
-				setInput('');
+	useEffect(() => {
+		if (remainingTime > 0) return;
+		if (player !== currentSpeaker) return;
+		if (!input.trim()) return; // 入力が空なら送信しない
+
+		console.log(`[AUTO-SEND] ${player} のターン終了 → 自動送信`);
+		const autoSend = async () => {
+			const newMessage = {
+				session_id: sessionId,
+				phase: phase,
+				turn: turn,
+				sender: player,
+				receiver: currentPair.find((p) => p !== player),
+				content: input,
+			};
+
+			try {
+				const success = await saveMessage(newMessage);
+				if (success) {
+					setInput('');
+					setIsLocked(false);
+				}
+			} catch (err) {
+				console.error('自動送信中に例外が発生:', err);
 			}
-		} catch (err) {
-			console.error('送信処理中に例外が発生しました:', err);
-		}
+		};
+
+		autoSend();
+	}, [remainingTime, player, currentSpeaker, currentPair, input, phase, sessionId, turn]);
+
+	// ボタンによるテキストボックスの固定
+    const handleConfirm = async () => {
+        // 編集状態の切り替え
+        setIsLocked(prev => !prev);
 	};
 
 	// リアルタイム処理
 	useEffect(() => {
 		if (!player) return;
-	
+
 		const channel = supabase
 			.channel('messages_realtime')
 			.on(
@@ -247,7 +277,7 @@ export default function Conversation({ player, convStartTime }) {
 				}
 			)
 			.subscribe();
-	
+
 		return () => {
 			supabase.removeChannel(channel);
 		};
@@ -256,18 +286,54 @@ export default function Conversation({ player, convStartTime }) {
 	// NPCのターンを検知し、推論を行う
 	useEffect(() => {
 		if (!currentSpeaker) return;
+		if (!['npc1', 'npc2', 'npc3'].includes(currentSpeaker)) return;
 
-		// npc1〜npc3か判定
-		if (['npc1', 'npc2', 'npc3'].includes(currentSpeaker)) {
-			makeResponse({
-				sessionId: sessionId,
-				phase: phase,
-				turn: turn,
-				sender: currentSpeaker,
-				receiver: player,
-			});
-		}
+		// 推論タスクを開始してPromiseを保持
+		npcResponseRef.current = makeResponse({
+			sessionId,
+			phase,
+			turn,
+			sender: currentSpeaker,
+			receiver: player,
+		});
 	}, [phase, turn, currentSpeaker, sessionId, player]);
+
+	// ターンが終了した瞬間に推論結果を反映
+	useEffect(() => {
+		if (remainingTime > 0) return;
+		if (!['npc1', 'npc2', 'npc3'].includes(currentSpeaker)) return;
+
+		const handleNpcEndTurn = async () => {
+			console.log(`[NPC推論完了待機] ${currentSpeaker} のターン終了`);
+
+			try {
+				// 推論結果を取得
+				const result = await npcResponseRef.current;
+				if (!result) return;
+
+				const newMessage = {
+					session_id: sessionId,
+					phase,
+					turn,
+					sender: currentSpeaker,
+					receiver: player,
+					content: result,
+				};
+
+				// DBに保存して反映
+				const success = await saveMessage(newMessage);
+				if (success) {
+					console.log(`[NPC自動送信] ${currentSpeaker}: ${result}`);
+				}
+			} catch (err) {
+				console.error('NPC推論反映エラー:', err);
+			} finally {
+				npcResponseRef.current = null; // クリーンアップ
+			}
+		};
+
+		handleNpcEndTurn();
+	}, [remainingTime, currentSpeaker, phase, turn, sessionId, player]);
 
     return (
         <VStack spacing={4} align="stretch" p={4}>
@@ -294,12 +360,21 @@ export default function Conversation({ player, convStartTime }) {
                 <Input
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder={player === currentSpeaker ? 'メッセージを入力' : `${charNameMap[currentSpeaker] || currentSpeaker} のターンです`}
-                    isDisabled={player !== currentSpeaker}
+                    placeholder={
+						player === currentSpeaker ? isLocked ?
+						'確定中（編集不可）':
+						'メッセージを入力':
+						`${charNameMap[currentSpeaker] || currentSpeaker} のターンです`
+					}
+                    isDisabled={player !== currentSpeaker || isLocked}
                 />
-                <Button onClick={handleSend} isDisabled={player !== currentSpeaker}>
-                    送信
-                </Button>
+                <Button
+					onClick={handleConfirm}
+					colorScheme={isLocked ? 'gray' : 'blue'}
+					isDisabled={player !== currentSpeaker}
+				>
+					{isLocked ? '編集に戻す' : '確定'}
+				</Button>
             </HStack>
 
             <Flex fontSize="sm" color="gray.500" align="center" gap={2}>
@@ -316,7 +391,7 @@ export default function Conversation({ player, convStartTime }) {
                     minW="30px"
                     textAlign="center"
                 >
-                    {remainingTime}s
+                    {remainingTime}s後に自動送信
                 </Box>
             </Flex>
         </VStack>
