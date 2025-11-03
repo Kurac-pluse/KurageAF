@@ -38,7 +38,7 @@ async def call_openai_chat(prompt: str, model="gpt-4o-mini", max_tokens=2000, te
         return response.choices[0].message.content.strip()
     except Exception as e:
         print("[OpenAI Exception]", e)
-        return "（内部エラーが発生しました）"
+        return "（内部エラーが発生しました1）"
 
 # --- 会話履歴取得関数 ---
 def get_conversation_context(session_id: str, phase: int) -> str:
@@ -105,7 +105,7 @@ async def call_llm_conv(request: QueryRequestConv):
 
     except Exception as e:
         print("[Exception]", e)
-        return {"status":"error","message":"内部エラーが発生しました"}
+        return {"status":"error","message":"内部エラーが発生しました2"}
 
 @app.post("/api/plan")
 async def call_llm_plan(request: QueryRequestPlan):
@@ -129,7 +129,7 @@ async def call_llm_plan(request: QueryRequestPlan):
 
     except Exception as e:
         print("[Exception]", e)
-        return {"status":"error","message":"内部エラーが発生しました"}
+        return {"status":"error","message":"内部エラーが発生しました3"}
 
 @app.post("/api/makeJSON")
 async def call_llm_JSON(request: QueryRequestJSON):
@@ -142,7 +142,7 @@ async def call_llm_JSON(request: QueryRequestJSON):
 
     except Exception as e:
         print("[Exception]", e)
-        return {"response": "（内部エラーが発生しました）"}
+        return {"response": "（内部エラーが発生しました4）"}
 
 @app.post("/api/task")
 async def call_llm_task(request: QueryRequestTask):
@@ -160,4 +160,4 @@ async def call_llm_task(request: QueryRequestTask):
 
     except Exception as e:
         print("[Exception]", e)
-        return {"response": '{"status":"error","message":"内部エラーが発生しました"}'}
+        return {"response": '{"status":"error","message":"内部エラーが発生しました5"}'}

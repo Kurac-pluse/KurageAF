@@ -75,53 +75,67 @@ export default function Conversation({ player, convStartTime }) {
     useEffect(() => {
 		const fetchAllNames = async () => {
 		  if (order.length === 0) return;
-	
+
 		  const entries = await Promise.all(
 			pilot.map(async (id) => {
 			  const name = await player_make(id);
 			  return [id, name || id];
 			})
 		  );
-	
+
 		  setCharNameMap(Object.fromEntries(entries));
 		};
-	
+
 		fetchAllNames();
 	  }, [order.length]);
 
     // タイマー更新とフェーズ・ターンの計算
     useEffect(() => {
+		// convStartTime（会話開始時刻）、order（発話順序）、initiatives（先攻情報）
+		// のいずれかが未設定の場合は処理を行わない
 		if (!convStartTime || order.length === 0 || initiatives.length === 0) return;
-	
+
+		// 各フェーズの総時間 = (1ターンの長さ × ターン数) + フェーズ終了時のバッファ時間
 		const PHASE_DURATION = TURNS_PER_PHASE * TURN_DURATION + PHASE_END_BUFFER;
-	
+
+		// 一定間隔（250msごと）で経過時間を監視し、フェーズやターンの状態を更新する
 		const interval = setInterval(() => {
+			// 会話開始からの経過時間（ミリ秒）
 			const elapsed = new Date() - new Date(convStartTime);
-	
-			// フェーズ内の経過時間
-			const elapsedInPhase = elapsed % PHASE_DURATION;
-	
-			// バッファ期間内ならターン更新をスキップ
-			if (elapsedInPhase >= TURNS_PER_PHASE * TURN_DURATION) return;
-	
-			// フェーズ番号は経過したフェーズ数で求める
+
+			// 経過時間から現在のフェーズ番号を算出
+			// 経過時間 ÷ フェーズ時間 でフェーズのインデックスを得る
+			// order.length で割った余りを取ることで、ループにも対応
 			const phaseIndex = Math.floor(elapsed / PHASE_DURATION) % order.length;
-	
-			// フェーズ内のターン番号
+
+			// 現在のフェーズ内で経過した時間（ミリ秒）
+			const elapsedInPhase = elapsed % PHASE_DURATION;
+
+			// バッファ時間中（フェーズ終了から次のフェーズ開始まで）は更新をスキップする
+			if (elapsedInPhase >= TURNS_PER_PHASE * TURN_DURATION) return;
+
+			// 現在フェーズ内のターン番号（0始まり）
 			const turnInPhase = Math.floor(elapsedInPhase / TURN_DURATION);
-	
-			setPhase(phaseIndex);
-			setTurn(turnInPhase);
-	
+
+			// 現在ターン内で経過した時間（ミリ秒）
 			const turnElapsed = elapsedInPhase % TURN_DURATION;
-			setRemainingTime(Math.ceil((TURN_DURATION - turnElapsed) / 1000));
-	
-			// 総ターン数（バッファ含まず、実ターンのみ）
-			const totalTurns = Math.floor(elapsed / TURN_DURATION) - Math.floor(elapsed / PHASE_DURATION) * (PHASE_END_BUFFER / TURN_DURATION);
-			setTotalTurns(totalTurns);
-	
+
+			// フェーズとターンの状態を更新
+			setPhase(phaseIndex);   // 現在のフェーズ番号
+			setTurn(turnInPhase);   // 現在のターン番号
+
+			// 現在ターンの残り時間（秒単位）を計算して更新
+			setRemainingTime(Math.floor((TURN_DURATION - turnElapsed) / 1000));
+
+			// 純粋な経過ターン数を算出
+			// 例: フェーズ1のターン3 → 1×TURNS_PER_PHASE + 3 = 8ターン目
+			const pureTurns = phaseIndex * TURNS_PER_PHASE + turnInPhase;
+
+			// 累積ターン数としてstateを更新
+			setTotalTurns(pureTurns);
 		}, 250);
-	
+
+		// コンポーネントがアンマウントされた際にintervalを解除してメモリリークを防ぐ
 		return () => clearInterval(interval);
 	}, [convStartTime, order.length, initiatives]);
 
@@ -129,7 +143,7 @@ export default function Conversation({ player, convStartTime }) {
 	useEffect(() => {
 		if(!order.length) return;
 		const maxTurns = order.length * TURNS_PER_PHASE;
-		if ( player === 'player1' && totalTurns >= maxTurns ) {
+		if ( player === 'player1' && totalTurns >= maxTurns -1 ) {
 			const switchTimers2 = async () => {
 				try {
 					// 現在の状態を取得
@@ -137,12 +151,12 @@ export default function Conversation({ player, convStartTime }) {
 						.from('timer')
 						.select('id, is_running')
 						.eq('id', 2);
-			
+
 					if (error) throw error;
 					if (!timers || timers.length === 0) return;
-			
+
 					const timer2 = timers[0];
-			
+
 					// すでに切り替わっていたら何もしない
 					if (timer2 && timer2.is_running === false) {
 						return;
@@ -153,7 +167,7 @@ export default function Conversation({ player, convStartTime }) {
 						.from('timer')
 						.update({ is_running: false })
 						.eq('id', 2);
-					
+
 					if (error2) throw error2;
 				} catch (error) {
 					console.error('タイマー切り替えエラー:', error.message);
@@ -189,7 +203,7 @@ export default function Conversation({ player, convStartTime }) {
 		  	}
 		};
 		window.addEventListener('storage', handleStorage);
-	  
+
 		return () => {
 		  	window.removeEventListener('storage', handleStorage);
 		};
@@ -226,6 +240,7 @@ export default function Conversation({ player, convStartTime }) {
 				const success = await saveMessage(newMessage);
 				if (success) {
 					setInput('');
+					setIsLocked(false);
 				}
 			} catch (err) {
 				console.error('自動送信中に例外が発生:', err);
@@ -244,7 +259,7 @@ export default function Conversation({ player, convStartTime }) {
 	// リアルタイム処理
 	useEffect(() => {
 		if (!player) return;
-	
+
 		const channel = supabase
 			.channel('messages_realtime')
 			.on(
@@ -261,7 +276,7 @@ export default function Conversation({ player, convStartTime }) {
 				}
 			)
 			.subscribe();
-	
+
 		return () => {
 			supabase.removeChannel(channel);
 		};
