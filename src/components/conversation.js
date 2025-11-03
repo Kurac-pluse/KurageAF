@@ -7,7 +7,7 @@ import supabase from '../supabaseClient';
 import { fetchMessagesBySession, saveMessage } from '../server/chat';
 import { makeResponse } from '../server/generation/llm';
 
-const TURN_DURATION = 8 * 1000;
+const TURN_DURATION = 30 * 1000;
 const TURNS_PER_PHASE = 6;
 const PHASE_END_BUFFER = 5 * 1000;
 
@@ -40,6 +40,7 @@ export default function Conversation({ player, convStartTime }) {
 	const [ totalTurns, setTotalTurns ] = useState();
 	const [sessionId, setSessionId] = useState(() => localStorage.getItem('session_id') || null);
     const messagesEndRef = useRef(null);
+	const npcResponseRef = useRef(null);
 
     // 会話順と先攻を初期化
     useEffect(() => {
@@ -285,18 +286,55 @@ export default function Conversation({ player, convStartTime }) {
 	// NPCのターンを検知し、推論を行う
 	useEffect(() => {
 		if (!currentSpeaker) return;
+		if (!['npc1', 'npc2', 'npc3'].includes(currentSpeaker)) return;
 
-		// npc1〜npc3か判定
-		if (['npc1', 'npc2', 'npc3'].includes(currentSpeaker)) {
-			makeResponse({
-				sessionId: sessionId,
-				phase: phase,
-				turn: turn,
-				sender: currentSpeaker,
-				receiver: player,
-			});
-		}
+		// 推論タスクを開始してPromiseを保持
+		npcResponseRef.current = makeResponse({
+			sessionId,
+			phase,
+			turn,
+			sender: currentSpeaker,
+			receiver: player,
+		});
 	}, [phase, turn, currentSpeaker, sessionId, player]);
+
+	// ターンが終了した瞬間に推論結果を反映
+	useEffect(() => {
+		if (remainingTime > 0) return;
+		if (!['npc1', 'npc2', 'npc3'].includes(currentSpeaker)) return;
+
+		const handleNpcEndTurn = async () => {
+			console.log(`[NPC推論完了待機] ${currentSpeaker} のターン終了`);
+
+			try {
+				// 推論結果を取得
+				const result = await npcResponseRef.current;
+				if (!result) return;
+
+				const newMessage = {
+					session_id: sessionId,
+					phase,
+					turn,
+					sender: currentSpeaker,
+					receiver: player,
+					content: result,
+				};
+
+				// DBに保存して反映
+				const success = await saveMessage(newMessage);
+				if (success) {
+					console.log(`[NPC自動送信] ${currentSpeaker}: ${result}`);
+				}
+			} catch (err) {
+				console.error('NPC推論反映エラー:', err);
+			} finally {
+				npcResponseRef.current = null; // クリーンアップ
+			}
+		};
+
+		handleNpcEndTurn();
+
+	}, [remainingTime, currentSpeaker]);
 
     return (
         <VStack spacing={4} align="stretch" p={4}>

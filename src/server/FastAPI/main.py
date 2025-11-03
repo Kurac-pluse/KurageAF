@@ -87,20 +87,6 @@ async def call_llm_conv(request: QueryRequestConv):
 
         if not result:
             result = "（応答を生成できませんでした）"
-
-        # Supabaseに保存
-        try:
-            supabase.table("messages").insert({
-                "session_id": request.session_id,
-                "phase": request.phase,
-                "turn": request.turn,
-                "sender": request.sender,
-                "receiver": request.receiver,
-                "content": result,
-            }).execute()
-        except Exception as e:
-            print("[Supabase Insert Exception]", e)
-
         return {"response": result}
 
     except Exception as e:
