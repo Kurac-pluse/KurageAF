@@ -5,23 +5,16 @@ import {
     MenuList,
     MenuItem,
     Flex,
-    Box,
     Modal,
     ModalOverlay,
     ModalContent,
     ModalHeader,
-    ModalFooter,
     ModalBody,
     ModalCloseButton,
     useDisclosure,
   } from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { useNavigate } from 'react-router-dom';
-
-// const steps = Array.from({ length: 20 }, (_, i) => ({
-//     title: `Step ${i + 1}`,
-//     description: `Description ${i + 1}`,
-// }))
 
 export default function ChangeAccount(props) {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -35,42 +28,29 @@ export default function ChangeAccount(props) {
             navigate("/player2")
         }
     }
-    // const { activeStep } = useSteps({
-    //     index: 6,
-    //     count: steps.length
-    // })
+    const update = () => {
+    window.location.reload(); // ページ更新
+    };
 
     return (
         <>
-        <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />} width="110px">
-                {props.player || 'Select player'}
-            </MenuButton>
-            <MenuList>
-                <MenuItem onClick={() => changePage('0')}>Master</MenuItem>
-                <MenuItem onClick={() => changePage('1')}>Player1</MenuItem>
-                <MenuItem onClick={() => changePage('2')}>player2</MenuItem>
-            </MenuList>
-        </Menu>
-        <Box width="20px" />
-        <Flex direction="column" alignItems="stretch" width="100%" height="100%" justifyContent="center">
-            {/* <Stepper index={activeStep}>
-                {steps.map((step, index) => (
-                    <Step key={index}>
-                        <StepIndicator>
-                            <StepStatus
-                                complete={<StepIcon />}
-                                incomplete={<StepNumber />}
-                                active={<StepNumber />}
-                            />
-                        </StepIndicator>
-                        {index < steps.length - 1 && <StepSeparator />}
-                    </Step>
-                ))}
-            </Stepper> */}
-            <Button onClick={onOpen} width="60px">説明</Button>
+            <Flex align="center" gap="4">
+                <Menu>
+                    <MenuButton as={Button} rightIcon={<ChevronDownIcon />} width="110px">
+                        {props.player || 'Select player'}
+                    </MenuButton>
+                    <MenuList minW="110px">
+                        <MenuItem onClick={() => changePage('0')}>Master</MenuItem>
+                        <MenuItem onClick={() => changePage('1')}>Player1</MenuItem>
+                        <MenuItem onClick={() => changePage('2')}>Player2</MenuItem>
+                    </MenuList>
+                </Menu>
 
-            <Modal isOpen={isOpen} onClose={onClose} isCentered size={'xl'}>
+                <Button onClick={onOpen} width="60px">説明</Button>
+                <Button onClick={update} width="60px">更新</Button>
+            </Flex>
+
+            <Modal isOpen={isOpen} onClose={onClose} isCentered size="xl">
                 <ModalOverlay />
                 <ModalContent>
                     <ModalHeader>説明（チュートリアル）</ModalHeader>
@@ -90,15 +70,9 @@ export default function ChangeAccount(props) {
                         　・装備作成<br />
                         　・戦闘<br />
                         〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜<br />
-                        <br />
                     </ModalBody>
-                    <ModalFooter>
-                        {/*  */}
-                    </ModalFooter>
                 </ModalContent>
             </Modal>
-        </Flex>
-        
         </>
     );
 }
