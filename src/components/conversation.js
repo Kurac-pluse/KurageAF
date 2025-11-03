@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useMemo } from 'react';
 import {
     Box, Button, Input, VStack, Text, HStack, Flex
 } from '@chakra-ui/react';
@@ -184,7 +184,7 @@ export default function Conversation({ player, convStartTime }) {
     }, [messages, phase]);
 
     // 現在の会話ペアと先攻判定
-    const currentPair = order[phase] || [];
+    const currentPair = useMemo(() => order[phase] || [], [order, phase]);
     const initiative = initiatives[phase] ?? 0;
 
     // ターン判定（先攻・後攻）
@@ -249,7 +249,7 @@ export default function Conversation({ player, convStartTime }) {
 		};
 
 		autoSend();
-	}, [remainingTime, player, currentSpeaker]);
+	}, [remainingTime, player, currentSpeaker, currentPair, input, phase, sessionId, turn]);
 
 	// ボタンによるテキストボックスの固定
     const handleConfirm = async () => {
@@ -333,8 +333,7 @@ export default function Conversation({ player, convStartTime }) {
 		};
 
 		handleNpcEndTurn();
-
-	}, [remainingTime, currentSpeaker]);
+	}, [remainingTime, currentSpeaker, phase, turn, sessionId, player]);
 
     return (
         <VStack spacing={4} align="stretch" p={4}>
