@@ -2,27 +2,27 @@ import { Box, Grid, Flex } from '@chakra-ui/react';
 import ChangeChar from './change-character.js';
 import Status from './status.js';
 import Control from './control.js';
-import React from 'react';
-import { useState } from 'react';
 import Time from './time.js';
 
-const Operation = (props) => {
-
-    const [ viewChar, setViewChar ] = useState('');
+const Operation = ({ player, viewChar, setViewChar }) => {
 
     return (
         <>
         <Box flex="4" border="1px solid black">
             <Grid p={3}>
                 <Flex flex="1" direction="row">
-                    <ChangeChar player={props.player} viewChar={viewChar} setViewChar={setViewChar}/>
+                    <ChangeChar
+                            player={player}
+                            viewChar={viewChar}
+                            setViewChar={setViewChar}
+                        />
                 </Flex>
             </Grid>
         </Box>
         <Box flex="4" border="1px solid black">
             <Grid p={3}>
                 <Flex flex="1" direction="row">
-                    <Status player={props.player} viewChar={viewChar}/>
+                    <Status player={player} viewChar={viewChar}/>
                 </Flex>
             </Grid>
         </Box>
@@ -30,17 +30,13 @@ const Operation = (props) => {
             <Grid p={3} height="100%">
                 <Flex flex="1" direction="row">
                 {(() => {
-                    if (props.player === 'master') {
+                    if (player === 'master') {
                         return (
-                            <Control
-                                player={props.player}
-                            />
+                            <Control player={player} />
                         );
                     } else {
                         return (
-                            <Time
-                                player={props.player}
-                            />
+                            <Time player={player} />
                         );
                     }
                 })()}
