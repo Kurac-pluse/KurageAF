@@ -1,16 +1,18 @@
 import {
-  ChakraProvider,
-  Box,
-  Grid,
-  theme,
-  Flex,
+	ChakraProvider,
+	Box,
+	Grid,
+	theme,
+	Flex,
 } from '@chakra-ui/react';
 import Operation from '../components/operation.js';
 import Log from '../components/log.js';
 import ChangeAccount from '../components/change-account.js';
+import { useState } from 'react';
 
 const Player1 = () => {
 	const this_player = 'player1'
+	const [viewChar, setViewChar] = useState('');
   	return (
 		<ChakraProvider theme={theme}>
 			<Box textAlign="center" fontSize="xl">
@@ -23,10 +25,17 @@ const Player1 = () => {
 						</Grid>
 						<Flex direction="row" flex="9">
 							<Flex flex="5" direction="column" border="1px solid black">
-								<Operation player={this_player} />
+								<Operation
+                                    player={this_player}
+                                    viewChar={viewChar}
+                                    setViewChar={setViewChar}
+                                />
 							</Flex>
 							<Box flex="2" border="1px solid black">
-								<Log />
+								<Log
+									player={this_player}
+									viewChar={viewChar}
+								/>
 							</Box>
 						</Flex>
 					</Flex>
