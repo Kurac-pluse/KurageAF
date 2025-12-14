@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Flex, VStack, Text, Spinner, Box } from '@chakra-ui/react';
-import { get_character_logs } from '../server/api-call/info';
+import { get_character_logs } from '../api/info';
 
 export default function Log({ player, viewChar }) {
     const [logs, setLogs] = useState([]);

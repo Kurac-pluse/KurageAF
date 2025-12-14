@@ -1,6 +1,6 @@
 // 6:装備解除, 7:装備
 import fetch from 'node-fetch';
-import { server, token } from '../global.js';
+import { server, token } from '../utils/global.js';
 
 export async function equip(character, item) {
     const url = server + '/my/' + character + '/action/equip';

@@ -1,6 +1,6 @@
 import { Box, Grid, Flex, Image } from '@chakra-ui/react';
-import { CHAR1, CHAR2, CHAR3, CHAR4, CHAR5 } from '../server/global.js';
-import { player1, player2 } from '../server/global.js';
+import { CHAR1, CHAR2, CHAR3, CHAR4, CHAR5 } from '../utils/global.js';
+import { player1, player2 } from '../utils/global.js';
 
 function ChangeChar(props) {
 

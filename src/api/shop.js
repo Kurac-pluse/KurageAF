@@ -1,6 +1,6 @@
 // 9:武器作成, 10:料理作成
 import fetch from 'node-fetch';
-import { server, token } from '../global.js';
+import { server, token } from '../utils/global.js';
 
 export async function craft(character, item) {
 	const url = server + '/my/' + character + '/action/crafting';

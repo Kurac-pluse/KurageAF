@@ -1,6 +1,6 @@
-import supabase from "../../supabaseClient";
-import { get_character_logs } from "../api-call/info";
-import { getCharacterNameById } from "../global";
+import supabase from "../supabaseClient";
+import { get_character_logs } from "../api/info";
+import { getCharacterNameById } from "../utils/global";
 import { makePlan, refinePlanToJson, makeTask } from "./llm";
 
 export async function generateInitialPlan(npcID) {

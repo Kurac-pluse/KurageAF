@@ -9,7 +9,7 @@ import Operation from '../components/operation.js';
 import Log from '../components/log.js';
 import ChangeAccount from '../components/change-account.js';
 import { useState } from 'react';
-import { useNpcAct } from '../server/npc-admin.js';
+import { useNpcAct } from '../utils/npc-admin.js';
 
 const Master = () => {
     const this_player = 'master';

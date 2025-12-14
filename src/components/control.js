@@ -1,8 +1,8 @@
 import { HStack, Button } from '@chakra-ui/react';
-import { names, pilot } from '../server/global';
-import { game_restart, initial_setting } from '../server/game-setting';
+import { names, pilot } from '../utils/global';
+import { game_restart, initial_setting } from '../utils/game-setting';
 import supabase from '../supabaseClient';
-import { createSession } from '../server/chat';
+import { createSession } from '../utils/chat';
 
 const Control = () => {
 

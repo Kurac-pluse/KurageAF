@@ -2,7 +2,7 @@
 // 名前、座標、、、、
 
 import fetch from 'node-fetch';
-import { CHAR1, CHAR2, CHAR3, CHAR4, CHAR5, server, token } from '../global.js';
+import { CHAR1, CHAR2, CHAR3, CHAR4, CHAR5, server, token } from '../utils/global.js';
 
 export async function get_character_logs(character) {
 	const url = server + '/my/logs/' + character;

@@ -2,10 +2,10 @@ import { useEffect, useState, useRef, useMemo } from 'react';
 import {
     Box, Button, Input, VStack, Text, HStack, Flex
 } from '@chakra-ui/react';
-import { pilot, player_make } from '../server/global';
+import { pilot, player_make } from '../utils/global';
 import supabase from '../supabaseClient';
-import { fetchMessagesBySession, saveMessage } from '../server/chat';
-import { makeResponse } from '../server/generation/llm';
+import { fetchMessagesBySession, saveMessage } from '../utils/chat';
+import { makeResponse } from '../api/llm';
 
 const TURN_DURATION = 30 * 1000;
 const TURNS_PER_PHASE = 6;
