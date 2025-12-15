@@ -3,7 +3,7 @@
 
 import fetch from 'node-fetch';
 import { server, token, names,  skins } from './global.js';
-import { get_character_names } from './api-call/info.js'; 
+import { get_character_names } from '../api/info.js'; 
 
 export async function game_restart() {
     const url1 = server + '/characters/delete';

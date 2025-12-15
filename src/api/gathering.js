@@ -1,6 +1,6 @@
 // 2:釣り, 3:伐採, 4:採掘, 5:採集
 import fetch from 'node-fetch';
-import { server, token } from '../global.js';
+import { server, token } from '../utils/global.js';
 
 export async function gather(character) {
     const url = server + '/my/' + character + '/action/gathering';

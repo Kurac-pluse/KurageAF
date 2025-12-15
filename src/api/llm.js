@@ -1,6 +1,6 @@
-import supabase from "../../supabaseClient";
-import { get_character_coordinate } from "../api-call/info";
-import { getCharacterNameById } from "../global";
+import supabase from "../supabaseClient";
+import { get_character_coordinate } from "./info";
+import { getCharacterNameById } from "../utils/global";
 import { getLogs } from "./npc-plan";
 
 const maxRetries = 5;

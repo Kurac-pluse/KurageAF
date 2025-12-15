@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Box, Grid, Flex, Spinner, Text } from '@chakra-ui/react';
-import { playerToCharName } from '../server/global.js';
-import { get_one_character_info } from '../server/api-call/info.js';
+import { playerToCharName } from '../utils/global.js';
+import { get_one_character_info } from '../api/info.js';
 
 function Status(props) {
     const [myStatus, setMyStatus] = useState(null);

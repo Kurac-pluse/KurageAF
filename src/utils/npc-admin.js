@@ -70,8 +70,8 @@
 
 import { useEffect, useState, useRef } from 'react';
 import supabase from '../supabaseClient';
-import { getLogs, generateInitialPlan, generateNextPlan } from './generation/npc-plan';
-import { callApiWithPlan } from './generation/npc-act';
+import { getLogs, generateInitialPlan, generateNextPlan } from '../api/npc-plan';
+import { callApiWithPlan } from '../api/npc-act';
 
 export function useNpcAct() {
     const [isRunning, setIsRunning] = useState(false);

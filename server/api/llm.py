@@ -1,30 +1,26 @@
-from dotenv import load_dotenv
 import os
 import re
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from supabase_client import supabase
-from models import QueryRequestConv, QueryRequestPlan, QueryRequestJSON, QueryRequestTask
 import openai
-
-# OpenAIクライアント（最新SDK対応）
-# client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-load_dotenv(".env.python")
-api_key = os.getenv("OPENAI_API_KEY")
-client = openai.AsyncClient(api_key=api_key)
-
-app = FastAPI()
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+from fastapi import APIRouter
+from supabase_client import supabase
+from api.models import (
+    QueryRequestConv,
+    QueryRequestPlan,
+    QueryRequestJSON,
+    QueryRequestTask,
 )
+from config import settings
 
-# --- OpenAI呼び出し関数（非同期対応） ---
-async def call_openai_chat(prompt: str, model="gpt-4o-mini", max_tokens=2000, temperature=0.7) -> str:
+router = APIRouter(prefix="/api")
+client = openai.AsyncClient(api_key=settings.openai_api_key)
+
+# --- OpenAI呼び出し関数 ---
+async def call_openai_chat(
+    prompt: str,
+    model="gpt-4o-mini",
+    max_tokens=2000,
+    temperature=0.7
+) -> str:
     try:
         response = await client.chat.completions.create(
             model=model,
@@ -40,26 +36,35 @@ async def call_openai_chat(prompt: str, model="gpt-4o-mini", max_tokens=2000, te
         print("[OpenAI Exception]", e)
         return "（内部エラーが発生しました1）"
 
-# --- 会話履歴取得関数 ---
+
+# --- 会話履歴取得 ---
 def get_conversation_context(session_id: str, phase: int) -> str:
     try:
-        response = supabase.table("messages") \
-            .select("sender, content") \
-            .eq("session_id", session_id) \
-            .eq("phase", phase) \
-            .order("turn", desc=False) \
+        response = (
+            supabase.table("messages")
+            .select("sender, content")
+            .eq("session_id", session_id)
+            .eq("phase", phase)
+            .order("turn", desc=False)
             .execute()
+        )
         logs = response.data or []
         return "\n".join(f"{m['sender']}: {m['content']}" for m in logs)
     except Exception as e:
         print("[Supabase Exception]", e)
         return ""
 
-@app.post("/api/conv")
+
+# -------------------------
+# API エンドポイント
+# -------------------------
+
+@router.post("/conv")
 async def call_llm_conv(request: QueryRequestConv):
     try:
         base_dir = os.path.dirname(__file__)
-        template_path = os.path.join(base_dir, "texts", "conv_template.txt")
+        template_path = os.path.join(base_dir, "..", "texts", "conv_template.txt")
+
         with open(template_path, "r", encoding="utf-8") as f:
             template = f.read()
 
@@ -69,35 +74,32 @@ async def call_llm_conv(request: QueryRequestConv):
             agent_name=request.sen_char_name,
             agent_name2=request.rec_char_name,
             personality="英語が喋れない純日本人",
-            role="親友",
+            role="仲の良い後輩",
             conversation_context=context,
             knowledge="",
             query=request.prompt,
             task=request.task,
         )
 
-        print("[DEBUG] prompt_filled:", prompt_filled)
         result = await call_openai_chat(prompt_filled)
-        print("[DEBUG] GPT result:", result)
 
-        # 文末で切る
-        m = re.search(r'.*?[。！？.]', result)
+        m = re.search(r".*?[。！？.]", result)
         if m:
             result = m.group(0)
 
-        if not result:
-            result = "（応答を生成できませんでした）"
-        return {"response": result}
+        return {"response": result or "（応答を生成できませんでした）"}
 
     except Exception as e:
         print("[Exception]", e)
-        return {"status":"error","message":"内部エラーが発生しました2"}
+        return {"status": "error", "message": "内部エラーが発生しました2"}
 
-@app.post("/api/plan")
+
+@router.post("/plan")
 async def call_llm_plan(request: QueryRequestPlan):
     try:
         base_dir = os.path.dirname(__file__)
-        template_path = os.path.join(base_dir, "texts", "explain.txt")
+        template_path = os.path.join(base_dir, "..", "texts", "explain.txt")
+
         with open(template_path, "r", encoding="utf-8") as f:
             template = f.read()
 
@@ -107,43 +109,36 @@ async def call_llm_plan(request: QueryRequestPlan):
             task=request.task
         )
 
-        print("[DEBUG] prompt_filled:", prompt_filled)
         result = await call_openai_chat(prompt_filled)
-        print("[DEBUG] GPT result:", result)
-
         return {"response": result}
 
     except Exception as e:
         print("[Exception]", e)
-        return {"status":"error","message":"内部エラーが発生しました3"}
+        return {"status": "error", "message": "内部エラーが発生しました3"}
 
-@app.post("/api/makeJSON")
-async def call_llm_JSON(request: QueryRequestJSON):
+
+@router.post("/makeJSON")
+async def call_llm_json(request: QueryRequestJSON):
     try:
         prompt_filled = f"出力は必ずJSON形式で返してください:\n{request.prompt}"
-        print("[DEBUG] prompt_filled:", prompt_filled)
         result = await call_openai_chat(prompt_filled)
-        print("[DEBUG] GPT result:", result)
         return {"response": result}
-
     except Exception as e:
         print("[Exception]", e)
         return {"response": "（内部エラーが発生しました4）"}
 
-@app.post("/api/task")
+
+@router.post("/task")
 async def call_llm_task(request: QueryRequestTask):
     try:
         result = await call_openai_chat(request.prompt)
 
-        m = re.search(r'.*?[。！？.]', result)
+        m = re.search(r".*?[。！？.]", result)
         if m:
             result = m.group(0)
 
-        if not result:
-            result = "（応答を生成できませんでした）"
-
-        return {"response": result}
+        return {"response": result or "（応答を生成できませんでした）"}
 
     except Exception as e:
         print("[Exception]", e)
-        return {"response": '{"status":"error","message":"内部エラーが発生しました5"}'}
+        return {"response": "（内部エラーが発生しました5）"}

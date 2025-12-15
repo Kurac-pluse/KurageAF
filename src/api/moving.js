@@ -1,6 +1,6 @@
 // 1:移動, 8:戦闘, 11:回復
 import fetch from 'node-fetch';
-import { server, token } from '../global.js';
+import { server, token } from '../utils/global.js';
 import { get_character_coordinate } from './info.js';
 
 export async function movement(character, x, y) {

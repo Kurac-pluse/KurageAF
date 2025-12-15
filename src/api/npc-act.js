@@ -8,12 +8,12 @@
 //         "item":"",
 //     },
 // }
-import { equip, unequip } from "../api-call/equipment";
-import { gather } from "../api-call/gathering";
-import { get_character_cooldown } from "../api-call/info";
-import { fight, heal, movement } from "../api-call/moving";
-import { craft } from "../api-call/shop";
-import { getCharacterNameById } from "../global";
+import { equip, unequip } from "./equipment";
+import { gather } from "./gathering";
+import { get_character_cooldown } from "./info";
+import { fight, heal, movement } from "./moving";
+import { craft } from "./shop";
+import { getCharacterNameById } from "../utils/global";
 
 // 指定秒数待機するヘルパー関数
 function wait(seconds) {
