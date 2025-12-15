@@ -1,10 +1,4 @@
-import os
 from supabase import create_client, Client
-from dotenv import load_dotenv
+from config import settings
 
-load_dotenv()
-
-SUPABASE_URL = os.environ.get("REACT_APP_SUPABASE_URL")
-SUPABASE_KEY = os.environ.get("REACT_APP_SUPABASE_KEY")
-
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(settings.supabase_url, settings.supabase_key)

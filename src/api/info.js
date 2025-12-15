@@ -5,12 +5,15 @@ import fetch from 'node-fetch';
 import { CHAR1, CHAR2, CHAR3, CHAR4, CHAR5, server, token } from '../utils/global.js';
 
 export async function get_character_logs(character) {
-	const url = server + '/my/logs/' + character;
+    if (!character) {
+        console.warn("character is undefined, skip get_character_logs");
+        return null;
+    }
+    const url = process.env.REACT_APP_SERVER_URL + "/api/mmo/logs/" + character;
 	const options = {
         method: 'GET',
         headers: {
             Accept: 'application/json',
-            Authorization: 'Bearer ' + token,
         },
     };
 
