@@ -1,10 +1,12 @@
-import { HStack, Button } from '@chakra-ui/react';
+import { HStack, Button, Input } from '@chakra-ui/react';
 import { names, pilot } from '../utils/global';
 import { game_restart, initial_setting } from '../utils/game-setting';
 import supabase from '../supabaseClient';
 import { createSession } from '../utils/chat';
+import { useState } from 'react';
 
 const Control = () => {
+    const [sessionName, setSessionName] = useState('');
 
     const shuffleTaskNumbers = async() => {
         // 1. 全タスクを取得
@@ -42,32 +44,38 @@ const Control = () => {
 
     const shuffle = async () => {
         try {
-            const { data, error } = await supabase.from('characters').select('conversation');
-            if (error) throw error;
+            if (!sessionName) {
+                console.log("session_name埋めて");
+                return;
+            }
 
-            if (data.some((row) => row.conversation !== 0)) return;
+            // session 作成
+            const sessionId = await createSession(sessionName);
+            if (!sessionId) return;
 
+            // localStorage は「管理者用の一時参照」
+            localStorage.setItem('session_id', sessionId);
+
+            // roleをランダムに並び替えて配列に格納
             const storedData = [];
             while (storedData.length < 5) {
                 const name = names[Math.floor(Math.random() * 5)];
                 if (!storedData.includes(name)) storedData.push(name);
             }
 
-            const playerNames = ['player1', 'player2', 'npc1', 'npc2', 'npc3'];
             for (let i = 0; i < 5; i++) {
                 const { error } = await supabase
                     .from('characters')
-                    .update({ role: storedData[i] })
-                    .eq('name', playerNames[i]);
+                    .update({ role: storedData[i] }) // 割り当てる役割
+                    .eq('name', pilot[i]);     // 対象キャラ
 
                 if (error) throw error;
             }
 
-            // 会話順と先攻を決めて Supabase に保存
-            const allParticipants = pilot;
+            // 会話ペア作成
             const pairs = [];
+            const shuffledOthers = [...pilot];
 
-            const shuffledOthers = [...allParticipants];
             for (let i = shuffledOthers.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [shuffledOthers[i], shuffledOthers[j]] = [shuffledOthers[j], shuffledOthers[i]];
@@ -80,7 +88,7 @@ const Control = () => {
                 }
             }
 
-            // 各会話に対して先攻(0 or 1)をランダムに決定
+            // 会話順
             const initiatives = pairs.map(() => Math.round(Math.random()));
 
             // Supabase に保存
@@ -89,9 +97,8 @@ const Control = () => {
                 .upsert([
                     {
                         session_id: 'default_session',
-                        conversation_order: pairs,
-                        initiatives,
-                        created_by: 'master',
+                        conversation_order: pairs, // 会話順
+                        initiatives,               // 先攻情報
                     },
                 ])
                 .eq('session_id', 'default_session');
@@ -107,20 +114,28 @@ const Control = () => {
 
     const startGame = async () => {
         try {
+            const sessionId = localStorage.getItem('session_id');
+            if (!sessionId) return;
+
+            // 他セッションを finished
+            await supabase
+            .from('sessions')
+            .update({ status: 'finished' })
+            .neq('id', sessionId);
+
+            // この session を running
+            await supabase
+            .from('sessions')
+            .update({ status: 'running' })
+            .eq('id', sessionId);
+
+            // ③ timer 開始
             const now = new Date().toISOString();
-      
-            const { error } = await supabase.from('timer').update({
+            await supabase.from('timer').update({
+                start_time: now,
                 is_running: true,
-                start_time: now
             }).eq('id', 1);
-      
-            if (error) throw error;
-            const session = await createSession('default_session');
-            if (!session) {
-                console.error('セッション作成に失敗しました');
-                return;
-            }
-            localStorage.setItem('session_id', session);
+
         } catch (error) {
             console.error('ゲーム開始エラー:', error.message);
         }
@@ -128,7 +143,12 @@ const Control = () => {
 
     return (
         <HStack spacing={4} wrap="wrap">
-            <Button onClick={shuffle}>キャラクターシャッフル</Button>
+            <Input
+                placeholder="例: Aさん, Bさん"
+                value={sessionName}
+                onChange={(e) => setSessionName(e.target.value)}
+            />
+            <Button onClick={shuffle}>MAKE SESSION</Button>
             <Button onClick={startGame}>GAME START</Button>
             <Button onClick={game_restart}>GAME RESET</Button>
             <Button onClick={initial_setting}>INITIAL</Button>

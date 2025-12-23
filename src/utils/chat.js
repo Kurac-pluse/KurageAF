@@ -8,15 +8,21 @@ import supabase from '../supabaseClient';
 export const createSession = async (name) => {
     const { data, error } = await supabase
         .from('sessions')
-        .insert([{ name }])
-        .select();
+        .insert([
+            {
+                name,
+                status: 'idle',
+            },
+        ])
+        .select()
+        .single();
 
     if (error) {
         console.error('セッション作成エラー:', error.message);
         return null;
     }
 
-    return data[0]?.id; // UUID
+    return data.id; // UUID
 };
 
 /**
