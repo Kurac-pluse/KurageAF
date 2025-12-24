@@ -185,6 +185,10 @@ export default function Conversation({ player, convStartTime }) {
 
     // 現在の会話ペアと先攻判定
     const currentPair = useMemo(() => order[phase] || [], [order, phase]);
+	const currentPartner = useMemo(
+		() => currentPair.find(p => p !== player),
+		[currentPair, player]
+	);
     const initiative = initiatives[phase] ?? 0;
 
     // ターン判定（先攻・後攻）
@@ -305,6 +309,7 @@ export default function Conversation({ player, convStartTime }) {
 				(payload) => {
 					const newMsg = payload.new;
 					if (newMsg.session_id !== sessionId) return;
+					if (newMsg.sender !== player && newMsg.receiver !== player) return;
 					// 最新セッションのメッセージか確認（必要に応じてsession_idのチェックを追加）
 					setMessages((prev) => [...prev, newMsg]);
 				}
@@ -379,7 +384,13 @@ export default function Conversation({ player, convStartTime }) {
                 ref={messagesEndRef}
             >
                 {messages
-					.filter((msg) => msg.phase === phase)
+					.filter(msg =>
+						msg.phase === phase &&
+						(
+						(msg.sender === player && msg.receiver === currentPartner) ||
+						(msg.sender === currentPartner && msg.receiver === player)
+						)
+					)
 					.map((msg, i) => (
                     	<Box key={i} mb={2}>
                         	<Text fontWeight="bold">{charNameMap[msg.sender] || msg.sender}:</Text>
