@@ -6,7 +6,9 @@ import { createSession } from '../utils/chat';
 import { useState } from 'react';
 
 const Control = () => {
-    const [sessionName, setSessionName] = useState('');
+    const [sessionName, setSessionName] = useState(() => localStorage.getItem('session_name') || '');
+    const [errorMessage, setErrorMessage] = useState('');
+    
 
     const shuffleTaskNumbers = async() => {
         // 1. 全タスクを取得
@@ -44,14 +46,38 @@ const Control = () => {
 
     const shuffle = async () => {
         try {
+            setErrorMessage(''); // まずエラーをリセット
+
+            // 空チェック
             if (!sessionName) {
-                console.log("session_name埋めて");
+                setErrorMessage('セッション名を入力してください');
+                return;
+            }
+
+            // 既存 name チェック
+            const { data: existing, error: checkError } = await supabase
+                .from('sessions')
+                .select('id')
+                .eq('name', sessionName)
+                .limit(1);
+
+            if (checkError) {
+                console.error(checkError);
+                setErrorMessage('セッション名の確認中にエラーが発生しました');
+                return;
+            }
+
+            if (existing.length > 0) {
+                setErrorMessage('そのセッション名は既に使われています');
                 return;
             }
 
             // session 作成
             const sessionId = await createSession(sessionName);
-            if (!sessionId) return;
+            if (!sessionId) {
+                setErrorMessage('セッションの作成に失敗しました');
+                return;
+            }
 
             // localStorage は「管理者用の一時参照」
             localStorage.setItem('session_id', sessionId);
@@ -114,8 +140,26 @@ const Control = () => {
 
     const startGame = async () => {
         try {
-            const sessionId = localStorage.getItem('session_id');
-            if (!sessionId) return;
+            // 入力チェック
+            if (!sessionName) {
+                setErrorMessage('セッション名を入力してください');
+                return;
+            }
+
+            // name から session を取得
+            const { data: session, error } = await supabase
+                .from('sessions')
+                .select('id')
+                .eq('name', sessionName)
+                .single();
+
+            if (error || !session) {
+                setErrorMessage('指定されたセッションが見つかりません');
+                return;
+            }
+            
+            setErrorMessage('');
+            const sessionId = session.id;
 
             // 他セッションを finished
             await supabase
@@ -138,20 +182,33 @@ const Control = () => {
 
         } catch (error) {
             console.error('ゲーム開始エラー:', error.message);
+            setErrorMessage('ゲーム開始に失敗しました');
         }
     };
 
     return (
         <HStack spacing={4} wrap="wrap">
             <Input
-                placeholder="例: Aさん, Bさん"
-                value={sessionName}
-                onChange={(e) => setSessionName(e.target.value)}
-            />
-            <Button onClick={shuffle}>MAKE SESSION</Button>
-            <Button onClick={startGame}>GAME START</Button>
-            <Button onClick={game_restart}>GAME RESET</Button>
-            <Button onClick={initial_setting}>INITIAL</Button>
+            placeholder="例: Aさん, Bさん"
+            value={sessionName}
+            isInvalid={!!errorMessage}
+            onChange={(e) => {
+                setSessionName(e.target.value);
+                localStorage.setItem('session_name', e.target.value);
+                setErrorMessage(''); // 入力中にエラー解除
+            }}
+        />
+
+        <Button onClick={shuffle}>MAKE SESSION</Button>
+        <Button onClick={startGame}>GAME START</Button>
+        <Button onClick={game_restart}>GAME RESET</Button>
+        <Button onClick={initial_setting}>INITIAL</Button>
+
+        {errorMessage && (
+            <div style={{ color: 'red', fontSize: '0.9em' }}>
+                {errorMessage}
+            </div>
+        )}
         </HStack>
     );
 };
