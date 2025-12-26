@@ -8,7 +8,7 @@ import { useState } from 'react';
 const Control = () => {
     const [sessionName, setSessionName] = useState(() => localStorage.getItem('session_name') || '');
     const [errorMessage, setErrorMessage] = useState('');
-    
+    const [successMessage, setSuccessMessage] = useState('');
 
     const shuffleTaskNumbers = async() => {
         // 1. 全タスクを取得
@@ -47,6 +47,7 @@ const Control = () => {
     const shuffle = async () => {
         try {
             setErrorMessage(''); // まずエラーをリセット
+            setSuccessMessage(''); // 成功用メッセージもリセット
 
             // 空チェック
             if (!sessionName) {
@@ -157,7 +158,7 @@ const Control = () => {
                 setErrorMessage('指定されたセッションが見つかりません');
                 return;
             }
-            
+
             setErrorMessage('');
             const sessionId = session.id;
 
@@ -180,6 +181,7 @@ const Control = () => {
                 is_running: true,
             }).eq('id', 1);
 
+            setSuccessMessage('ゲームを開始しました');
         } catch (error) {
             console.error('ゲーム開始エラー:', error.message);
             setErrorMessage('ゲーム開始に失敗しました');
@@ -207,6 +209,11 @@ const Control = () => {
         {errorMessage && (
             <div style={{ color: 'red', fontSize: '0.9em' }}>
                 {errorMessage}
+            </div>
+        )}
+        {successMessage && (
+            <div style={{ color: 'green', fontSize: '0.9em' }}>
+                {successMessage}
             </div>
         )}
         </HStack>
