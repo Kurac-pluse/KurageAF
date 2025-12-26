@@ -38,7 +38,7 @@ export default function Conversation({ player, convStartTime }) {
     const [ charNameMap, setCharNameMap ] = useState({});
     const [ remainingTime, setRemainingTime ] = useState(TURN_DURATION / 1000);
 	const [ totalTurns, setTotalTurns ] = useState();
-	const [sessionId, setSessionId] = useState(() => localStorage.getItem('session_id') || null);
+	const [sessionId, setSessionId] = useState(null);
     const messagesEndRef = useRef(null);
 	const npcResponseRef = useRef(null);
 
@@ -185,6 +185,10 @@ export default function Conversation({ player, convStartTime }) {
 
     // 現在の会話ペアと先攻判定
     const currentPair = useMemo(() => order[phase] || [], [order, phase]);
+	const currentPartner = useMemo(
+		() => currentPair.find(p => p !== player),
+		[currentPair, player]
+	);
     const initiative = initiatives[phase] ?? 0;
 
     // ターン判定（先攻・後攻）
@@ -196,18 +200,50 @@ export default function Conversation({ player, convStartTime }) {
     // 発言者決定
     const currentSpeaker = isPlayerTurn ? player : currentPair.find((p) => p !== player);
 
-	// セッションIDの更新
+	// supabaseからセッションIDの取得
 	useEffect(() => {
-		const handleStorage = (e) => {
-		  	if (e.key === 'session_id') {
-				setSessionId(e.newValue);
-		  	}
-		};
-		window.addEventListener('storage', handleStorage);
+	const fetchRunningSession = async () => {
+		const { data, error } = await supabase
+		.from('sessions')
+		.select('id')
+		.eq('status', 'running')
+		.single(); // running は常に1つである前提
 
-		return () => {
-		  	window.removeEventListener('storage', handleStorage);
-		};
+		if (error) {
+		console.error('running session の取得に失敗:', error.message);
+		return;
+		}
+
+		setSessionId(data.id);
+	};
+
+	fetchRunningSession();
+	}, []);
+
+	// sessionsテーブルをリアルタイム購読
+	useEffect(() => {
+	const channel = supabase
+		.channel('sessions_running_watch')
+		.on(
+		'postgres_changes',
+		{
+			event: '*',
+			schema: 'public',
+			table: 'sessions',
+		},
+		(payload) => {
+			const row = payload.new;
+
+			if (row?.status === 'running') {
+			setSessionId(row.id);
+			}
+		}
+		)
+		.subscribe();
+
+	return () => {
+		supabase.removeChannel(channel);
+	};
 	}, []);
 
 	// メッセージのDB登録
@@ -259,7 +295,7 @@ export default function Conversation({ player, convStartTime }) {
 
 	// リアルタイム処理
 	useEffect(() => {
-		if (!player) return;
+		if (!player || !sessionId) return;
 
 		const channel = supabase
 			.channel('messages_realtime')
@@ -272,6 +308,8 @@ export default function Conversation({ player, convStartTime }) {
 				},
 				(payload) => {
 					const newMsg = payload.new;
+					if (newMsg.session_id !== sessionId) return;
+					if (newMsg.sender !== player && newMsg.receiver !== player) return;
 					// 最新セッションのメッセージか確認（必要に応じてsession_idのチェックを追加）
 					setMessages((prev) => [...prev, newMsg]);
 				}
@@ -281,7 +319,7 @@ export default function Conversation({ player, convStartTime }) {
 		return () => {
 			supabase.removeChannel(channel);
 		};
-	}, [player]);
+	}, [player, sessionId]);
 
 	// NPCのターンを検知し、推論を行う
 	useEffect(() => {
@@ -346,7 +384,13 @@ export default function Conversation({ player, convStartTime }) {
                 ref={messagesEndRef}
             >
                 {messages
-					.filter((msg) => msg.phase === phase)
+					.filter(msg =>
+						msg.phase === phase &&
+						(
+						(msg.sender === player && msg.receiver === currentPartner) ||
+						(msg.sender === currentPartner && msg.receiver === player)
+						)
+					)
 					.map((msg, i) => (
                     	<Box key={i} mb={2}>
                         	<Text fontWeight="bold">{charNameMap[msg.sender] || msg.sender}:</Text>

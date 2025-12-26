@@ -21,6 +21,7 @@ export async function makeResponse({
         .select("content")
         .eq("session_id", sessionId)
         .eq("phase", phase)
+        .or(`and(sender.eq.${sender},receiver.eq.${receiver}),and(sender.eq.${receiver},receiver.eq.${sender})`)
         .order("turn", { ascending: false })
         .limit(1);
 
