@@ -54,7 +54,6 @@ export async function generateNextPlan(npcID, logs){
 }
 
 export async function getLogs(npcID){
-    // supabase から log の取得
     const name = await getCharacterNameById(npcID);
     const response = await get_character_logs(name);
 
