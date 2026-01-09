@@ -21,14 +21,6 @@ export const addNames = () => {
 export const names = addNames();
 // console.log(names[0], names[1], names[2], names[3], names[4]);
 
-const pre_skins = [];
-export const addSkins = () => {
-    pre_skins.push('men1', 'women2', 'women3', 'men2', 'women1');
-    return pre_skins;
-}
-
-export const skins = addSkins();
-
 export const player_make = async (name) => {
     try {
         const { data, error } = await supabase
