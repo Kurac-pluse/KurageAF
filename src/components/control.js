@@ -1,6 +1,6 @@
 import { HStack, Button, Input } from '@chakra-ui/react';
 import { names, pilot } from '../utils/global';
-import { game_restart, initial_setting } from '../utils/game-setting';
+import { game_restart } from '../utils/game-setting';
 import supabase from '../supabaseClient';
 import { createSession } from '../utils/chat';
 import { useState } from 'react';
@@ -13,32 +13,32 @@ const Control = () => {
     const shuffleTaskNumbers = async() => {
         // 1. 全タスクを取得
         const { data: tasks, error } = await supabase
-          .from('tasks')
-          .select('id');
-      
+            .from('tasks')
+            .select('id');
+
         if (error) {
-          console.error('タスク取得失敗:', error);
-          return;
+            console.error('タスク取得失敗:', error);
+            return;
         }
-      
+
         // 2. シャッフル用の number 配列を作成
         const count = tasks.length;
         const shuffledNumbers = Array.from({ length: count }, (_, i) => i + 1)
-          .sort(() => Math.random() - 0.5);
-      
+            .sort(() => Math.random() - 0.5);
+
         // 3. id と number をペアにして UPDATE
         for (let i = 0; i < count; i++) {
-          const taskId = tasks[i].id;
-          const number = shuffledNumbers[i];
-      
-          const { error: updateError } = await supabase
-            .from('tasks')
-            .update({ number })
-            .eq('id', taskId);
-      
-          if (updateError) {
-            console.error(`タスクID ${taskId} の更新失敗:`, updateError);
-          }
+            const taskId = tasks[i].id;
+            const number = shuffledNumbers[i];
+
+            const { error: updateError } = await supabase
+                .from('tasks')
+                .update({ number })
+                .eq('id', taskId);
+
+            if (updateError) {
+                console.error(`タスクID ${taskId} の更新失敗:`, updateError);
+            }
         }
         console.log(shuffledNumbers);
         console.log("完了");
@@ -188,6 +188,20 @@ const Control = () => {
         }
     };
 
+    const handleGameReset = async () => {
+        try {
+            setErrorMessage('');
+            setSuccessMessage('');
+
+            await game_restart();   // ← 成功 or throw
+
+            setSuccessMessage('ゲームをリセットしました');
+        } catch (error) {
+            console.error('GAME RESET error:', error);
+            setErrorMessage('ゲームのリセットに失敗しました');
+        }
+    };
+
     return (
         <HStack spacing={4} wrap="wrap">
             <Input
@@ -203,8 +217,7 @@ const Control = () => {
 
         <Button onClick={shuffle}>MAKE SESSION</Button>
         <Button onClick={startGame}>GAME START</Button>
-        <Button onClick={game_restart}>GAME RESET</Button>
-        <Button onClick={initial_setting}>INITIAL</Button>
+        <Button onClick={handleGameReset}>GAME RESET</Button>
 
         {errorMessage && (
             <div style={{ color: 'red', fontSize: '0.9em' }}>
