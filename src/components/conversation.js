@@ -411,6 +411,20 @@ export default function Conversation({ player, convStartTime }) {
 						`${charNameMap[currentSpeaker] || currentSpeaker} のターンです`
 					}
                     isDisabled={player !== currentSpeaker || isLocked}
+
+					borderColor={player === currentSpeaker ? 'green.400' : 'gray.200'}
+					borderWidth={player === currentSpeaker ? '3px' : '1px'}
+					
+					_hover={{
+						borderColor: player === currentSpeaker ? 'green.500' : 'gray.300',
+					}}
+					_focus={{
+						borderColor: player === currentSpeaker ? 'green.500' : 'blue.400',
+						borderWidth: player === currentSpeaker ? '3px' : '1px',
+						boxShadow: player === currentSpeaker
+							? '0 0 0 1px var(--chakra-colors-green-500)'
+							: '0 0 0 1px var(--chakra-colors-blue-400)',
+					}}
                 />
                 <Button
 					onClick={handleConfirm}
