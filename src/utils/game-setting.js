@@ -43,12 +43,11 @@ export async function initial_setting() {
               Authorization: 'Bearer ' + token,
             },
             body: '{"name":"' + names[i] +'","skin":"' + skins[i] + '"}'
-          };
-          
-          try {
+        };
+        try {
             await fetch(url, options);
-          } catch (error) {
+        } catch (error) {
             console.error(error);
-          }
+        }
     }
 }

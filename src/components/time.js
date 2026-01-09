@@ -15,10 +15,10 @@ import supabase from "../supabaseClient";
 import Conversation from "./conversation";
 import Task from "./task";
 
-export default function Time({ player }) {
-    const playTime = 300;
-    // const playTime = 10;
+const playTime = 8 * 60;
+// const playTime = 10;
 
+export default function Time({ player }) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [ timeLeft, setTimeLeft ] = useState(playTime);
     const [ playStartTime, setPlayStartTime ] = useState(null);

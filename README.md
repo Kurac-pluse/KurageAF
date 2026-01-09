@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# 実験参加者マニュアル
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+本実験へのご協力ありがとうございます。
+このドキュメントは、実験で使用するプラットフォームの基本操作、および割り当てられるタスクの遂行手順について説明するものです。
 
-## Available Scripts
+実験の公平性を保つため、開始前に必ずご一読ください。
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 1. 実験の流れ
+本実験では、以下の2つのフェーズを順番に行います。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.  **タスク遂行フェーズ**
+    * 外部サービスArtifacts (https://docs.artifactsmmo.com) 内で行います。
+    * 割り当てられた目標アイテムの収集や作成を行います。
+    * 初期タスクが終了次第、残り時間は自由行動です。
+3.  **会話・推論フェーズ**
+    * 自分以外の「4人」とチャットで会話を行います。
+    * 先に会話をする順番、会話相手の順番はすべてランダムです。
+    * 会話を通じて情報交換を行ったり、PC / NPC の判別をしたりします。
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> ⚠️ 重要 ⚠️
+> 
+> **タスクの制限時間は8分です。**
+> 
+> **チャットは 30秒毎に自動送信されます（3往復・計6回 × 4人分 = 12分）。**
+>
+> **チャットで会話を行う「前」と「後」それぞれで、「どのキャラがPC (Player Character)であるか」を予想してもらいます。Forms([回答用URL](https://forms.office.com/Pages/ResponsePage.aspx?id=RQbIut33KkaF68U3I3it8emwe9XjxFhIlD1Rd1IFcxtUN1JaS1BJNk4yTktKTDVGQTc4UFlSQUMzUi4u))に書くか記憶しておいてください。**
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 2. タスク遂行フェーズのルール
+あなたには、以下のいずれかのアイテムを入手するタスクがランダムで割り当てられます。
+システム内のアイテム名や場所は**すべて英語**で表記されています。以下の表を参照し、日本語の意味と入手方法を確認してください。
+左上「説明ボタン」でいつでも確認できます。
 
-### `npm run build`
+### A. 採取・採掘・釣り (Gathering / Mining / Fishing)
+フィールド上の特定の資源ポイントへ移動し、アクションを行うことで入手します。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| アイテム名 (英語) | 日本語訳 | 座標 (X, Y) | 入手ルート・詳細 |
+| :--- | :--- | :--- | :--- |
+| **Ash Wood** | 木材 | **(-1, 0)** | **[伐採]** 対象座標に移動し、アクションを実行して入手。 |
+| **Apple** | リンゴ | **(-1, 0)** | **[採取]** 対象座標に移動し、アクションを実行して低確率で入手。 |
+| **Copper Ore** | 銅鉱石 | **(2, 0)** | **[採掘]** 対象座標に移動し、アクションを実行して入手。 |
+| **Sunflower** | ヒマワリ | **(2, 2)** | **[採取]** 対象座標に移動し、アクションを実行して入手。 |
+| **Gudgeon** | ガジョン (魚) | **(4, 2)** | **[釣り]** 対象座標に移動し、アクションを実行して入手。 |
+| **Algae** | 藻 (モ) | **(4, 2)** | **[釣り]** 対象座標に移動し、アクションを実行して低確率で入手。 |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### B. 戦闘・ドロップ (Combat / Drops)
+フィールド上のモンスターシンボルと接触して戦闘を行い、勝利することで入手します。失った体力は左下HP右上の♡マークで回復できます。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| アイテム名 (英語) | 日本語訳 | 座標 (X, Y) | 入手ルート・詳細 |
+| :--- | :--- | :--- | :--- |
+| **Chicken** | 鶏 (肉/卵) | **(0, 1)** | **[戦闘]** 対象座標に移動し、戦闘に勝利してドロップを入手。<br>※卵 (Egg) が必要な場合もこのルートです。 |
+| **Cow** | 牛 (肉/牛乳) | **(0, 2)** | **[戦闘]** 対象座標に移動し、戦闘に勝利してドロップを入手。 |
 
-### `npm run eject`
+### C. クラフト・料理 (Crafting / Cooking)
+素材を集めた後、特定の設備（ワークショップ）に移動して作成します。
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| アイテム名 (英語) | 日本語訳 | 座標 (X, Y) | 入手ルート・詳細 |
+| :--- | :--- | :--- | :--- |
+| **Wooden Staff** | 木の杖 | **(2, 1)** | **[木工]** <br>1. **Ash Wood** を4つ採取する。<br>2. 対象座標(Workshop)に移動する。<br>3. Craftを実行して作成。 |
+| **Fried Eggs** | 目玉焼き | **(1, 1)** | **[料理]** <br>1. Chickenから **Egg** を2つ入手する。<br>2. 対象座標(Workshop)に移動する。<br>3. 料理を実行して作成。 |
+| **Cooled Chicken** | 調理した鶏肉 | **(1, 1)** | **[料理]** <br>1. Chickenから **Raw Chicken** を1つ入手する。<br>2. 対象座標(Workshop)に移動する。<br>3. 料理を実行して作成。 |
+| **Small Health Potion** | 小回復薬 | **(2, 3)** | **[錬金術]** <br>1. **Sunflower** を3つ採取する。<br>2. 対象座標(Workshop)に移動する。<br>3. 調合を実行して作成。 |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![サービス内キャラ選択](public/images/highlight.png)
+*図1：Artifactsでのキャラクターの動かし方　(例：kuroe)*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+画面左下、自身のキャラクターを図1のようにクリックしてから操作してください。
+各操作にはクールダウンタイムが長めに設けられています。待ち時間にはサイトの情報からNPCとPCの判別を行ってください。
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 3. 会話・推論フェーズのルール
+タスク遂行中、チャット画面を通じてパートナーと会話を行います。以下のルールに従って会話してください。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 推論タスクについて
+* あなたとパートナーには、それぞれ**別のタスク**が割り当てられています。
+* 「相手が何のタスクを行っているか（何を集めているか）」など、タスク遂行フェーズに関連の高い会話をしてください。
+* 同時に、相手からの質問に対しては、自分のタスクの進捗や内容を共有して構いません。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 用語の統一（重要）
+システム上の固有名詞（アイテム名、キャラクター名など）については、できれば**翻訳せず英語表記のまま**発言してください。
 
-### Code Splitting
+* **良い例**:
+    * 「**Ash Wood** を集めるの大変だったよ」
+    * 「あなたのタスクはなんでしたか？」
+* **悪い例**:
+    * 「木材を集めています。」　（英語表記が望ましい）
+    * 「明日の予定は？」　（人間とバレない行動を心がけてください）
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+※ それ以外の日常会話は、通常の日本語で行ってください。
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 4. その他・注意事項
+* **操作トラブル**: 画面が反応しない、ローディングが終わらない等の場合は、ブラウザのリロード（再読み込み）を試してください。
+* **ログの扱い**: 実験中の行動ログおよびチャット内容は、分析のためにサーバーへ記録されます。個人を特定する情報は公開されません。
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ご協力ありがとうございます。準備ができ次第、実験を開始してください。
