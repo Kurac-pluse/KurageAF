@@ -9,7 +9,11 @@ import {
     ModalContent,
     ModalHeader,
     ModalBody,
-    useDisclosure
+    useDisclosure,
+    VStack,
+    Divider,
+    useClipboard,
+    HStack,
 } from "@chakra-ui/react";
 import supabase from "../supabaseClient";
 import Conversation from "./conversation";
@@ -17,6 +21,83 @@ import Task from "./task";
 
 const playTime = 8 * 60;
 // const playTime = 10;
+
+const CHARACTER_NAMES = [
+    "laplus",
+    "rui",
+    "koyori",
+    "kuroe",
+    "iroha",
+];
+const TASK_KEYWORDS = [
+    "Algae：藻 (モ)",
+    "Apple：リンゴ",
+    "Ash Wood：木材",
+    "Chicken：鶏 (肉/卵)",
+    "Copper Ore：銅鉱石",
+    "Cooled Chicken：調理した鶏肉",
+    "Cow：牛 (肉/牛乳)",
+    "Fried Eggs：目玉焼き",
+    "Gudgeon：ガジョン (魚)",
+    "Small Health Potion：小回復薬",
+    "Sunflower：ヒマワリ",
+    "Wooden Staff：木の杖",
+];
+
+function CopyRow({ text, isChar = false }) {
+    const copyValue = text.split('：')[0];
+    const { hasCopied, onCopy } = useClipboard(copyValue);
+
+    if (isChar) {
+        return (
+            <Flex
+                as="button"
+                onClick={onCopy}
+                flex="1"
+                minW="0"
+                h="36px"
+                align="center"
+                justify="center"
+                bg={hasCopied ? "blue.100" : "transparent"}
+                border="1px solid"
+                borderColor={hasCopied ? "blue.200" : "gray.300"}
+                color={hasCopied ? "blue.800" : "gray.800"}
+                borderRadius="md"
+                fontWeight="bold"
+                fontSize="14px"
+                lineHeight="1"
+                letterSpacing="-0.5px"
+                px={0}
+                transition="all 0.2s"
+                _hover={{ 
+                    bg: hasCopied ? "blue.100" : "gray.50",
+                    transform: "translateY(-1px)"
+                }}
+                boxShadow="sm"
+            >
+                {hasCopied ? "Copied" : text}
+            </Flex>
+        );
+    }
+
+    // タスク固有名詞用（変更なし）
+    return (
+        <Box
+            onClick={onCopy}
+            cursor="pointer"
+            px={3}
+            py={2}
+            borderRadius="md"
+            bg={hasCopied ? "blue.100" : "transparent"}
+            _hover={{ bg: hasCopied ? "blue.100" : "gray.50" }}
+            transition="all 0.2s"
+        >
+            <Text fontSize="sm" color={hasCopied ? "blue.800" : "gray.700"} fontWeight={hasCopied ? "bold" : "normal"}>
+                {hasCopied ? `${text} Copied` : text}
+            </Text>
+        </Box>
+    );
+}
 
 export default function Time({ player }) {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -227,11 +308,55 @@ export default function Time({ player }) {
                         会話 TIME
                     </ModalHeader>
                     <ModalBody>
-                        <Conversation
-                            key={convStartTime}
-                            player={player}
-                            convStartTime={convStartTime}
-                        />
+                        <Grid templateColumns="350px 1fr" gap={4} h="100%">
+
+                            {/* ===== 左：参照リファレンス（個別コピー） ===== */}
+                            <Box
+                                border="1px solid gray"
+                                borderRadius="md"
+                                p={3}
+                                bg="white"
+                                h="100%"
+                                overflowY="auto"
+                            >
+                            <VStack align="stretch" spacing={6}>
+                                {/* キャラクター名 */}
+                                <Box>
+                                    <Text fontWeight="bold" mb={2}>
+                                        会話キャラクター (コピペ用)
+                                    </Text>
+                                    <HStack spacing={1} w="100%">
+                                        {CHARACTER_NAMES.map((name) => (
+                                            <CopyRow key={name} text={name} isChar={true} />
+                                        ))}
+                                    </HStack>
+                                </Box>
+
+                                <Divider />
+
+                                {/* タスク固有名詞 */}
+                                <Box>
+                                    <Text fontWeight="bold" mb={2}>
+                                        ゲーム内固有名詞 (コピペ用)
+                                    </Text>
+                                    <VStack align="stretch" spacing={1}>
+                                        {TASK_KEYWORDS.map((word) => (
+                                            <CopyRow key={word} text={word} />
+                                        ))}
+                                    </VStack>
+                                </Box>
+                            </VStack>
+                            </Box>
+
+                            {/* ===== 右：会話本体 ===== */}
+                            <Box h="100%">
+                                <Conversation
+                                    key={convStartTime}
+                                    player={player}
+                                    convStartTime={convStartTime}
+                                />
+                            </Box>
+                        </Grid>
                     </ModalBody>
                 </ModalContent>
             </Modal>

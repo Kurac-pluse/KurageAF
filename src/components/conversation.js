@@ -379,7 +379,7 @@ export default function Conversation({ player, convStartTime }) {
                 border="1px solid gray"
                 borderRadius="md"
                 p={4}
-                h="500px"
+                h="530px"
                 overflowY="auto"
                 ref={messagesEndRef}
             >
