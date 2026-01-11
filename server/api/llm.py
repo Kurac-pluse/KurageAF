@@ -52,6 +52,7 @@ def get_system_prompt(mode: PromptMode) -> str:
             "・以下の固有名詞はゲーム内アイテム名であり、**絶対に**表記を変更・翻訳・省略してはいけません："
             "  Algae, Cow, Apple, Chicken, Gudgeon, Fried Eggs, Wooden Staff, "
             "  Copper Ore, Small Health Potion, Cooled Chicken, Ash Wood, Sunflower"
+            "・つまり、アッシュの木ではなくAsh Wood、リンゴではなくApple、藻ではなくAlgaeといった、ゲーム内アイテム名表記に揃えてください。"
         )
 
     if mode == PromptMode.PLAN:
