@@ -41,6 +41,7 @@ export default function Conversation({ player, convStartTime }) {
 	const [sessionId, setSessionId] = useState(null);
     const messagesEndRef = useRef(null);
 	const npcResponseRef = useRef(null);
+	const hasSentRef = useRef(false);
 
     // 会話順と先攻を初期化
     useEffect(() => {
@@ -256,13 +257,21 @@ export default function Conversation({ player, convStartTime }) {
 	fetchMessages();
 	}, [player, sessionId]);
 
+	// 2重送信を防ぐためのフラグをリセット
+	useEffect(() => {
+		hasSentRef.current = false;
+	}, [phase, turn]);
+
 	// メッセージ送信処理
 	useEffect(() => {
 		if (remainingTime > 0) return;
 		if (player !== currentSpeaker) return;
 		if (!input.trim()) return; // 入力が空なら送信しない
+		if (hasSentRef.current) return; // 送信済みなら何もしない
+		hasSentRef.current = true;
 
 		console.log(`[AUTO-SEND] ${player} のターン終了 → 自動送信`);
+
 		const autoSend = async () => {
 			const newMessage = {
 				session_id: sessionId,
