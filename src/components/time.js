@@ -29,6 +29,13 @@ const CHARACTER_NAMES = [
     "kuroe",
     "iroha",
 ];
+// const CHARACTER_NAMES = [
+//     "A-AAAAA",
+//     "B-BBBBB",
+//     "C-CCCCC",
+//     "D-DDDDD",
+//     "E-EEEEE",
+// ];
 const TASK_KEYWORDS = [
     "Algae：藻 (モ)",
     "Apple：リンゴ",

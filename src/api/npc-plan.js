@@ -24,7 +24,7 @@ export async function generateInitialPlan(npcID) {
         return null;
     }
     // console.log(task.name);
-    
+
     // 1回目: 箇条書きのプランを生成
     const rawPlan = await makePlan(npcID, task.name);
     console.log(npcID, rawPlan);
@@ -61,11 +61,11 @@ export async function getLogs(npcID){
         console.error("response.data が配列ではありません:", response);
         return '';
     }
-    
+
     const logText = response.data
         .map((entry, i) => `${i + 1}. [${entry.type}] ${entry.description}`)
         .join('\n');
-    
+
     // console.log(logText);
     return logText;
 }
