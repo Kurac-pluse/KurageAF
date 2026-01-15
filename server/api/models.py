@@ -21,7 +21,7 @@ class QueryRequestPlan(BaseModel):
     task: str
 
 class QueryRequestJSON(BaseModel):
-    prompt: str
+    raw_plan: str
 
 class QueryRequestTask(BaseModel):
     prompt: str

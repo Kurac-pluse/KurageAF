@@ -144,75 +144,28 @@ export async function makePlan(npcID, task) {
 
 // JSONに変換する関数
 export async function refinePlanToJson(rawPlan) {
-    const url = process.env.REACT_APP_SERVER_URL + "/api/makeJSON";
-
-    const prompt = `
-あなたは与えられた行動計画（箇条書きテキスト）を JSON 配列に変換する役割です。
-
-typeの対応表 
-1:移動, 2:釣り, 3:伐採, 4:採掘, 5:採集, 6:装備解除, 7:装備, 8:Chickenと戦闘 Cowと戦闘, 9:武器制作, 10:調理, 11:回復
-
-必須ルール:
-- 出力は必ず JSON 配列のみ
-- 説明文や余計な文字を入れない
-- コードブロック (...json 等) を絶対に出さない
-
-【出力フォーマット】
-[
-  {
-    "type": 0,
-    "info": {
-      "Coordinates": [0, 0],
-      "item": ""
-    }
-  },
-  ...
-]
-
-⚠️注意:
-- 出力は JSON 配列のみ
-- 説明文やコメントは禁止
-- JSON 以外の文字は一切出力しない
-
-入力:
-${rawPlan}
-
-出力（JSON のみ）:
-`;
-
-    const body = {
-        prompt,
-    };
-
     try {
-        const res = await fetch(url, {
-            method: "POST",
-            headers: {
-            "Content-Type": "application/json",
-            },
-            body: JSON.stringify(body),
-        });
-
-        if (!res.ok) {
-            throw new Error(`HTTP error! status: ${res.status}`);
-        }
+        const res = await fetch(
+            process.env.REACT_APP_SERVER_URL + "/api/makeJSON",
+            {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ raw_plan: rawPlan }),
+            }
+        );
 
         const data = await res.json();
-        let cleaned = data.response.trim();
 
-        // コードブロック除去
-        cleaned = cleaned.replace(/```(?:json)?/g, "").trim();
+        if (!Array.isArray(data.json)) {
+            console.error("makeJSON failed:", data);
+            return [];
+        }
 
-        // JSON 部分だけ抽出
-        const match = cleaned.match(/\[.*\]/s);
-        if (match) cleaned = match[0];
-
-        // 最終チェック
-        JSON.parse(cleaned); // パースできなければ例外
-        return cleaned;
+        return data.json;
 
     } catch (e) {
-    console.error("Error calling LLM API:", e);
+        console.error("refinePlanToJson error:", e);
+        return [];
     }
 }
 

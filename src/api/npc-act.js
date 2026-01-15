@@ -22,19 +22,12 @@ function wait(seconds) {
 
 // クールダウン対応 callApiWithPlan
 export async function callApiWithPlan(npcID, plan, isRunningRef){
-    if (typeof plan !== 'string') {
-        console.error('plan が文字列ではありません:', plan);
+    if (!Array.isArray(plan)) {
+        console.error('plan が配列ではありません:', plan);
         return;
     }
 
-    let actions;
-
-    try {
-        actions = typeof plan === "string" ? JSON.parse(plan) : plan;
-    } catch (err) {
-        console.error("plan のパースに失敗しました:", err, plan);
-        return;
-    }
+    const actions = plan;
 
     const character = await getCharacterNameById(npcID);
 

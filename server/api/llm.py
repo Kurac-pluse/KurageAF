@@ -1,6 +1,7 @@
 import os
 import re
 import openai
+import json
 from fastapi import APIRouter
 from supabase_client import supabase
 from api.models import (
@@ -187,9 +188,22 @@ async def call_llm_plan(request: QueryRequestPlan):
 @router.post("/makeJSON")
 async def call_llm_json(request: QueryRequestJSON):
     try:
-        prompt_filled = f"出力は必ずJSON形式で返してください:\n{request.prompt}"
-        result = await call_openai_chat(prompt_filled, PromptMode.JSON)
-        return {"response": result}
+        base_dir = os.path.dirname(__file__)
+        template_path = os.path.join(base_dir, "..", "texts", "json_template.txt")
+
+        with open(template_path, "r", encoding="utf-8") as f:
+            template = f.read()
+
+        prompt = template.replace("<<RAW_PLAN>>", request.raw_plan)
+
+        result = await call_openai_chat(prompt, PromptMode.JSON)
+        match = re.search(r"\[.*\]", result, re.S)
+        if not match:
+            raise ValueError("JSON配列が見つかりません")
+        parsed = json.loads(match.group())
+
+        return {"json": parsed}
+
     except Exception as e:
         print("[Exception]", e)
         return {"response": "（内部エラーが発生しました4）"}
