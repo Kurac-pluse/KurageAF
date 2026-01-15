@@ -6,6 +6,7 @@ router = APIRouter(prefix="/api/mmo")
 
 # 初期キャラクター設定（実験条件として固定）
 INITIAL_NAMES = ["laplus", "rui", "koyori", "kuroe", "iroha"]
+# INITIAL_NAMES = ["A-AAAAA", "B-BBBBB", "C-CCCCC", "D-DDDDD", "E-EEEEE"]
 INITIAL_SKINS = ["men1", "women2", "women3", "men2", "women1"]
 
 @router.post("/game_restart")

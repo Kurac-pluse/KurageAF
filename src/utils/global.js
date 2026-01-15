@@ -11,6 +11,11 @@ export const CHAR2 = 'rui';
 export const CHAR3 = 'koyori';
 export const CHAR4 = 'kuroe';
 export const CHAR5 = 'iroha';
+// export const CHAR1 = 'A-AAAAA';
+// export const CHAR2 = 'B-BBBBB';
+// export const CHAR3 = 'C-CCCCC';
+// export const CHAR4 = 'D-DDDDD';
+// export const CHAR5 = 'E-EEEEE';
 
 export const addNames = () => {
     const pre_names = [];
