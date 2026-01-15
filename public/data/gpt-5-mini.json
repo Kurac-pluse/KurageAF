@@ -1,0 +1,316 @@
+[
+  [
+    {
+      "timestamp": "2026/01/15 06:11:46",
+      "action_type": "SPAWN",
+      "details": "The character arrives in the region"
+    },
+    {
+      "timestamp": "2026/01/15 06:12:31",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/15 06:12:38",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/15 06:13:11",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/01/15 06:13:50",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/01/15 06:14:23",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (2,0) to (0,1) via path: (2,0) -> (1,0) -> (0,0) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/01/15 06:14:40",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:15:40",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:16:39",
+      "action_type": "FIGHT_LOSS",
+      "details": "rui lost the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:16:51",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/15 06:16:59",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/15 06:17:31",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/15 06:18:03",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/15 06:18:36",
+      "action_type": "UNEQUIP",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/15 06:18:42",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/15 06:19:07",
+      "action_type": "CRAFTING",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/15 06:19:16",
+      "action_type": "EQUIP",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/15 06:19:22",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (2,1) to (0,2) via path: (2,1) -> (1,1) -> (0,1) -> (0,2)"
+    },
+    {
+      "timestamp": "2026/01/15 06:19:40",
+      "action_type": "FIGHT_LOSS",
+      "details": "rui lost the fight against Cow."
+    },
+    {
+      "timestamp": "2026/01/15 06:19:47",
+      "action_type": "REST",
+      "details": "rui rested."
+    },
+    {
+      "timestamp": "2026/01/15 06:20:20",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (0,0) to (2,2) via path: (0,0) -> (0,1) -> (0,2) -> (1,2) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/01/15 06:20:43",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/01/15 06:21:16",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (2,2) to (4,2) via path: (2,2) -> (3,2) -> (4,2)"
+    },
+    {
+      "timestamp": "2026/01/15 06:21:31",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (gudgeon_spot) with the skill fishing."
+    },
+    {
+      "timestamp": "2026/01/15 06:22:04",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (4,2) to (0,1) via path: (4,2) -> (3,2) -> (2,2) -> (1,2) -> (0,2) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/01/15 06:22:31",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:23:28",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:23:56",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:24:25",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (0,1) to (1,1) via path: (0,1) -> (1,1)"
+    },
+    {
+      "timestamp": "2026/01/15 06:24:48",
+      "action_type": "CRAFTING",
+      "details": "rui crafted cooked_chicken x1."
+    },
+    {
+      "timestamp": "2026/01/15 06:27:28",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (1,1) to (-1,0) via path: (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/15 06:11:46",
+      "action_type": "SPAWN",
+      "details": "The character arrives in the region"
+    },
+    {
+      "timestamp": "2026/01/15 06:12:31",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/15 06:12:38",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/15 06:13:11",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/01/15 06:13:50",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/01/15 06:14:23",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (2,0) to (0,1) via path: (2,0) -> (1,0) -> (0,0) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/01/15 06:14:40",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:15:40",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:16:39",
+      "action_type": "FIGHT_LOSS",
+      "details": "rui lost the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:16:51",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/15 06:16:59",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/15 06:17:31",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/15 06:18:03",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/15 06:18:36",
+      "action_type": "UNEQUIP",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/15 06:18:42",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/15 06:19:07",
+      "action_type": "CRAFTING",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/15 06:19:16",
+      "action_type": "EQUIP",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/15 06:19:22",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (2,1) to (0,2) via path: (2,1) -> (1,1) -> (0,1) -> (0,2)"
+    },
+    {
+      "timestamp": "2026/01/15 06:19:40",
+      "action_type": "FIGHT_LOSS",
+      "details": "rui lost the fight against Cow."
+    },
+    {
+      "timestamp": "2026/01/15 06:19:47",
+      "action_type": "REST",
+      "details": "rui rested."
+    },
+    {
+      "timestamp": "2026/01/15 06:20:20",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (0,0) to (2,2) via path: (0,0) -> (0,1) -> (0,2) -> (1,2) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/01/15 06:20:43",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/01/15 06:21:16",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (2,2) to (4,2) via path: (2,2) -> (3,2) -> (4,2)"
+    },
+    {
+      "timestamp": "2026/01/15 06:21:31",
+      "action_type": "GATHERING",
+      "details": "rui gathered a resource (gudgeon_spot) with the skill fishing."
+    },
+    {
+      "timestamp": "2026/01/15 06:22:04",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (4,2) to (0,1) via path: (4,2) -> (3,2) -> (2,2) -> (1,2) -> (0,2) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/01/15 06:22:31",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:23:28",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:23:56",
+      "action_type": "FIGHT_WIN",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/15 06:24:25",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (0,1) to (1,1) via path: (0,1) -> (1,1)"
+    },
+    {
+      "timestamp": "2026/01/15 06:24:48",
+      "action_type": "CRAFTING",
+      "details": "rui crafted cooked_chicken x1."
+    },
+    {
+      "timestamp": "2026/01/15 06:27:28",
+      "action_type": "MOVEMENT",
+      "details": "rui moved from (1,1) to (-1,0) via path: (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    }
+  ]
+]
