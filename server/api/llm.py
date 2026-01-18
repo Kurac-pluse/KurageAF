@@ -59,25 +59,79 @@ def get_system_prompt(mode: PromptMode) -> str:
 
     if mode == PromptMode.PLAN:
         return (
-            "あなたは説明が得意な日本語アシスタントです。"
-            "論理的かつ分かりやすく説明してください。"
+            "あなたはゲーム内行動計画を立てる日本語アシスタントです。"
+            "以下の行動定義と条件・制約を厳守して計画を出力してください。"
+
+            "【可能な操作（実行条件）→ 入手アイテム】"
+            "・移動 [x,y]（条件：なし）"
+            "・伐採（条件：座標[-1,0]）→ Ash Wood, Apple"
+            "・採掘（条件：座標[2,0]）→ Copper Ore"
+            "・採集（条件：座標[2,2]）→ Sunflower"
+            "・釣り（条件：座標[4,2]）→ Gudgeon, Algae"
+            "・武器制作 〇〇（条件：座標[2,1]）→ 〇〇"
+            "・Chickenと戦闘（条件：座標[0,1]）→ Raw Chicken, 経験値"
+            "・Cowと戦闘（条件：座標[0,2]）→ 経験値"
+            "・回復（HP全回復）"
+            "・装備解除 〇〇（条件：なし）→ 〇〇"
+            "・装備 〇〇（条件：なし）"
+            "・調理 〇〇（条件：座標[1,1]）→ 〇〇"
+
+            "【素材/確率 条件】"
+            "・wooden_staff 素材: wooden_stick 1個, Ash Tree 4個"
+            "・Cooked Chicken 素材: Raw Chicken 1個"
+            "・wooden_stick は初期装備であり、素材として使うにはまず『装備解除』が必須"
+            "・ドロップ確率: Apple(5%), Algae(10%), Raw Chicken(50%), Egg(8.33%)"
+            "  ※確率入手アイテムがタスクの場合、行動を複数回繰り返すこと"
+
+            "【出力制約】"
+            "・現在の座標からタスク達成に必要な操作のみを箇条書きで出力"
+            "・最大でも『5行前後』で出力"
+            "・武器作成後は必ず『装備』すること"
+            "・一度武器を作って装備したら重複行動は不要"
+            "・操作名とパラメータ以外（説明文など）は一切出力禁止"
         )
 
     if mode == PromptMode.JSON:
         return (
-            "あなたはJSON生成専用アシスタントです。"
-            "必ず正しいJSON形式のみを出力してください。"
-            "説明文や前置きは禁止です。"
+            "あなたは与えられた行動計画（箇条書き）を厳密なJSON配列に変換する専用アシスタントです。"
+
+            "type対応表:"
+            "1:移動, 2:釣り, 3:伐採, 4:採掘, 5:採集, 6:装備解除, 7:装備,"
+            "8:Chickenと戦闘 / Cowと戦闘, 9:武器制作, 10:調理, 11:回復"
+
+            "必須ルール:"
+            "・出力はJSON配列のみ"
+            "・説明文、前置き、コードブロックは禁止"
+            "・JSON以外の文字を一切含めない"
         )
 
     if mode == PromptMode.TASK:
         return (
-            "あなたは簡潔に応答する日本語アシスタントです。"
-            "短い自然文で返答してください。"
+            "あなたは行動ログから、キャラクターの"
+            "現在の関心や次の行動指針を推定するアシスタントです。"
+
+            "必須ルール:"
+            "・出力は必ず日本語1文のみ"
+            "・説明、理由、補足は禁止"
+            "・推定であることを示唆する表現は禁止"
+            "・会話口調や感情表現は禁止"
+            "・行動指針として自然な文にする"
+
+            "・ログに存在しない行動やアイテムを補完・創作しない"
         )
 
     return "あなたは日本語が得意なアシスタントです。"
 
+def get_temperature(mode: PromptMode) -> float:
+    if mode == PromptMode.JSON:
+        return 0.0
+    if mode == PromptMode.TASK:
+        return 0.2
+    if mode == PromptMode.PLAN:
+        return 0.4
+    if mode == PromptMode.CONV:
+        return 0.7
+    return 0.7
 
 # --- OpenAI呼び出し関数 ---
 async def call_openai_chat(
@@ -85,9 +139,12 @@ async def call_openai_chat(
     mode: PromptMode,
     model="gpt-4o-mini",
     max_tokens=2000,
-    temperature=0.7
+    temperature=None
 ) -> str:
     try:
+        if temperature is None:
+            temperature = get_temperature(mode)
+
         response = await client.chat.completions.create(
             model=model,
             messages=[
@@ -212,7 +269,12 @@ async def call_llm_json(request: QueryRequestJSON):
 @router.post("/task")
 async def call_llm_task(request: QueryRequestTask):
     try:
-        result = await call_openai_chat(request.prompt, PromptMode.TASK)
+        prompt = (
+            "以下はこれまでの行動ログです。\n"
+            "このログのみを根拠に、次の行動指針を出力してください。\n\n"
+            f"{request.prompt}"
+        )
+        result = await call_openai_chat(prompt, PromptMode.TASK)
 
         m = re.search(r".*?[。！？.]", result)
         if m:

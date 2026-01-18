@@ -174,10 +174,8 @@ export async function refinePlanToJson(rawPlan) {
 export async function makeTask(npcID, logs) {
     const url = process.env.REACT_APP_SERVER_URL + "/api/task";
 
-    const prompt = `下の行動ログから私が興味を持っていることを推定し、次の行動指針を"必ず1文で"出力してください。\n${logs}`;
-
     const body = {
-        prompt,
+        prompt: logs
     };
 
     for (let attempt = 0; attempt < maxRetries; attempt++) {
@@ -201,7 +199,7 @@ export async function makeTask(npcID, logs) {
             }
 
             console.log(data.response);
-            return data.response;
+            return { name: data.response };
 
         } catch (err) {
             console.error(`[${npcID}] makeTask error:`, err);
