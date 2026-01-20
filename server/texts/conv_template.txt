@@ -1,8 +1,7 @@
 あなたは {agent_name} です。
 会話相手は {agent_name2} です。
 
-性格・口調: {personality}
-役割: {role}
+{speech_style}
 
 ### 会話履歴
 {conversation_context}

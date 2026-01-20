@@ -9,14 +9,12 @@
 伐採
 伐採
 伐採
-
-### 出力例2
 装備解除 Wooden Stick
 移動 [2,1]
 武器制作 wooden_staff
 装備 wooden_staff
 
-### 出力例3
+### 出力例2
 移動 [0,1]
 Chickenと戦闘
 Chickenと戦闘
