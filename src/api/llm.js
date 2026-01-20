@@ -6,6 +6,30 @@ import { getLogs } from "./npc-plan";
 const maxRetries = 5;
 const retryDelayMs = 5000;
 
+const NPC_TASK_NUMBER = {
+    npc1: 3,
+    npc2: 4,
+    npc3: 5,
+};
+
+export async function getTaskByNpcId(npcID) {
+    const number = NPC_TASK_NUMBER[npcID];
+    if (!number) return "";
+
+    const { data, error } = await supabase
+        .from("tasks")
+        .select("name")
+        .eq("number", number)
+        .single();
+
+    if (error) {
+        console.error("[getTaskByNpcId]", error);
+        return "";
+    }
+
+    return data.name;
+}
+
 // 会話用の推論を行う関数
 export async function makeResponse({
     sessionId,
@@ -39,24 +63,7 @@ export async function makeResponse({
     const sen_char_name = await getCharacterNameById(sender);
     const rec_char_name = await getCharacterNameById(receiver);
 
-    // supabase から自分のtaskを取得
-    const npcNumberMap = {
-        npc1: 3,
-        npc2: 4,
-        npc3: 5,
-    };
-    const number = npcNumberMap[sender];
-
-    const { data: task, error: taskError } = await supabase
-        .from('tasks')
-        .select('*')
-        .eq('number', number)
-        .single();
-    
-    if (taskError) {
-        console.error(`[${sender}] タスク取得エラー`, taskError);
-        return null;
-    }
+    const task = await getTaskByNpcId(sender);
 
     const body = {
         prompt: latestPrompt,
@@ -68,7 +75,7 @@ export async function makeResponse({
         receiver,
         sen_char_name,
         rec_char_name,
-        task: task.name,
+        task: task,
     };
 
     try {
@@ -173,9 +180,13 @@ export async function refinePlanToJson(rawPlan) {
 // タスクを作成する関数
 export async function makeTask(npcID, logs) {
     const url = process.env.REACT_APP_SERVER_URL + "/api/task";
+    const name = await getCharacterNameById(npcID);
+    const task = await getTaskByNpcId(npcID);
 
     const body = {
-        prompt: logs
+        prompt: logs,
+        name: name,
+        task: task
     };
 
     for (let attempt = 0; attempt < maxRetries; attempt++) {
@@ -198,7 +209,7 @@ export async function makeTask(npcID, logs) {
                 continue;  // 再リトライ
             }
 
-            console.log(data.response);
+            console.log("★★★", npcID, ":",data.response, "★★★");
             return { name: data.response };
 
         } catch (err) {
