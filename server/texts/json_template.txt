@@ -1,0 +1,13 @@
+入力:
+<<RAW_PLAN>>
+
+出力形式:
+[
+	{
+		"type": 0,
+		"info": {
+			"Coordinates": [0, 0],
+			"item": ""
+		}
+	}
+]

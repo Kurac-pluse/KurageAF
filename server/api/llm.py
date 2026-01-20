@@ -1,6 +1,7 @@
 import os
 import re
 import openai
+import json
 from fastapi import APIRouter
 from supabase_client import supabase
 from api.models import (
@@ -11,6 +12,7 @@ from api.models import (
 )
 from config import settings
 from enum import Enum
+from api.artifacts import get_inventory
 
 router = APIRouter(prefix="/api")
 client = openai.AsyncClient(api_key=settings.openai_api_key)
@@ -48,7 +50,7 @@ def get_system_prompt(mode: PromptMode) -> str:
             "・タスクと無関係なゲーム内アイテム名を会話に登場させてはいけません。"
 
             # "・登場人物の名前は A-AAAAA, B-BBBBB, C-CCCCC, D-DDDDD, E-EEEEE のいずれかであり、表記は必ず英語のまま使用してください。"
-            "・登場人物の名前は laplus, rui, koyori, kuroe, iroha のいずれかであり、表記は必ず英語のまま使用してください。"
+            "・登場人物の名前は laplus, rui, koyori, kuroe, iroha のいずれかであり、表記は必ず英語小文字のまま使用してください。"
 
             "・以下の固有名詞はゲーム内アイテム名であり、**絶対に**表記を変更・翻訳・省略してはいけません："
             "  Algae, Cow, Apple, Chicken, Gudgeon, Fried Eggs, Wooden Staff, "
@@ -58,25 +60,116 @@ def get_system_prompt(mode: PromptMode) -> str:
 
     if mode == PromptMode.PLAN:
         return (
-            "あなたは説明が得意な日本語アシスタントです。"
-            "論理的かつ分かりやすく説明してください。"
+            "あなたはゲーム内行動計画を立てる日本語アシスタントです。"
+            "以下の行動定義と条件・制約を厳守して計画を出力してください。"
+
+            "【可能な操作（実行条件）→ 入手アイテム】"
+            "・移動 [x,y]（条件：なし）"
+            "・伐採（条件：座標[-1,0]）→ Ash Wood, Apple"
+            "・採掘（条件：座標[2,0]）→ Copper Ore"
+            "・採集（条件：座標[2,2]）→ Sunflower"
+            "・釣り（条件：座標[4,2]）→ Gudgeon, Algae"
+            "・武器制作 〇〇（条件：座標[2,1]）→ 〇〇"
+            "・Chickenと戦闘（条件：座標[0,1]）→ Raw Chicken, 経験値"
+            "・Cowと戦闘（条件：座標[0,2]）→ 経験値"
+            "・回復（HP全回復）"
+            "・装備解除 〇〇（条件：なし）→ 〇〇"
+            "・装備 〇〇（条件：なし）"
+            "・調理 〇〇（条件：座標[1,1]）→ 〇〇"
+
+            "【素材/確率 条件】"
+            "・武器制作 wooden_staff → 素材: wooden_stick 1個, Ash Tree 4個"
+            "・調理 Cooked Chicken → 素材: Raw Chicken 1個"
+            "・wooden_stick は初期装備であり、素材として使うにはまず『装備解除』が必須"
+            "・ドロップ確率: Apple(5%), Algae(10%), Raw Chicken(50%), Egg(8.33%)"
+            "  ※確率入手アイテムがタスクの場合、行動を複数回繰り返すこと"
+
+            "【出力制約】"
+            "・現在の座標からタスク達成に必要な操作のみを箇条書きで出力"
+            "・最大でも『5行前後』で出力"
+            "・武器作成後は必ず『装備』すること"
+            "・3回以上連続でChickenと戦闘をするとHPが0になるため、回復を挟む必要がある。"
+            "・操作名とパラメータ以外（説明文など）は一切出力禁止"
         )
 
     if mode == PromptMode.JSON:
         return (
-            "あなたはJSON生成専用アシスタントです。"
-            "必ず正しいJSON形式のみを出力してください。"
-            "説明文や前置きは禁止です。"
+            "あなたは与えられた行動計画（箇条書き）を厳密なJSON配列に変換する専用アシスタントです。"
+
+            "type対応表:"
+            "1:移動, 2:釣り, 3:伐採, 4:採掘, 5:採集, 6:装備解除, 7:装備,"
+            "8:Chickenと戦闘 / Cowと戦闘, 9:武器制作, 10:調理, 11:回復"
+
+            "必須ルール:"
+            "・出力はJSON配列のみ"
+            "・説明文、前置き、コードブロックは禁止"
+            "・JSON以外の文字を一切含めない"
         )
 
     if mode == PromptMode.TASK:
         return (
-            "あなたは簡潔に応答する日本語アシスタントです。"
-            "短い自然文で返答してください。"
+            "あなたはゲーム内キャラクターの行動ログ・インベントリ・初期タスクをもとに、"
+            "次に取るべき行動指針を決定するアシスタントです。"
+
+            "必須ルール:"
+            "・出力は必ず日本語1文のみ"
+            "・説明、理由、補足は禁止"
+            "・推定であることを示唆する表現は禁止"
+            "・会話口調や感情表現は禁止"
+            "・行動指針として自然な断定文にする"
+
+            "判断ルール:"
+            "・行動ログに書かれている事実のみを根拠とすること"
+            "・ログに存在しない行動やアイテムを補完・創作してはいけない"
+            "・インベントリに存在しないアイテムは未入手として扱うこと"
+            "・初期タスクは完了するまで常に有効であり、最優先で評価すること"
+
+            "行動指針の決定方針:"
+            "・タスク達成に必要な素材や状態で、まだ満たされていないものを特定する"
+            "・未達成要素を解決するために、次に行うべき最も直接的な行動を選ぶ"
+            "・確率で入手される素材が目的の場合、入手完了まで同じ行動を継続する方針とする"
+            "・目的がすでに達成されている場合、同一目的の行動を繰り返さない"
         )
 
     return "あなたは日本語が得意なアシスタントです。"
 
+NPC_SPEECH_STYLE = {
+    "npc1": {
+        "description": "落ち着いていて少し柔らかい",
+        "ending": "〜だよ！ / 〜かな！"
+    },
+    "npc2": {
+        "description": "常に敬語で敬意を持って丁寧に話す",
+        "ending": "〜です。 / 〜ですね。"
+    },
+    "npc3": {
+        "description": "ぶっきらぼうで断定表現を使う",
+        "ending": "〜だ。 / 〜だな。"
+    },
+}
+
+def get_speech_instruction(sender: str) -> str:
+    style = NPC_SPEECH_STYLE.get(sender)
+    if not style:
+        return ""
+
+    return (
+        f"あなたの話し方の特徴:\n"
+        f"・性格: {style['description']}\n"
+        f"・文末傾向: {style['ending']}\n"
+        f"・すべての発話でこの話し方を自然に維持してください。\n"
+    )
+
+def get_temperature(mode: PromptMode) -> float:
+    if mode == PromptMode.JSON:
+        return 0.0
+    if mode == PromptMode.TASK:
+        return 0.2
+    if mode == PromptMode.PLAN:
+        return 0.4
+    if mode == PromptMode.CONV:
+        return 0.7
+    return 0.7
 
 # --- OpenAI呼び出し関数 ---
 async def call_openai_chat(
@@ -84,9 +177,12 @@ async def call_openai_chat(
     mode: PromptMode,
     model="gpt-4o-mini",
     max_tokens=2000,
-    temperature=0.7
+    temperature=None
 ) -> str:
     try:
+        if temperature is None:
+            temperature = get_temperature(mode)
+
         response = await client.chat.completions.create(
             model=model,
             messages=[
@@ -103,13 +199,20 @@ async def call_openai_chat(
 
 
 # --- 会話履歴取得 ---
-def get_conversation_context(session_id: str, phase: int) -> str:
+def get_conversation_context(
+    session_id: str,
+    phase: int,
+    sender: str,
+    receiver: str,
+) -> str:
     try:
         response = (
             supabase.table("messages")
             .select("sender, content")
             .eq("session_id", session_id)
             .eq("phase", phase)
+            .in_("sender", [sender, receiver])
+            .in_("receiver", [sender, receiver])
             .order("turn", desc=False)
             .execute()
         )
@@ -133,13 +236,13 @@ async def call_llm_conv(request: QueryRequestConv):
         with open(template_path, "r", encoding="utf-8") as f:
             template = f.read()
 
-        context = get_conversation_context(request.session_id, request.phase)
+        speech_instruction = get_speech_instruction(request.sender)
+        context = get_conversation_context(request.session_id, request.phase, request.sender, request.receiver,)
 
         prompt_filled = template.format(
             agent_name=request.sen_char_name,
             agent_name2=request.rec_char_name,
-            personality="仲の良い後輩・気さくに会話をする",
-            role="英語が喋れない純日本人",
+            speech_style=speech_instruction,
             conversation_context=context,
             action_log=request.log,
             query=request.prompt,
@@ -187,9 +290,22 @@ async def call_llm_plan(request: QueryRequestPlan):
 @router.post("/makeJSON")
 async def call_llm_json(request: QueryRequestJSON):
     try:
-        prompt_filled = f"出力は必ずJSON形式で返してください:\n{request.prompt}"
-        result = await call_openai_chat(prompt_filled, PromptMode.JSON)
-        return {"response": result}
+        base_dir = os.path.dirname(__file__)
+        template_path = os.path.join(base_dir, "..", "texts", "json_template.txt")
+
+        with open(template_path, "r", encoding="utf-8") as f:
+            template = f.read()
+
+        prompt = template.replace("<<RAW_PLAN>>", request.raw_plan)
+
+        result = await call_openai_chat(prompt, PromptMode.JSON)
+        match = re.search(r"\[.*\]", result, re.S)
+        if not match:
+            raise ValueError("JSON配列が見つかりません")
+        parsed = json.loads(match.group())
+
+        return {"json": parsed}
+
     except Exception as e:
         print("[Exception]", e)
         return {"response": "（内部エラーが発生しました4）"}
@@ -198,7 +314,22 @@ async def call_llm_json(request: QueryRequestJSON):
 @router.post("/task")
 async def call_llm_task(request: QueryRequestTask):
     try:
-        result = await call_openai_chat(request.prompt, PromptMode.TASK)
+        base_dir = os.path.dirname(__file__)
+        template_path = os.path.join(base_dir, "..", "texts", "task.txt")
+
+        with open(template_path, "r", encoding="utf-8") as f:
+            template = f.read()
+
+        inventory_str = await get_inventory(request.name)
+
+        prompt_filled = template.format(
+            prompt=request.prompt,
+            inventory=inventory_str,
+            task=request.task
+        )
+        print(prompt_filled)
+
+        result = await call_openai_chat(prompt_filled, PromptMode.TASK)
 
         m = re.search(r".*?[。！？.]", result)
         if m:

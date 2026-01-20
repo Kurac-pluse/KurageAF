@@ -39,7 +39,7 @@ export async function generateInitialPlan(npcID) {
 
 export async function generateNextPlan(npcID, logs){
     // 行動ログから個別で行動目標を定める
-    const task = makeTask(npcID, logs);
+    const task = await makeTask(npcID, logs);
 
     // 1回目: 箇条書きのプランを生成
     const rawPlan = await makePlan(npcID, task.name);
