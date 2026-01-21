@@ -12,16 +12,3 @@ class QueryRequestConv(BaseModel):
     sen_char_name: str
     rec_char_name: str
     task: str
-
-class QueryRequestPlan(BaseModel):
-    x: str
-    y: str
-    task: str
-
-class QueryRequestJSON(BaseModel):
-    raw_plan: str
-
-class QueryRequestTask(BaseModel):
-    prompt: str
-    name: str
-    task: str

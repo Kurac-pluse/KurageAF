@@ -9,6 +9,10 @@ INITIAL_NAMES = ["laplus", "rui", "koyori", "kuroe", "iroha"]
 # INITIAL_NAMES = ["A-AAAAA", "B-BBBBB", "C-CCCCC", "D-DDDDD", "E-EEEEE"]
 INITIAL_SKINS = ["men1", "women2", "women3", "men2", "women1"]
 
+@router.options("/game_restart")
+async def game_restart_options():
+    return {}
+
 @router.post("/game_restart")
 async def game_restart():
     base_url = settings.artifacts_url
@@ -83,27 +87,24 @@ async def game_restart():
         "created": created,
     }
 
-@router.get("/logs/{character}")
-async def get_character_logs(character: str):
+async def fetch_character_logs(character: str) -> dict:
     url = f"{settings.artifacts_url}/my/logs/{character}"
-
     headers = {
         "Accept": "application/json",
         "Authorization": "Bearer " + settings.artifacts_token,
     }
 
     async with httpx.AsyncClient() as client:
-        try:
-            response = await client.get(url, headers=headers)
-            # print("Artifact status:", response.status_code)
-            # print("Artifact body:", response.text)
-            if response.status_code != 200:
-                raise HTTPException(
-                    status_code=response.status_code,
-                    detail=response.text
-                )
-            return response.json()
+        response = await client.get(url, headers=headers)
+        response.raise_for_status()
+        return response.json()
 
-        except httpx.RequestError as e:
-            print("[HTTPX ERROR]", e)
-            raise HTTPException(status_code=500, detail="Artifact API connection failed")
+@router.get("/logs/{character}")
+async def get_character_logs(character: str):
+    try:
+        return await fetch_character_logs(character)
+    except httpx.HTTPStatusError as e:
+        raise HTTPException(
+            status_code=e.response.status_code,
+            detail=e.response.text
+        )
