@@ -1,6 +1,5 @@
 import { HStack, Button, Input } from '@chakra-ui/react';
 import { names, pilot } from '../utils/global';
-import { game_restart } from '../utils/game-setting';
 import supabase from '../supabaseClient';
 import { createSession } from '../utils/chat';
 import { useState } from 'react';
@@ -187,6 +186,22 @@ const Control = () => {
             setErrorMessage('ゲーム開始に失敗しました');
         }
     };
+
+    // FastAPIにgameのリセットを依頼
+    async function game_restart() {
+        const url = process.env.REACT_APP_SERVER_URL + "/api/mmo/game_restart";
+
+        const response = await fetch(url, {
+            method: "POST",
+            headers: { Accept: "application/json" },
+        });
+
+        if (!response.ok) {
+            throw new Error(await response.text());
+        }
+
+        return await response.json();
+    }
 
     const handleGameReset = async () => {
         try {

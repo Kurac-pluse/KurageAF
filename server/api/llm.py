@@ -4,15 +4,9 @@ import openai
 import json
 from fastapi import APIRouter
 from supabase_client import supabase
-from api.models import (
-    QueryRequestConv,
-    QueryRequestPlan,
-    QueryRequestJSON,
-    QueryRequestTask,
-)
+from api.models import QueryRequestConv
 from config import settings
 from enum import Enum
-from api.artifacts import get_inventory
 
 router = APIRouter(prefix="/api")
 client = openai.AsyncClient(api_key=settings.openai_api_key)
@@ -135,7 +129,7 @@ def get_system_prompt(mode: PromptMode) -> str:
 
 NPC_SPEECH_STYLE = {
     "npc1": {
-        "description": "落ち着いていて少し柔らかい",
+        "description": "軽快でくだけた柔らかい話し方",
         "ending": "〜だよ！ / 〜かな！"
     },
     "npc2": {
@@ -143,8 +137,8 @@ NPC_SPEECH_STYLE = {
         "ending": "〜です。 / 〜ですね。"
     },
     "npc3": {
-        "description": "ぶっきらぼうで断定表現を使う",
-        "ending": "〜だ。 / 〜だな。"
+        "description": "距離感ゼロのフランクな言葉遣い、句点なし",
+        "ending": "そう、〜なの / それって〜じゃない？。"
     },
 }
 
@@ -222,7 +216,6 @@ def get_conversation_context(
         print("[Supabase Exception]", e)
         return ""
 
-
 # -------------------------
 # API エンドポイント
 # -------------------------
@@ -263,80 +256,55 @@ async def call_llm_conv(request: QueryRequestConv):
         print("[Exception]", e)
         return {"status": "error", "message": "内部エラーが発生しました2"}
 
+# -------------------------
+# FastAPI 内部関数
+# -------------------------
 
-@router.post("/plan")
-async def call_llm_plan(request: QueryRequestPlan):
-    try:
-        base_dir = os.path.dirname(__file__)
-        template_path = os.path.join(base_dir, "..", "texts", "explain.txt")
+async def call_llm_plan(x: str, y: str, task: str) -> str:
+    base_dir = os.path.dirname(__file__)
+    template_path = os.path.join(base_dir, "..", "texts", "explain.txt")
 
-        with open(template_path, "r", encoding="utf-8") as f:
-            template = f.read()
+    with open(template_path, "r", encoding="utf-8") as f:
+        template = f.read()
 
-        prompt_filled = template.format(
-            x=request.x,
-            y=request.y,
-            task=request.task
-        )
-
-        result = await call_openai_chat(prompt_filled, PromptMode.PLAN)
-        return {"response": result}
-
-    except Exception as e:
-        print("[Exception]", e)
-        return {"status": "error", "message": "内部エラーが発生しました3"}
+    prompt_filled = template.format(x=x, y=y, task=task)
+    return await call_openai_chat(prompt_filled, PromptMode.PLAN)
 
 
-@router.post("/makeJSON")
-async def call_llm_json(request: QueryRequestJSON):
-    try:
-        base_dir = os.path.dirname(__file__)
-        template_path = os.path.join(base_dir, "..", "texts", "json_template.txt")
+async def call_llm_json(raw_plan: str) -> list[dict]:
+    base_dir = os.path.dirname(__file__)
+    template_path = os.path.join(base_dir, "..", "texts", "json_template.txt")
 
-        with open(template_path, "r", encoding="utf-8") as f:
-            template = f.read()
+    with open(template_path, "r", encoding="utf-8") as f:
+        template = f.read()
 
-        prompt = template.replace("<<RAW_PLAN>>", request.raw_plan)
+    prompt = template.replace("<<RAW_PLAN>>", raw_plan)
+    result = await call_openai_chat(prompt, PromptMode.JSON)
 
-        result = await call_openai_chat(prompt, PromptMode.JSON)
-        match = re.search(r"\[.*\]", result, re.S)
-        if not match:
-            raise ValueError("JSON配列が見つかりません")
-        parsed = json.loads(match.group())
+    match = re.search(r"\[.*\]", result, re.S)
+    if not match:
+        raise ValueError("JSON配列が見つかりません")
 
-        return {"json": parsed}
-
-    except Exception as e:
-        print("[Exception]", e)
-        return {"response": "（内部エラーが発生しました4）"}
+    parsed = json.loads(match.group())
+    return parsed
 
 
-@router.post("/task")
-async def call_llm_task(request: QueryRequestTask):
-    try:
-        base_dir = os.path.dirname(__file__)
-        template_path = os.path.join(base_dir, "..", "texts", "task.txt")
+async def call_llm_task(logs, inventory, task):
+    base_dir = os.path.dirname(__file__)
+    template_path = os.path.join(base_dir, "..", "texts", "task.txt")
 
-        with open(template_path, "r", encoding="utf-8") as f:
-            template = f.read()
+    with open(template_path, "r", encoding="utf-8") as f:
+        template = f.read()
 
-        inventory_str = await get_inventory(request.name)
+    prompt_filled = template.format(
+        prompt=logs,
+        inventory=inventory,
+        task=task
+    )
 
-        prompt_filled = template.format(
-            prompt=request.prompt,
-            inventory=inventory_str,
-            task=request.task
-        )
-        print(prompt_filled)
+    result = await call_openai_chat(prompt_filled, PromptMode.TASK)
+    m = re.search(r".*?[。！？.]", result)
+    if m:
+        result = m.group(0)
 
-        result = await call_openai_chat(prompt_filled, PromptMode.TASK)
-
-        m = re.search(r".*?[。！？.]", result)
-        if m:
-            result = m.group(0)
-
-        return {"response": result or "（応答を生成できませんでした）"}
-
-    except Exception as e:
-        print("[Exception]", e)
-        return {"response": "（内部エラーが発生しました5）"}
+    return {"response": result or "（応答を生成できませんでした）"}

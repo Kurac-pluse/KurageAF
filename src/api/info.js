@@ -4,6 +4,8 @@
 import fetch from 'node-fetch';
 import { CHAR1, CHAR2, CHAR3, CHAR4, CHAR5, server, token } from '../utils/global.js';
 
+// FastAPIに依頼する関数
+// フロントの画面右logの表示と、会話用llm推論の要素で使用
 export async function get_character_logs(character) {
     if (!character) {
         console.warn("character is undefined, skip get_character_logs");

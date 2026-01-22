@@ -50,7 +50,6 @@ export const player2 = await player_make('player2');
 
 export const playerToCharName = async (player) => {
     if (player === 'player1') {
-        //console.log(player1);
         return await player1;
     } else if (player === 'player2') {
         return await player2;

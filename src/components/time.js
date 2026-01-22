@@ -36,6 +36,7 @@ const CHARACTER_NAMES = [
 //     "D-DDDDD",
 //     "E-EEEEE",
 // ];
+
 const TASK_KEYWORDS = [
     "Algae：藻 (モ)",
     "Apple：リンゴ",
@@ -229,53 +230,6 @@ export default function Time({ player }) {
 
         return () => clearInterval(interval);
     }, [playStartTime]);
-
-    // タイマー終了時、id:1のis_runningをfalseに、id:2をtrueに
-    useEffect(() => {
-        if (
-            player === 'player1' &&
-            timeLeft === 0
-        ) {
-            const switchTimers1 = async () => {
-                try {
-                    // 現在の状態を取得
-                    const { data: timers, error } = await supabase
-                        .from('timer')
-                        .select('id, is_running')
-                        .in('id', [1, 2]);
-            
-                    if (error) throw error;
-            
-                    const timer1 = timers.find(t => t.id === 1);
-                    const timer2 = timers.find(t => t.id === 2);
-            
-                    // すでに切り替わっていたら何もしない
-                    if (timer1 && timer2 && timer1.is_running === false && timer2.is_running === true) {
-                        return;
-                    }
-
-                    const now = new Date().toISOString();
-
-                    // 切り替え処理
-                    const { error: error1 } = await supabase
-                        .from('timer')
-                        .update({ is_running: false })
-                        .eq('id', 1);
-                    if (error1) throw error1;
-
-                    const { error: error2 } = await supabase
-                        .from('timer')
-                        .update({ is_running: true, start_time: now })
-                        .eq('id', 2);
-                    if (error2) throw error2;
-                    // console.log('タイマーの切り替え完了');
-                } catch (error) {
-                    console.error('タイマー切り替えエラー:', error.message);
-                }
-            };
-            switchTimers1();
-        }
-    }, [timeLeft, player]);
 
     // convIsRunning の変化に応じてモーダルを開閉
     useEffect(() => {
