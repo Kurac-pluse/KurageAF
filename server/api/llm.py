@@ -129,7 +129,7 @@ def get_system_prompt(mode: PromptMode) -> str:
 
 NPC_SPEECH_STYLE = {
     "npc1": {
-        "description": "落ち着いていて少し柔らかい",
+        "description": "軽快でくだけた柔らかい話し方",
         "ending": "〜だよ！ / 〜かな！"
     },
     "npc2": {
@@ -137,8 +137,8 @@ NPC_SPEECH_STYLE = {
         "ending": "〜です。 / 〜ですね。"
     },
     "npc3": {
-        "description": "ぶっきらぼうで断定表現を使う",
-        "ending": "〜だ。 / 〜だな。"
+        "description": "距離感ゼロのフランクな言葉遣い、句点なし",
+        "ending": "そう、〜なの / それって〜じゃない？。"
     },
 }
 

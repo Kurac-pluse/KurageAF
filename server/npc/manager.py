@@ -152,15 +152,33 @@ async def watch_timer_expire():
             if now >= start_dt + timedelta(minutes=EXPIRE_MINUTES):
                 print("[TIMER] expired → switch id1 OFF / id2 ON")
 
+                # id=1 を停止
                 await asyncio.to_thread(
                     lambda: supabase.table("timer").update({
                         "is_running": False
                     }).eq("id", 1).execute()
                 )
 
+                # id=2 の現在状態を確認（多重起動防止）
+                res2 = await asyncio.to_thread(
+                    lambda: supabase
+                        .table("timer")
+                        .select("is_running")
+                        .eq("id", 2)
+                        .single()
+                        .execute()
+                )
+
+                # すでに ON なら何もしない
+                if res2.data["is_running"]:
+                    await asyncio.sleep(1)
+                    continue
+
+                # id=2 を開始（★ start_time を「今」に更新）
                 await asyncio.to_thread(
                     lambda: supabase.table("timer").update({
-                        "is_running": True
+                        "is_running": True,
+                        "start_time": now.isoformat()
                     }).eq("id", 2).execute()
                 )
 

@@ -9,12 +9,10 @@ import Operation from '../components/operation.js';
 import Log from '../components/log.js';
 import ChangeAccount from '../components/change-account.js';
 import { useState } from 'react';
-// import { useNpcAct } from '../utils/npc-admin.js';
 
 const Master = () => {
     const this_player = 'master';
     const [viewChar, setViewChar] = useState('');
-    // useNpcAct(); // キャラクター操作時間にNPCを行動させる
     return (
         <ChakraProvider theme={theme}>
             <Box textAlign="center" fontSize="xl">
@@ -37,7 +35,6 @@ const Master = () => {
                                 <Log
                                     player={this_player}
                                     viewChar={viewChar}
-                                    setViewChar={setViewChar}
                                 />
                             </Box>
                         </Flex>

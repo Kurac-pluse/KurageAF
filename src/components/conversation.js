@@ -141,43 +141,43 @@ export default function Conversation({ player, convStartTime }) {
 		return () => clearInterval(interval);
 	}, [convStartTime, order.length, initiatives]);
 
-	// // モーダルの終了条件
-	// useEffect(() => {
-	// 	if(!order.length) return;
-	// 	const maxTurns = order.length * TURNS_PER_PHASE;
-	// 	if ( player === 'player1' && totalTurns >= maxTurns -1 ) {
-	// 		const switchTimers2 = async () => {
-	// 			try {
-	// 				// 現在の状態を取得
-	// 				const { data: timers, error } = await supabase
-	// 					.from('timer')
-	// 					.select('id, is_running')
-	// 					.eq('id', 2);
+	// モーダルの終了条件
+	useEffect(() => {
+		if(!order.length) return;
+		const maxTurns = order.length * TURNS_PER_PHASE;
+		if ( player === 'player1' && totalTurns >= maxTurns -1 ) {
+			const switchTimers2 = async () => {
+				try {
+					// 現在の状態を取得
+					const { data: timers, error } = await supabase
+						.from('timer')
+						.select('id, is_running')
+						.eq('id', 2);
 
-	// 				if (error) throw error;
-	// 				if (!timers || timers.length === 0) return;
+					if (error) throw error;
+					if (!timers || timers.length === 0) return;
 
-	// 				const timer2 = timers[0];
+					const timer2 = timers[0];
 
-	// 				// すでに切り替わっていたら何もしない
-	// 				if (timer2 && timer2.is_running === false) {
-	// 					return;
-	// 				}
-	// 				// console.log("max: ", maxTurns);
-	// 				// console.log("total: ", totalTurns);
-	// 				const { error: error2 } = await supabase
-	// 					.from('timer')
-	// 					.update({ is_running: false })
-	// 					.eq('id', 2);
+					// すでに切り替わっていたら何もしない
+					if (timer2 && timer2.is_running === false) {
+						return;
+					}
+					// console.log("max: ", maxTurns);
+					// console.log("total: ", totalTurns);
+					const { error: error2 } = await supabase
+						.from('timer')
+						.update({ is_running: false })
+						.eq('id', 2);
 
-	// 				if (error2) throw error2;
-	// 			} catch (error) {
-	// 				console.error('タイマー切り替えエラー:', error.message);
-	// 			}
-	// 		};
-	// 		switchTimers2();
-	// 	}
-	// }, [totalTurns, player, order.length]);
+					if (error2) throw error2;
+				} catch (error) {
+					console.error('タイマー切り替えエラー:', error.message);
+				}
+			};
+			switchTimers2();
+		}
+	}, [totalTurns, player, order.length]);
 
     // メッセージ自動スクロール
     useEffect(() => {
