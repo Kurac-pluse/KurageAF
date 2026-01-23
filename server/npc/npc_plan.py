@@ -3,11 +3,8 @@ import time
 from supabase_client import supabase
 from api.llm import call_llm_plan, call_llm_json, call_llm_task
 from api.mmo import fetch_character_logs
-from npc.artifacts import (
-    get_character_coordinate,
-    get_inventory,
-    get_character_cooldown
-)
+from services.util import get_task_by_npc_id, get_inventory
+from npc.artifacts import get_character_coordinate, get_character_cooldown
 from npc.artifacts import (
     movement,
     gather,
@@ -17,39 +14,6 @@ from npc.artifacts import (
     craft,
     heal,
 )
-
-NPC_NUMBER_MAP = {
-    "npc1": 3,
-    "npc2": 4,
-    "npc3": 5,
-}
-
-# 初期タスク取得
-async def get_task_by_npc_id(npc_id: str) -> str | None:
-    number = NPC_NUMBER_MAP.get(npc_id)
-    if number is None:
-        print(f"[{npc_id}] invalid npc id")
-        return None
-
-    try:
-        res = (
-            supabase
-            .table("tasks")
-            .select("*")
-            .eq("number", number)
-            .single()
-            .execute()
-        )
-    except Exception as e:
-        print(f"[{npc_id}] task fetch exception:", e)
-        return None
-
-    if not getattr(res, "data", None):
-        print(f"[{npc_id}] task fetch error: no data")
-        return None
-
-    return res.data.get("name")
-
 
 # ======================
 # 初期プラン生成

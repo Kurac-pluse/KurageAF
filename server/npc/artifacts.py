@@ -3,22 +3,7 @@ import asyncio
 from config import settings
 from typing import List, Dict, Any
 from datetime import datetime
-
-# -----------------------------------------------------
-# /my/characters を取得
-# -----------------------------------------------------
-async def fetch_characters_info() -> List[Dict[str, Any]]:
-    url = f"{settings.artifacts_url}/my/characters"
-    headers = {
-        "Accept": "application/json",
-        "Authorization": "Bearer " + settings.artifacts_token,
-    }
-
-    async with httpx.AsyncClient() as client:
-        response = await client.get(url, headers=headers)
-        response.raise_for_status()
-        payload = response.json()
-        return payload["data"]
+from services.util import fetch_characters_info
 
 # -----------------------------------------------------
 # キャラの座標取得
@@ -45,46 +30,6 @@ async def get_character_cooldown(character: str) -> int:
             return int(dt.timestamp())
 
     raise ValueError(f"Character not found: {character}")
-
-# -----------------------------------------------------
-# キャラのインベントリ取得
-# -----------------------------------------------------
-async def get_inventory(character: str) -> str:
-    url = f"{settings.artifacts_url}/my/characters"
-
-    headers = {
-        "Accept": "application/json",
-        "Authorization": "Bearer " + settings.artifacts_token,
-    }
-
-    try:
-        async with httpx.AsyncClient() as client:
-            res = await client.get(url, headers=headers)
-            data = res.json()
-
-        char = next(
-            (c for c in data["data"] if c["name"] == character),
-            None
-        )
-        if not char:
-            return "[]"
-
-        # inventory を取得
-        inventory = char.get("inventory", [])
-
-        # code の quantity > 0 だけ抜き出す
-        codes = [
-            f'{i["code"]} x {i["quantity"]}'
-            for i in inventory
-            if i.get("quantity", 0) > 0
-        ]
-
-        # "[A, B, C]" 形式の str にする
-        return "[" + ", ".join(codes) + "]"
-
-    except Exception as e:
-        print(f"[get_inventory] error: {e}")
-        return "[]"
     
 # -----------------------------------------------------
 # movement（移動）

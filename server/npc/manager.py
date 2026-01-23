@@ -2,6 +2,7 @@ import asyncio
 from datetime import datetime, timedelta, timezone
 from supabase_client import supabase
 from npc.state import is_running_event
+from services.util import get_char_name_by_id
 from npc.npc_plan import (
     generate_initial_plan,
     generate_next_plan,
@@ -10,29 +11,6 @@ from npc.npc_plan import (
 
 NPC_IDS = ["npc1", "npc2", "npc3"]
 npc_tasks: dict[str, asyncio.Task] = {}
-
-async def get_char_name_by_id(npc_id: str) -> str | None:
-    try:
-        res = await asyncio.to_thread(
-            lambda: (
-                supabase
-                .table("characters")
-                .select("role")
-                .eq("name", npc_id)
-                .single()
-                .execute()
-            )
-        )
-        if not res.data:
-            print(f"[get_char_name_by_id] no data for npc_id={npc_id}")
-            return None
-
-        return res.data["role"]
-
-    except Exception as e:
-        print("[get_char_name_by_id ERROR]", e)
-        return None
-
 
 # -------------------------
 # Generative Agents 本体

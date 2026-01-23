@@ -37,7 +37,7 @@ export default function Conversation({ player, convStartTime }) {
     const [ initiatives, setInitiatives ] = useState([]);
     const [ charNameMap, setCharNameMap ] = useState({});
     const [ remainingTime, setRemainingTime ] = useState(TURN_DURATION / 1000);
-	const [ totalTurns, setTotalTurns ] = useState();
+	// const [ totalTurns, setTotalTurns ] = useState();
 	const [sessionId, setSessionId] = useState(null);
     const messagesEndRef = useRef(null);
 	const npcResponseRef = useRef(null);
@@ -131,10 +131,10 @@ export default function Conversation({ player, convStartTime }) {
 
 			// 純粋な経過ターン数を算出
 			// 例: フェーズ1のターン3 → 1×TURNS_PER_PHASE + 3 = 8ターン目
-			const pureTurns = phaseIndex * TURNS_PER_PHASE + turnInPhase;
+			// const pureTurns = phaseIndex * TURNS_PER_PHASE + turnInPhase;
 
 			// 累積ターン数としてstateを更新
-			setTotalTurns(pureTurns);
+			// setTotalTurns(pureTurns);
 		}, 250);
 
 		// コンポーネントがアンマウントされた際にintervalを解除してメモリリークを防ぐ
@@ -144,40 +144,40 @@ export default function Conversation({ player, convStartTime }) {
 	// モーダルの終了条件
 	useEffect(() => {
 		if(!order.length) return;
-		const maxTurns = order.length * TURNS_PER_PHASE;
-		if ( player === 'player1' && totalTurns >= maxTurns -1 ) {
-			const switchTimers2 = async () => {
-				try {
-					// 現在の状態を取得
-					const { data: timers, error } = await supabase
-						.from('timer')
-						.select('id, is_running')
-						.eq('id', 2);
+		if (player !== 'player1') return;
 
-					if (error) throw error;
-					if (!timers || timers.length === 0) return;
+		const isLastTurn =
+			phase === order.length - 1 &&
+			turn === TURNS_PER_PHASE - 1 &&
+			remainingTime === 0;
+		if (!isLastTurn) return;
 
-					const timer2 = timers[0];
+		const switchTimers2 = async () => {
+			try {
+				// 現在の状態を取得
+				const { data, error } = await supabase
+					.from('timer')
+					.select('id, is_running')
+					.eq('id', 2)
+					.single();
 
-					// すでに切り替わっていたら何もしない
-					if (timer2 && timer2.is_running === false) {
-						return;
-					}
-					// console.log("max: ", maxTurns);
-					// console.log("total: ", totalTurns);
-					const { error: error2 } = await supabase
-						.from('timer')
-						.update({ is_running: false })
-						.eq('id', 2);
+				if (error) throw error;
+				if (!data || data.is_running === false) return;
 
-					if (error2) throw error2;
-				} catch (error) {
-					console.error('タイマー切り替えエラー:', error.message);
-				}
-			};
+				await supabase
+					.from('timer')
+					.update({ is_running: false })
+					.eq('id', 2);
+			} catch (e) {
+				console.error('タイマー切り替えエラー:', e.message);
+			}
+		};
+
+		const timeoutId = setTimeout(() => {
 			switchTimers2();
-		}
-	}, [totalTurns, player, order.length]);
+		}, PHASE_END_BUFFER);
+		return () => clearTimeout(timeoutId);
+	}, [phase, turn, remainingTime, player, order.length]);
 
     // メッセージ自動スクロール
     useEffect(() => {
@@ -249,12 +249,12 @@ export default function Conversation({ player, convStartTime }) {
 
 	// メッセージのDB登録
 	useEffect(() => {
-	const fetchMessages = async () => {
-		if (!player) return;
-		const msgs = await fetchMessagesBySession(sessionId, player);
-		setMessages(msgs);
-	};
-	fetchMessages();
+		const fetchMessages = async () => {
+			if (!player || !sessionId) return;
+			const msgs = await fetchMessagesBySession(sessionId, player);
+			setMessages(msgs);
+		};
+		fetchMessages();
 	}, [player, sessionId]);
 
 	// 2重送信を防ぐためのフラグをリセット

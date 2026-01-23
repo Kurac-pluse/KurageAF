@@ -7,6 +7,13 @@ from supabase_client import supabase
 from api.models import QueryRequestConv
 from config import settings
 from enum import Enum
+from services.util import (
+    get_char_name_by_id,
+    format_logs_simple,
+    get_task_by_npc_id,
+    get_inventory,
+    get_character_level
+)
 
 router = APIRouter(prefix="/api")
 client = openai.AsyncClient(api_key=settings.openai_api_key)
@@ -32,9 +39,12 @@ def get_system_prompt(mode: PromptMode) -> str:
             "・会話履歴を参照し、同じ言葉を繰り返さないでください。"
 
             "・会話にはキャラクターとして一貫した性格・口調・役割を維持してください。"
-            "・これは会話・推論フェーズであり、タスク遂行フェーズの情報を自然に会話へ織り交ぜてください。"
+            "・これは実験後半の「会話・推論フェーズ」であり、実験前半の「タスク遂行フェーズ」の情報を自然に会話へ織り交ぜてください。"
             "・タスク遂行フェーズにおけるタスクは、あなたと会話相手の両方にそれぞれ別のものが与えられています。"
             "・タスク遂行フェーズにおける行動ログは、あなた自身の過去の体験として扱い、必要に応じて自然に会話へ反映してください。"
+            "・またタスクについても、過去の行動に対して与えられたものであったことを理解してください。"
+            "・タスク遂行フェーズと関連の薄い、現在の話や未来の話はしないでください。"
+            "・タスクをクリアできたかどうかは、行動ログやlevelやインベントリから判断してください。"
 
             "・タスク遂行フェーズにおいて、"
             "  明示的に与えられていないタスク・行動・アイテムを"
@@ -80,7 +90,7 @@ def get_system_prompt(mode: PromptMode) -> str:
 
             "【出力制約】"
             "・現在の座標からタスク達成に必要な操作のみを箇条書きで出力"
-            "・最大でも『5行前後』で出力"
+            "・おもに『5行前後』で出力（wooden_staffに関する指示は工程が多いので最大10行まで許可）"
             "・武器作成後は必ず『装備』すること"
             "・3回以上連続でChickenと戦闘をするとHPが0になるため、回復を挟む必要がある。"
             "・操作名とパラメータ以外（説明文など）は一切出力禁止"
@@ -142,6 +152,7 @@ NPC_SPEECH_STYLE = {
     },
 }
 
+# --- 話し方定義 ---
 def get_speech_instruction(sender: str) -> str:
     style = NPC_SPEECH_STYLE.get(sender)
     if not style:
@@ -151,8 +162,61 @@ def get_speech_instruction(sender: str) -> str:
         f"あなたの話し方の特徴:\n"
         f"・性格: {style['description']}\n"
         f"・文末傾向: {style['ending']}\n"
-        f"・すべての発話でこの話し方を自然に維持してください。\n"
+        f"・すべての発話でこの話し方を自然に維持してください。"
     )
+
+# --- 会話履歴取得 ---
+def get_conversation_context(session_id, phase, sender, receiver):
+    if not session_id:
+        print("[get_conversation_context] session_id is None")
+        return ""
+    try:
+        res = (
+            supabase
+            .table("messages")
+            .select("sender, content")
+            .eq("session_id", session_id)
+            .eq("phase", phase)
+            .or_(
+                f"and(sender.eq.{sender},receiver.eq.{receiver}),"
+                f"and(sender.eq.{receiver},receiver.eq.{sender})"
+            )
+            .order("turn", desc=False)
+            .execute()
+        )
+
+        logs = res.data or []
+        return "\n".join(f"{m['sender']}: {m['content']}" for m in logs)
+
+    except Exception as e:
+        print("[get_conversation_context Supabase Exception]", e)
+        return ""
+
+def get_latest_message(session_id, phase, sender, receiver):
+    if not session_id:
+        print("[get_conversation_context] session_id is None")
+        return ""
+    try:
+        res = (
+            supabase
+            .table("messages")
+            .select("content")
+            .eq("session_id", session_id)
+            .eq("phase", phase)
+            .or_(
+                f"and(sender.eq.{sender},receiver.eq.{receiver}),"
+                f"and(sender.eq.{receiver},receiver.eq.{sender})"
+            )
+            .order("turn", desc=True)
+            .limit(1)
+            .execute()
+        )
+
+        return res.data[0]["content"] if res.data else ""
+
+    except Exception as e:
+        print("[get_latest_message Supabase Exception]", e)
+        return ""
 
 def get_temperature(mode: PromptMode) -> float:
     if mode == PromptMode.JSON:
@@ -192,30 +256,6 @@ async def call_openai_chat(
         return "（内部エラーが発生しました1）"
 
 
-# --- 会話履歴取得 ---
-def get_conversation_context(
-    session_id: str,
-    phase: int,
-    sender: str,
-    receiver: str,
-) -> str:
-    try:
-        response = (
-            supabase.table("messages")
-            .select("sender, content")
-            .eq("session_id", session_id)
-            .eq("phase", phase)
-            .in_("sender", [sender, receiver])
-            .in_("receiver", [sender, receiver])
-            .order("turn", desc=False)
-            .execute()
-        )
-        logs = response.data or []
-        return "\n".join(f"{m['sender']}: {m['content']}" for m in logs)
-    except Exception as e:
-        print("[Supabase Exception]", e)
-        return ""
-
 # -------------------------
 # API エンドポイント
 # -------------------------
@@ -229,18 +269,28 @@ async def call_llm_conv(request: QueryRequestConv):
         with open(template_path, "r", encoding="utf-8") as f:
             template = f.read()
 
+        sen_char_name = await get_char_name_by_id(request.sender)
+        level = await get_character_level(sen_char_name)
+        rec_char_name = await get_char_name_by_id(request.receiver)
         speech_instruction = get_speech_instruction(request.sender)
-        context = get_conversation_context(request.session_id, request.phase, request.sender, request.receiver,)
+        inventory = await get_inventory(sen_char_name)
+        context = get_conversation_context(request.session_id, request.phase, request.sender, request.receiver)
+        log = await format_logs_simple(sen_char_name)
+        last_conv = get_latest_message(request.session_id, request.phase, request.sender, request.receiver)
+        task = await get_task_by_npc_id(request.sender)
 
         prompt_filled = template.format(
-            agent_name=request.sen_char_name,
-            agent_name2=request.rec_char_name,
+            agent_name=sen_char_name,
+            level=level,
+            agent_name2=rec_char_name,
             speech_style=speech_instruction,
+            inventory=inventory,
             conversation_context=context,
-            action_log=request.log,
-            query=request.prompt,
-            task=request.task,
+            action_log=log,
+            query=last_conv,
+            task=task,
         )
+        # print(prompt_filled)
 
         result = await call_openai_chat(prompt_filled, PromptMode.CONV)
 

@@ -1,7 +1,11 @@
 あなたは {agent_name} です。
+現在のレベルは lv.{level} です。
 会話相手は {agent_name2} です。
 
 {speech_style}
+
+### 所持品
+{inventory}
 
 ### 会話履歴
 {conversation_context}

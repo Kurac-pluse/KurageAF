@@ -1,6 +1,7 @@
 import httpx
 from fastapi import APIRouter, HTTPException
 from config import settings
+from services.util import fetch_character_logs
 
 router = APIRouter(prefix="/api/mmo")
 
@@ -86,18 +87,6 @@ async def game_restart():
         "deleted": names,
         "created": created,
     }
-
-async def fetch_character_logs(character: str) -> dict:
-    url = f"{settings.artifacts_url}/my/logs/{character}"
-    headers = {
-        "Accept": "application/json",
-        "Authorization": "Bearer " + settings.artifacts_token,
-    }
-
-    async with httpx.AsyncClient() as client:
-        response = await client.get(url, headers=headers)
-        response.raise_for_status()
-        return response.json()
 
 @router.get("/logs/{character}")
 async def get_character_logs(character: str):

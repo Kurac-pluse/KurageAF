@@ -1,4 +1,3 @@
-# npc/state.py
 import asyncio
 
 # Pythonプロセス全体で共有されるフラグ
