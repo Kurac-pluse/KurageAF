@@ -1,13 +1,21 @@
-// APIを用いてエージェントの情報を入手し、stringで返す
-// 名前、座標、、、、
-
 import fetch from 'node-fetch';
-import { CHAR1, CHAR2, CHAR3, CHAR4, CHAR5, server, token } from '../utils/global.js';
+import supabase from "../supabaseClient";
 
-// FastAPIに依頼する関数（フロントの画面右logの表示）
-export async function get_character_logs(character) {
+// 環境定数
+export const server = process.env.REACT_APP_ARTIFACTS_URL;
+export const pilot = ["player1", "player2", "npc1", "npc2", "npc3"];
+export const names = ["laplus", "rui", "koyori", "kuroe", "iroha"];
+// export const names = ["A-AAAAA", "B-BBBBB", "C-CCCCC", "D-DDDDD", "E-EEEEE"];
+export const TURN_DURATION = 30 * 1000;
+export const TURNS_PER_PHASE = 6;
+export const PHASE_END_BUFFER = 5 * 1000;
+export const playTime = 8 * 60;
+
+
+// 画面右logの表示（FastAPIに依頼）
+export async function getCharacterLogs(character) {
     if (!character) {
-        console.warn("character is undefined, skip get_character_logs");
+        console.warn("character is undefined, skip getCharacterLogs");
         return null;
     }
     const url = process.env.REACT_APP_SERVER_URL + "/api/mmo/logs/" + character;
@@ -27,104 +35,86 @@ export async function get_character_logs(character) {
 	}
 }
 
-export async function get_character_coordinate(character) {
-    try {
-        const datas = await get_characters_info();
-        var x_y = Array(2);
-        // console.log(datas);
-
-        if (character === CHAR1) {
-            x_y[0] = datas[0].x;
-            x_y[1] = datas[0].y;
-        } else if (character === CHAR2) {
-            x_y[0] = datas[1].x;
-            x_y[1] = datas[1].y;
-        } else if (character === CHAR3) {
-            x_y[0] = datas[2].x;
-            x_y[1] = datas[2].y;
-        } else if (character === CHAR4) {
-            x_y[0] = datas[3].x;
-            x_y[1] = datas[3].y;
-        } else if (character === CHAR5) {
-            x_y[0] = datas[4].x;
-            x_y[1] = datas[4].y;
-        }
-
-        // console.log(x_y);
-        return x_y;
-    } catch (error) {
-        console.log(error);
+// statusの表示（FastAPIに依頼）
+export async function getCharacterInfo(character) {
+    if (!character) {
+        console.warn("character is undefined, skip getCharacterInfo");
+        return null;
     }
-}
-
-export async function get_character_cooldown(character) {
-    try {
-        const datas = await get_characters_info();
-        var cooldown = 0;
-
-        if (character === CHAR1) {
-            cooldown = datas[0].cooldown_expiration;
-        } else if (character === CHAR2) {
-            cooldown = datas[1].cooldown_expiration;
-        } else if (character === CHAR3) {
-            cooldown = datas[2].cooldown_expiration;
-        } else if (character === CHAR4) {
-            cooldown = datas[3].cooldown_expiration;
-        } else if (character === CHAR5) {
-            cooldown = datas[4].cooldown_expiration;
-        }
-
-        // console.log(cooldown);
-        return cooldown;
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-export async function get_character_names() {
-    try {
-        const datas = await get_characters_info();
-        console.log(datas[0]);
-        const names = datas.slice(0, 5).map(data => data.name);
-        // console.log(names);
-        return names;
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-async function get_characters_info() {
-    const url = server + '/my/characters';
-    const options = {
+    const url = process.env.REACT_APP_SERVER_URL + "/api/mmo/info/" + character;
+	const options = {
         method: 'GET',
         headers: {
             Accept: 'application/json',
-            Authorization: 'Bearer ' + token,
         },
     };
 
-    try {
-        const response = await fetch(url, options);
-        const { data } = await response.json();
-        // console.log(typeof(data));
-        return data;
-    } catch (error) {
-        console.log(error);
-    }
+	try {
+		const response = await fetch(url, options);
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		console.error(error);
+	}
 }
 
-export async function get_one_character_info(character) {
-    if (typeof character === 'undefined' || character === null) { return null; }
-
-    const url = server + '/characters/' + character;
-    const options = {method: 'GET', headers: {Accept: 'application/json'}};
-    //console.log(character);
-    try {
-        const response = await fetch(url, options);
-        const data = await response.json();
-        return data;
-        // console.log(data);
-    } catch (error) {
-        console.error(error);
-    }
+// データ収集用（FastAPIに依頼）
+export async function getEx3Data(task) {
+    return task;
 }
+
+// IDからキャラ名を取得
+export const playerToCharName = async (player) => {
+    if (player === 'master') return 'master';
+
+    const { data, error } = await supabase
+        .from('characters')
+        .select('role')
+        .eq('name', player)
+        .maybeSingle();
+
+    if (error) {
+        console.error('playerToCharName error:', error.message);
+        return null;
+    }
+
+    return data?.role ?? null;
+};
+
+// 会話順取得
+export const convNumber = async (viewer) => {
+    const { data, error } = await supabase
+        .from('conversation_setups')
+        .select('conversation_order')
+        .eq('session_id', 'default_session')
+        .maybeSingle();
+
+    if (error || !data) {
+        console.error('convNumber fetch error:', error?.message);
+        return null;
+    }
+
+    const order = data.conversation_order;
+    if (!Array.isArray(order)) return null;
+
+    const result = [];
+
+    for (let i = 0; i < 4; i++) {
+        let player = order[i]?.[1];
+
+        if (!player) {
+            result.push(`${i + 1}:unknown`);
+            continue;
+        }
+
+        // --- 視点変換（player2視点のみ） ---
+        if (viewer === 'player2' && player === 'player2') {
+            player = 'player1';
+        }
+
+        const charName = await playerToCharName(player);
+        result.push(`${i + 1}: ${charName || 'unknown'}`);
+    }
+
+    return result.join(', ');
+};

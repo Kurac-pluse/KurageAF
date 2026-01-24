@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Flex, VStack, Text, Spinner, Box } from '@chakra-ui/react';
-import { get_character_logs } from '../api/info';
+import { getCharacterLogs } from '../api/info';
 
 export default function Log({ player, viewChar }) {
     const [logs, setLogs] = useState([]);
@@ -10,7 +10,7 @@ export default function Log({ player, viewChar }) {
         async function fetchLogs() {
             setLoading(true);
             try {
-                const result = await get_character_logs(viewChar);
+                const result = await getCharacterLogs(viewChar);
                 setLogs(result?.data || []);
             } catch (err) {
                 console.error('ログ取得エラー:', err);

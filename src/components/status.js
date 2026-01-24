@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Box, Grid, Flex, Spinner, Text } from '@chakra-ui/react';
-import { playerToCharName } from '../utils/global.js';
-import { get_one_character_info } from '../api/info.js';
+import { playerToCharName, getCharacterInfo } from '../api/info';
 
 function Status(props) {
     const [myStatus, setMyStatus] = useState(null);
@@ -17,7 +16,7 @@ function Status(props) {
                 // console.log("取得したキャラ名:", charName);
                 if (charName !== "master") {
                     setMyCharName(charName); // ← ここで保存
-                    const status = await get_one_character_info(charName);
+                    const status = await getCharacterInfo(charName);
                     setMyStatus(status);
                 } else {
                     setMyStatus("master"); 
@@ -36,7 +35,7 @@ function Status(props) {
         const fetchOtherStatus = async () => {
             if (props.viewChar && props.viewChar !== myCharName) {
                 try {
-                    const status = await get_one_character_info(props.viewChar);
+                    const status = await getCharacterInfo(props.viewChar);
                     setOtherStatus(status);
                 } catch (error) {
                     console.error('他のキャラクターのステータス取得中にエラーが発生しました:', error);
@@ -52,16 +51,36 @@ function Status(props) {
 
     // ステータスを安全に表示
     const renderStatus = (status) => {
-        if (status === "master" || status.error) {
-            return <Text>{ 'ステータスがありません' || status?.error }</Text>;
+        if (!status || status === "master" || status.error) {
+            return <Text>ステータスがありません</Text>;
         }
+
         return (
             <>
-                <Text>名前: {status.data.name}</Text>
-                <Text>体力: {status.data.hp} &emsp; LV.: {status.data.level} &emsp; 所持金: {status.data.gold} &emsp; 座標: [{status.data.x}, {status.data.y}]</Text>
-                <Text>武器: {status.data.weapon_slot} &emsp; 盾: {status.data.shield_slot}</Text>
-                <Text>頭装備: {status.data.helmet_slot} &emsp; 胴装備: {status.data.body_armor_slot} &emsp; 足装備: {status.data.leg_armor_slot}</Text>
-                <Text>指輪: {status.data.ring1_slot} {status.data.ring2_slot} &emsp; インベントリ: ...</Text>
+                <Text>名前: {status.name}</Text>
+                <Text>
+                    体力: {status.hp}
+                    &emsp; LV.: {status.level}
+                    &emsp; 所持金: {status.gold}
+                    &emsp; 座標: [{status.x}, {status.y}]
+                </Text>
+                <Text>
+                    武器: {status.weapon_slot}
+                </Text>
+                <Text>
+                    インベントリ:
+                    {status.inventory && status.inventory.length > 0 ? (
+                        status.inventory
+                            .filter(i => i.quantity > 0)
+                            .map((item) => (
+                                <Text as="span" key={item.slot} ml={2}>
+                                    {item.code} x {item.quantity}
+                                </Text>
+                            ))
+                    ) : (
+                        <Text as="span" ml={2}>（空）</Text>
+                    )}
+                </Text>
             </>
         );
     };
