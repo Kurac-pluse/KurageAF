@@ -1,7 +1,7 @@
 import httpx
 from fastapi import APIRouter, HTTPException
 from config import settings
-from services.util import fetch_character_logs
+from services.util import fetch_character_logs, fetch_characters_info
 
 router = APIRouter(prefix="/api/mmo")
 
@@ -92,6 +92,26 @@ async def game_restart():
 async def get_character_logs(character: str):
     try:
         return await fetch_character_logs(character)
+    except httpx.HTTPStatusError as e:
+        raise HTTPException(
+            status_code=e.response.status_code,
+            detail=e.response.text
+        )
+
+@router.get("/info/{character}")
+async def get_character_info(character: str):
+    try:
+        characters = await fetch_characters_info()
+        char = next(
+            (c for c in characters if c.get("name") == character),
+            None
+        )
+        if char is None:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Character '{character}' not found"
+            )
+        return char
     except httpx.HTTPStatusError as e:
         raise HTTPException(
             status_code=e.response.status_code,

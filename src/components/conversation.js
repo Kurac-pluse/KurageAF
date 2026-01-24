@@ -2,14 +2,12 @@ import { useEffect, useState, useRef, useMemo } from 'react';
 import {
     Box, Button, Input, VStack, Text, HStack, Flex
 } from '@chakra-ui/react';
-import { pilot, player_make } from '../utils/global';
+import {
+	pilot, playerToCharName, convNumber, TURN_DURATION, TURNS_PER_PHASE, PHASE_END_BUFFER
+} from '../api/info';
 import supabase from '../supabaseClient';
-import { fetchMessagesBySession, saveMessage } from '../utils/chat';
+import { fetchMessagesBySession, saveMessage } from '../api/chat';
 import { makeResponse } from '../api/llm';
-
-const TURN_DURATION = 30 * 1000;
-const TURNS_PER_PHASE = 6;
-const PHASE_END_BUFFER = 5 * 1000;
 
 // プレイヤー視点に変換
 function convertOrderForPlayer(order, initiatives, player) {
@@ -37,11 +35,12 @@ export default function Conversation({ player, convStartTime }) {
     const [ initiatives, setInitiatives ] = useState([]);
     const [ charNameMap, setCharNameMap ] = useState({});
     const [ remainingTime, setRemainingTime ] = useState(TURN_DURATION / 1000);
-	// const [ totalTurns, setTotalTurns ] = useState();
 	const [sessionId, setSessionId] = useState(null);
     const messagesEndRef = useRef(null);
 	const npcResponseRef = useRef(null);
 	const hasSentRef = useRef(false);
+	const [convOrderStr, setConvOrderStr] = useState('');
+	const [selfCharName, setSelfCharName] = useState('');
 
     // 会話順と先攻を初期化
     useEffect(() => {
@@ -80,7 +79,7 @@ export default function Conversation({ player, convStartTime }) {
 
 		  const entries = await Promise.all(
 			pilot.map(async (id) => {
-			  const name = await player_make(id);
+			  const name = await playerToCharName(id);
 			  return [id, name || id];
 			})
 		  );
@@ -128,13 +127,6 @@ export default function Conversation({ player, convStartTime }) {
 
 			// 現在ターンの残り時間（秒単位）を計算して更新
 			setRemainingTime(Math.floor((TURN_DURATION - turnElapsed) / 1000));
-
-			// 純粋な経過ターン数を算出
-			// 例: フェーズ1のターン3 → 1×TURNS_PER_PHASE + 3 = 8ターン目
-			// const pureTurns = phaseIndex * TURNS_PER_PHASE + turnInPhase;
-
-			// 累積ターン数としてstateを更新
-			// setTotalTurns(pureTurns);
 		}, 250);
 
 		// コンポーネントがアンマウントされた際にintervalを解除してメモリリークを防ぐ
@@ -382,6 +374,30 @@ export default function Conversation({ player, convStartTime }) {
 		handleNpcEndTurn();
 	}, [remainingTime, currentSpeaker, phase, turn, sessionId, player]);
 
+	// 会話順（1〜4番目）を文字列で取得して表示用に保持
+	useEffect(() => {
+		if (!player) return;
+
+		const fetchConvOrderStr = async () => {
+			const str = await convNumber(player);
+			if (str) setConvOrderStr(str);
+		};
+
+		fetchConvOrderStr();
+	}, [player]);
+
+	// 自分のキャラ名を取得
+	useEffect(() => {
+		if (!player) return;
+
+		const fetchSelfName = async () => {
+			const name = await playerToCharName(player);
+			setSelfCharName(name || player);
+		};
+
+		fetchSelfName();
+	}, [player]);
+
     return (
         <VStack spacing={4} align="stretch" p={4}>
             <Box
@@ -461,6 +477,11 @@ export default function Conversation({ player, convStartTime }) {
                     {remainingTime}s後に自動送信
                 </Box>
             </Flex>
+			{convOrderStr && (
+				<Text fontSize="sm" color="gray.500">
+					自分 ( {selfCharName} ) - 会話順 ( {convOrderStr} )
+				</Text>
+			)}
         </VStack>
     );
 }

@@ -18,24 +18,9 @@ import {
 import supabase from "../supabaseClient";
 import Conversation from "./conversation";
 import Task from "./task";
+import { names, playTime} from "../api/info"
 
-const playTime = 8 * 60;
-// const playTime = 10;
-
-const CHARACTER_NAMES = [
-    "laplus",
-    "rui",
-    "koyori",
-    "kuroe",
-    "iroha",
-];
-// const CHARACTER_NAMES = [
-//     "A-AAAAA",
-//     "B-BBBBB",
-//     "C-CCCCC",
-//     "D-DDDDD",
-//     "E-EEEEE",
-// ];
+const CHARACTER_NAMES = names;
 
 const TASK_KEYWORDS = [
     "Algae：藻 (モ)",

@@ -1,7 +1,7 @@
 import { HStack, Button, Input } from '@chakra-ui/react';
-import { names, pilot } from '../utils/global';
+import { names, pilot } from '../api/info';
 import supabase from '../supabaseClient';
-import { createSession } from '../utils/chat';
+import { createSession } from '../api/chat';
 import { useState } from 'react';
 
 const Control = () => {
@@ -132,7 +132,8 @@ const Control = () => {
             if (convError) throw convError;
 
             await shuffleTaskNumbers();
-            window.location.reload();
+            setSuccessMessage('Session作成完了');
+            // window.location.reload();
         } catch (error) {
             console.error('シャッフルエラー:', error.message);
         }
