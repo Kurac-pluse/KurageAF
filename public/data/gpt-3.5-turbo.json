@@ -1,0 +1,5897 @@
+[
+  [
+    {
+      "timestamp": "2026/01/25 16:06:41",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:06:10",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:39",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:08",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:47",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:04:40",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:18",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:04:14",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:43",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:12",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:02:41",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:02:10",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:49",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:42",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:36",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:15",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:11",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:40",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:09",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:38",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:07",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:01",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 15:58:41",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:06:42",
+      "action_type": "movement",
+      "details": "rui moved from (0,1) to (-1,0) via path: (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:06:25",
+      "action_type": "rest",
+      "details": "rui rested."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:54",
+      "action_type": "fight",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:27",
+      "action_type": "fight",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:56",
+      "action_type": "fight",
+      "details": "rui won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:45",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (0,1) via path: (2,1) -> (1,1) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:04:39",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:18",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:04:14",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:43",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:12",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:02:41",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:02:10",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:49",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:42",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:36",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:15",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:11",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:40",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:09",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:38",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:07",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:01",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 15:58:41",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:06:50",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:06:19",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:48",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:17",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:46",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:35",
+      "action_type": "movement",
+      "details": "koyori moved from (0,1) to (-1,0) via path: (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:04:28",
+      "action_type": "rest",
+      "details": "koyori rested."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:57",
+      "action_type": "fight",
+      "details": "koyori won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:46",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (0,1) via path: (2,1) -> (1,1) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:03:42",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:19",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:03:15",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:02:44",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:02:13",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:52",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:43",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:37",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:16",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:12",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:41",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:10",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:39",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:07",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:01",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 15:58:41",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:06:43",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:06:12",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:41",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:10",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:49",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:04:42",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:20",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:04:16",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:45",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:14",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:02:43",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:02:12",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:51",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:44",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:38",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:17",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:13",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:42",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:09",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:38",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:07",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:01",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 15:58:42",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:06:41",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:06:33",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:06:12",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:06:08",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:37",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:05:06",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:35",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:04:04",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:43",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:03:37",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:32",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:03:11",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:02:40",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:02:09",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:48",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:42",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:36",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:01:15",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:01:11",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:40",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:00:09",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:38",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:07",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 15:59:01",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 15:58:42",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:53:42",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:53:11",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:40",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:09",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:48",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:41",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:19",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:15",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:44",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:13",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:42",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:11",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:50",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:43",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:37",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:16",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:12",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:41",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:10",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:39",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:08",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:02",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:45:49",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:53:41",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:53:10",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:39",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:08",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:47",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:40",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:18",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:14",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:43",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:12",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:41",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:10",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:49",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:43",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:37",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:16",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:12",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:41",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:10",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:39",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:08",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:02",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:45:49",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:17:17",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:46",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:15",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:15:44",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:15:23",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:15:16",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:54",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:14:50",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:19",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:48",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:17",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:46",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:25",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:12:18",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:12",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:51",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:11:47",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:16",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:45",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:14",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:43",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:37",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:09:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:17:18",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:47",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:16",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:15:45",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:15:24",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:15:17",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:55",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:14:51",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:20",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:49",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:18",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:47",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:26",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:12:18",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:12",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:51",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:11:47",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:16",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:45",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:14",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:43",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:37",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:09:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:17:17",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:46",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:15",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:15:44",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:15:23",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:15:16",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:54",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:14:50",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:19",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:48",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:17",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:46",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:25",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:12:18",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:12",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:51",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:11:47",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:16",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:45",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:14",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:43",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:37",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:09:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:17:03",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:32",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:11",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:16:04",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:15:43",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:15:12",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:41",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:20",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:14:14",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:52",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:13:48",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:17",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:46",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:25",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:12:19",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:13",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:52",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:11:48",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:17",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:46",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:15",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:43",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:37",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:09:18",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:17:16",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:45",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:16:14",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:15:43",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:15:22",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:15:15",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:53",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:14:49",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:14:18",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:47",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:13:16",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:45",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:24",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:12:17",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:12:11",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:50",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:11:46",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:11:15",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:44",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:10:13",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:42",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:09:36",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:09:18",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:34:09",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:38",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:07",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:36",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:15",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:32:08",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:46",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:31:42",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:11",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:40",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:09",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:38",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:17",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:29:10",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:04",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:43",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:28:39",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:08",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:37",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:06",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:35",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:29",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:26:10",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:34:09",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:38",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:07",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:36",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:15",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:32:08",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:46",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:31:42",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:11",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:40",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:09",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:38",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:17",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:29:09",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:03",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:42",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:28:38",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:07",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:36",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:05",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:34",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:28",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:26:10",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:34:10",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:39",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:08",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:37",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:16",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:32:08",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:46",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:31:42",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:11",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:40",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:09",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:38",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:17",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:29:10",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:04",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:43",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:28:39",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:08",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:37",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:06",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:35",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:29",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:26:10",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:25:42",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:25:11",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:40",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:09",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:23:48",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:23:41",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:23:19",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:23:15",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:44",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:13",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:42",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:11",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:50",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:42",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:36",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:15",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:11",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:40",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:09",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:38",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:07",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:01",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:17:43",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:25:41",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:25:10",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:39",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:08",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:23:47",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:23:40",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:23:19",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:23:15",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:44",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:13",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:42",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:11",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:50",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:43",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:37",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:16",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:12",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:41",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:10",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:39",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:08",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:02",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:17:43",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:25:22",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:51",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:20",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:09",
+      "action_type": "movement",
+      "details": "koyori moved from (0,1) to (-1,0) via path: (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:23:56",
+      "action_type": "rest",
+      "details": "koyori rested."
+    },
+    {
+      "timestamp": "2026/01/25 16:23:25",
+      "action_type": "fight",
+      "details": "koyori won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:54",
+      "action_type": "fight",
+      "details": "koyori won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:43",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (0,1) via path: (2,1) -> (1,1) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:22:39",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:16",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:22:12",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:41",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:10",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:49",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:42",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:36",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:15",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:11",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:40",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:09",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:38",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:07",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:01",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:17:43",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:25:41",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:25:10",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:39",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:08",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:23:47",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:23:39",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:23:18",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:23:14",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:43",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:12",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:41",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:10",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:49",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:42",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:36",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:15",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:11",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:40",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:09",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:38",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:07",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:01",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:17:44",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:25:44",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:25:13",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:42",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:24:11",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:23:50",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:23:44",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:23:22",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:23:18",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:47",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:22:16",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:45",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:21:14",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:53",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:46",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:40",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:20:19",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:20:15",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:44",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:19:13",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:42",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:11",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:18:05",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:17:44",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:53:46",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:53:15",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:44",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:13",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:52",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:42",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:20",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:16",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:45",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:14",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:43",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:12",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:51",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:44",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:38",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:17",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:13",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:42",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:11",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:40",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:09",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:03",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:45:49",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:34:09",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:38",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:07",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:36",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:15",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:32:08",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:46",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:31:42",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:11",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:40",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:09",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:38",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:17",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:29:09",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:03",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:42",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:28:38",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:07",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:36",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:05",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:34",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:28",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:26:11",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:34:08",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:37",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:33:06",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:35",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:32:14",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:32:07",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:45",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:31:41",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:31:10",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:39",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:30:08",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:37",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:16",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:29:09",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:29:03",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:42",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:28:38",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:28:07",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:36",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:27:05",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:34",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:26:28",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:26:11",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:42:35",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:42:04",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:33",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:02",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:41",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:35",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:13",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:09",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:38",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:07",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:36",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:05",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:44",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:32",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:26",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:05",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:01",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:36:30",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:35:59",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:35:28",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:57",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:51",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:34:35",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:42:35",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:42:04",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:33",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:02",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:41",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:33",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:11",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:07",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:36",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:05",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:34",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:03",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:42",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:34",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:28",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:07",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:03",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:36:32",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:36:01",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:35:29",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:58",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:52",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:34:35",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:42:33",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:42:02",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:31",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:00",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:39",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:32",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:10",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:06",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:35",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:04",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:33",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:02",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:41",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:34",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:28",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:07",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:03",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:36:32",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:36:01",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:35:29",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:58",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:52",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:34:35",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:42:33",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:42:02",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:31",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:00",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:39",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:32",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:10",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:06",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:35",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:04",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:33",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:02",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:41",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:33",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:27",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:06",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:02",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:36:31",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:36:00",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:35:29",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:58",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:52",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:34:35",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:42:34",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:42:03",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:32",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:41:01",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:40",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:32",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:40:10",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:40:06",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:35",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:39:04",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:33",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:38:02",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:41",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:33",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:27",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:37:06",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:37:02",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:36:31",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:36:00",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:35:29",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:58",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:34:52",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:34:35",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:53:42",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:53:11",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:40",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:09",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:48",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:41",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:19",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:15",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:44",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:13",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:42",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:11",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:50",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:43",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:37",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:16",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:12",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:41",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:10",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:39",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:08",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:02",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:45:49",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 16:53:42",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:53:11",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:40",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:52:09",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:48",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:41",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:51:19",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:51:15",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:44",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:50:13",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:42",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:49:11",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:50",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:44",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:38",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:48:17",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:48:13",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:42",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:47:11",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:40",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:09",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:46:03",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:45:49",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:02:28",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:57",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:26",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:55",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:34",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:28",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:06",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:02",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:59:31",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:59:00",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:58:29",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:58",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:37",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:57:30",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:24",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:03",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:56:59",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:56:28",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:57",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:26",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:55",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:49",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:54:39",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:02:29",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:58",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:27",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:56",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:35",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:28",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:06",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:02",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:59:31",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:59:00",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:58:29",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:58",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:37",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:57:30",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:24",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:03",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:56:59",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:56:28",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:57",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:26",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:55",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:49",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:54:39",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:02:28",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:57",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:26",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:55",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:34",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:27",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:05",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:01",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:59:30",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:58:59",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:58:28",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:57",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:36",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:57:29",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:23",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:02",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:56:58",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:56:27",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:56",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:25",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:54",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:48",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:54:40",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:02:29",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:58",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:27",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:56",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:35",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:27",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:06",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:02",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:59:31",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:59:00",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:58:29",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:58",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:37",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:57:29",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:23",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:02",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:56:58",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:56:27",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:56",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:25",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:54",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:48",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:54:40",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:02:26",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:55",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:01:24",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:53",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:32",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:26",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:00:04",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:00:00",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:59:29",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:58:58",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:58:27",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:56",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:35",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:57:29",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:23",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 16:57:02",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 16:56:58",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 16:56:27",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:56",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:55:25",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:54",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 16:54:48",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 16:54:40",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:31:13",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:42",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:11",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:40",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:19",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:29:12",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:51",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:28:47",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:16",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:45",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:14",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:43",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:22",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:26:15",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:09",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:48",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:25:44",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:13",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:42",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:11",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:40",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:34",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:23:24",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:31:13",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:42",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:11",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:40",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:19",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:29:13",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:51",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:28:47",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:16",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:45",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:14",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:43",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:22",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:26:15",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:09",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:48",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:25:44",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:13",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:42",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:11",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:40",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:34",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:23:24",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:31:15",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:44",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:13",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:42",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:21",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:29:14",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:52",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:28:48",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:17",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:46",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:15",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:44",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:23",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:26:16",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:10",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:49",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:25:45",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:14",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:43",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:12",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:40",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:34",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:23:25",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:31:15",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:44",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:13",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:42",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:21",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:29:14",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:52",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:28:48",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:17",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:46",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:15",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:43",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:22",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:26:15",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:09",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:48",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:25:44",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:13",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:42",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:11",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:40",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:34",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:23:25",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:31:13",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:42",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:30:11",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:40",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:29:19",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:29:13",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:51",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:28:47",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:28:16",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:45",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:27:14",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:43",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:22",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:26:14",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:26:08",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:47",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:25:43",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:25:12",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:41",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:24:10",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:39",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:23:34",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:23:25",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:39:56",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:39:25",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:54",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:23",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:02",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:37:54",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:37:32",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:37:28",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:57",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:26",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:55",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:24",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:03",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:56",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:50",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:29",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:25",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:54",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:23",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:52",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:21",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:15",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:32:04",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:39:56",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:39:25",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:54",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:23",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:02",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:37:55",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:37:33",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:37:29",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:58",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:27",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:56",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:25",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:04",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:57",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:51",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:30",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:26",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:55",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:24",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:53",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:22",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:15",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:32:04",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:39:55",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:39:24",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:53",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:22",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:01",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:37:54",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:37:32",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:37:28",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:57",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:26",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:55",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:24",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:03",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:56",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:50",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:29",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:25",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:54",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:23",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:52",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:21",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:15",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:32:04",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:40:07",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:39:36",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:39:05",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:34",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:23",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,1) to (-1,0) via path: (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:38:10",
+      "action_type": "rest",
+      "details": "kuroe rested."
+    },
+    {
+      "timestamp": "2026/01/25 17:37:39",
+      "action_type": "fight",
+      "details": "kuroe won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/25 17:37:08",
+      "action_type": "fight",
+      "details": "kuroe won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:57",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (0,1) via path: (2,1) -> (1,1) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:36:53",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:32",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:36:28",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:57",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:26",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:05",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:57",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:51",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:30",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:26",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:55",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:24",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:53",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:22",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:16",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:32:05",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:39:57",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:39:26",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:55",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:24",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:38:03",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:37:54",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:37:32",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:37:28",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:57",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:36:26",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:55",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:24",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:35:03",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:56",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:50",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:34:29",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:34:25",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:54",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:33:23",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:52",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:21",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:32:15",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:32:05",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:48:56",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:48:25",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:54",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:23",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:02",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:55",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:46:33",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:29",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:58",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:27",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:56",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:25",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:04",
+      "action_type": "movement",
+      "details": "laplus moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:56",
+      "action_type": "equip",
+      "details": "laplus equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:50",
+      "action_type": "crafting",
+      "details": "laplus crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:29",
+      "action_type": "movement",
+      "details": "laplus moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:25",
+      "action_type": "unequip",
+      "details": "laplus unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:54",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:23",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:52",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:21",
+      "action_type": "gathering",
+      "details": "laplus gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:15",
+      "action_type": "movement",
+      "details": "laplus moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:41:00",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:48:56",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:48:25",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:54",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:23",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:02",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:53",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:46:31",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:27",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:56",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:25",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:54",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:23",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:02",
+      "action_type": "movement",
+      "details": "rui moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:55",
+      "action_type": "equip",
+      "details": "rui equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:49",
+      "action_type": "crafting",
+      "details": "rui crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:28",
+      "action_type": "movement",
+      "details": "rui moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:24",
+      "action_type": "unequip",
+      "details": "rui unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:53",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:22",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:51",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:20",
+      "action_type": "gathering",
+      "details": "rui gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:14",
+      "action_type": "movement",
+      "details": "rui moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:41:01",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:48:53",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:48:22",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:51",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:20",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:46:59",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:52",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:46:30",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:26",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:55",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:24",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:53",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:22",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:01",
+      "action_type": "movement",
+      "details": "koyori moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:55",
+      "action_type": "equip",
+      "details": "koyori equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:49",
+      "action_type": "crafting",
+      "details": "koyori crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:28",
+      "action_type": "movement",
+      "details": "koyori moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:24",
+      "action_type": "unequip",
+      "details": "koyori unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:53",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:22",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:51",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:20",
+      "action_type": "gathering",
+      "details": "koyori gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:14",
+      "action_type": "movement",
+      "details": "koyori moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:41:01",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:48:57",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:48:26",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:55",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:24",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:03",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:55",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:46:34",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:30",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:59",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:28",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:57",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:26",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:05",
+      "action_type": "movement",
+      "details": "kuroe moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:57",
+      "action_type": "equip",
+      "details": "kuroe equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:51",
+      "action_type": "crafting",
+      "details": "kuroe crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:30",
+      "action_type": "movement",
+      "details": "kuroe moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:26",
+      "action_type": "unequip",
+      "details": "kuroe unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:55",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:24",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:53",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:22",
+      "action_type": "gathering",
+      "details": "kuroe gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:16",
+      "action_type": "movement",
+      "details": "kuroe moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:41:01",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/01/25 17:48:53",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:48:22",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:51",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:47:20",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:46:59",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:52",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:46:30",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:46:26",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:55",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:45:24",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:53",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:22",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:44:01",
+      "action_type": "movement",
+      "details": "iroha moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:55",
+      "action_type": "equip",
+      "details": "iroha equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:49",
+      "action_type": "crafting",
+      "details": "iroha crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/01/25 17:43:28",
+      "action_type": "movement",
+      "details": "iroha moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/01/25 17:43:24",
+      "action_type": "unequip",
+      "details": "iroha unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:53",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:42:22",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:51",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:20",
+      "action_type": "gathering",
+      "details": "iroha gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/01/25 17:41:14",
+      "action_type": "movement",
+      "details": "iroha moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/01/25 17:41:01",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ]
+]
