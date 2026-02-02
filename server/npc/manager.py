@@ -1,7 +1,8 @@
+import random
 import asyncio
 from npc import state
 from datetime import datetime, timedelta, timezone
-from supabase_client import supabase
+from supabase_client import get_supabase
 from npc.state import is_running_event
 from services.util import (
     get_char_name_by_id,
@@ -28,6 +29,12 @@ def timer_log(msg: str):
 # -------------------------
 async def npc_loop(char_id: str):
     print(f"[{char_id}] NPC LOOP START")
+
+    # 開始時間ずらす
+    delay = random.choice([0, 2, 4])
+    if delay > 0:
+        print(f"[{char_id}] initial delay: {delay}s")
+        await asyncio.sleep(delay)
 
     try:
         name = await get_char_name_by_id(char_id)
@@ -68,6 +75,7 @@ async def watch_timer():
 
     while True:
         try:
+            supabase = get_supabase()
             # Supabase は同期I/Oなのでスレッドに逃がす
             res = await asyncio.to_thread(
                 lambda: supabase
@@ -84,14 +92,13 @@ async def watch_timer():
                 timer_log("is_running = true → START NPCs")
                 is_running_event.set()
 
-                npc_ids = None
                 # mode に応じて NPC数を決める
                 if state.current_game_mode == "1":
                     npc_ids = CHAR_IDS
+                    timer_log("mode=1 → CHAR_IDS")
                 else:
-                    npc_ids = CHAR_IDS
-
-                timer_log("game_mode forced to 0 → NPC_IDS")
+                    npc_ids = NPC_IDS
+                    timer_log("mode=0 → NPC_IDS")
 
                 for npc_id in npc_ids:
                     if npc_id not in npc_tasks or npc_tasks[npc_id].done():
@@ -119,11 +126,11 @@ async def watch_timer():
 # -----------------------------------
 async def watch_timer_expire():
     print("[startup] timer expire watcher starting...")
-
     finished_mode1 = False  # 二重実行防止
 
     while True:
         try:
+            supabase = get_supabase()
             res = await asyncio.to_thread(
                 lambda: supabase
                     .table("timer")

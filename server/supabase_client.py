@@ -1,4 +1,5 @@
-from supabase import create_client, Client
+from supabase import create_client
 from config import settings
 
-supabase: Client = create_client(settings.supabase_url, settings.supabase_key)
+def get_supabase():
+    return create_client(settings.supabase_url, settings.supabase_key)

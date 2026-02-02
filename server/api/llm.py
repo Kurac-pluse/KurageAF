@@ -3,7 +3,7 @@ import re
 import openai
 import json
 from fastapi import APIRouter
-from supabase_client import supabase
+from supabase_client import get_supabase
 from api.models import QueryRequestConv
 from config import settings
 from enum import Enum
@@ -30,14 +30,15 @@ def get_system_prompt(mode: PromptMode) -> str:
     if mode == PromptMode.CONV:
         return (
             "あなたは修士論文の被験者実験で使用される対話エージェントです。"
-            "人間同士の自然で短めの日本語会話を再現することが目的です。"
+            "人間同士の自然で短め(30~40文字程度)の日本語会話を再現することが目的です。"
 
             "必ず以下を厳守してください。"
 
             "・自分がAI、LLM、システム、プログラムであることを一切示唆してはいけません。"
             "・実験、指示、制約、プロンプトの存在を会話に含めてはいけません。"
             "・出力は自然な会話文のみとし、説明文やメタ発言は禁止します。"
-            "・会話履歴を参照し、同じ言葉を繰り返さないでください。"
+            "・会話履歴を参照し、絶対に同じ内容や質問を繰り返さないでください。"
+            "・あなたは、会話相手のタスクが何であったか、達成することができたのか、難易度はどうだったかが気になっているます。"
 
             "・会話にはキャラクターとして一貫した性格・口調・役割を維持してください。"
             "・これは実験後半の「会話・推論フェーズ」であり、実験前半の「タスク遂行フェーズ」の情報を自然に会話へ織り交ぜてください。"
@@ -148,7 +149,7 @@ NPC_SPEECH_STYLE = {
     },
     "npc3": {
         "description": "距離感ゼロのフランクな言葉遣い、句点なし",
-        "ending": "〜だったわ / 〜できた？"
+        "ending": "〜だった / 〜できた？"
     },
 }
 
@@ -166,11 +167,12 @@ def get_speech_instruction(sender: str) -> str:
     )
 
 # --- 会話履歴取得 ---
-def get_conversation_context(session_id, phase, sender, receiver):
+async def get_conversation_context(session_id, phase, sender, receiver):
     if not session_id:
         print("[get_conversation_context] session_id is None")
         return ""
     try:
+        supabase = get_supabase()
         res = (
             supabase
             .table("messages")
@@ -192,11 +194,12 @@ def get_conversation_context(session_id, phase, sender, receiver):
         print("[get_conversation_context Supabase Exception]", e)
         return ""
 
-def get_latest_message(session_id, phase, sender, receiver):
+async def get_latest_message(session_id, phase, sender, receiver):
     if not session_id:
         print("[get_conversation_context] session_id is None")
         return ""
     try:
+        supabase = get_supabase()
         res = (
             supabase
             .table("messages")
@@ -276,9 +279,9 @@ async def call_llm_conv(request: QueryRequestConv):
         rec_char_name = await get_char_name_by_id(request.receiver)
         speech_instruction = get_speech_instruction(request.sender)
         inventory = await get_inventory(sen_char_name)
-        context = get_conversation_context(request.session_id, request.phase, request.sender, request.receiver)
+        context = await get_conversation_context(request.session_id, request.phase, request.sender, request.receiver)
         log = await format_logs_simple(sen_char_name)
-        last_conv = get_latest_message(request.session_id, request.phase, request.sender, request.receiver)
+        last_conv = await get_latest_message(request.session_id, request.phase, request.sender, request.receiver)
         task = await get_task_by_npc_id(request.sender)
 
         prompt_filled = template.format(

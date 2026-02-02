@@ -3,7 +3,7 @@ import asyncio
 from config import settings
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
-from supabase_client import supabase
+from supabase_client import get_supabase
 
 # LLM_MODEL = "gpt-3.5-turbo"
 LLM_MODEL = "gpt-4o-mini"
@@ -18,6 +18,7 @@ INITIAL_SKINS = ["men1", "women2", "women3", "men2", "women1"]
 # IDからキャラクター名に変換
 async def get_char_name_by_id(npc_id: str) -> str | None:
     try:
+        supabase = get_supabase()
         res = await asyncio.to_thread(
             lambda: (
                 supabase
@@ -97,6 +98,7 @@ async def get_task_by_npc_id(npc_id: str) -> str | None:
         return None
 
     try:
+        supabase = get_supabase()
         res = (
             supabase
             .table("tasks")
@@ -199,6 +201,7 @@ async def save_logs_and_finish():
     print("[LOG] save logs start...")
 
     try:
+        supabase = get_supabase()
         # 全キャラ取得
         characters = await fetch_characters_info()
         if not characters:

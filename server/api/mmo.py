@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException
 from config import settings
 from npc import state
 from api.models import StartExperimentRequest
-from supabase_client import supabase
+from supabase_client import get_supabase
 from datetime import datetime, timezone
 from services.util import (
     fetch_character_logs,
@@ -95,6 +95,7 @@ async def game_restart():
 @router.post("/start")
 async def start_experiment(req: StartExperimentRequest):
     try:
+        supabase = get_supabase()
         state.current_task_name = req.task_name
         # 0:通常モード
         # 1:実験3モード
