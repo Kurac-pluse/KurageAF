@@ -1,14 +1,19 @@
 import httpx
 from fastapi import APIRouter, HTTPException
 from config import settings
-from services.util import fetch_character_logs, fetch_characters_info
+from npc import state
+from api.models import StartExperimentRequest
+from supabase_client import get_supabase
+from datetime import datetime, timezone
+from services.util import (
+    fetch_character_logs,
+    fetch_characters_info,
+    save_logs_and_finish,
+    INITIAL_NAMES,
+    INITIAL_SKINS,
+)
 
 router = APIRouter(prefix="/api/mmo")
-
-# 初期キャラクター設定（実験条件として固定）
-INITIAL_NAMES = ["laplus", "rui", "koyori", "kuroe", "iroha"]
-# INITIAL_NAMES = ["A-AAAAA", "B-BBBBB", "C-CCCCC", "D-DDDDD", "E-EEEEE"]
-INITIAL_SKINS = ["men1", "women2", "women3", "men2", "women1"]
 
 @router.options("/game_restart")
 async def game_restart_options():
@@ -87,6 +92,45 @@ async def game_restart():
         "deleted": names,
         "created": created,
     }
+
+@router.post("/start")
+async def start_experiment(req: StartExperimentRequest):
+    try:
+        supabase = get_supabase()
+        state.current_task_name = req.task_name
+        # 0:通常モード
+        # 1:実験3モード
+        state.current_game_mode = req.game_mode
+
+        # timer を開始
+        now = datetime.now(timezone.utc).isoformat()
+        supabase.table("timer").update({
+            "is_running": True,
+            "start_time": now,
+        }).eq("id", 1).execute()
+
+        return {
+            "status": "ok",
+            "task_name": req.task_name,
+        }
+
+    except Exception as e:
+        print("[EX ERROR]", e)
+        return {"status": "error"}
+
+@router.post("/save")
+async def save_DB():
+    try:
+        await save_logs_and_finish(source="human")
+
+        return {
+            "status": "ok",
+            "message": "logs saved as human_operation"
+        }
+
+    except Exception as e:
+        print("[SAVE ERROR]", e)
+        raise HTTPException(status_code=500, detail=str(e))
 
 @router.get("/logs/{character}")
 async def get_character_logs(character: str):

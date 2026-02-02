@@ -3,9 +3,8 @@ import supabase from "../supabaseClient";
 
 // 環境定数
 export const server = process.env.REACT_APP_ARTIFACTS_URL;
-export const pilot = ["player1", "player2", "npc1", "npc2", "npc3"];
-export const names = ["laplus", "rui", "koyori", "kuroe", "iroha"];
-// export const names = ["A-AAAAA", "B-BBBBB", "C-CCCCC", "D-DDDDD", "E-EEEEE"];
+export const pilot = ["player1", "player2", "npc1", "npc2", "npc3"]
+export const names = ["A-AAAA", "B-BBBB", "C-CCCC", "D-DDDD", "E-EEEE"];
 export const TURN_DURATION = 30 * 1000;
 export const TURNS_PER_PHASE = 6;
 export const PHASE_END_BUFFER = 5 * 1000;

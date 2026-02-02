@@ -38,7 +38,7 @@ async def movement(character: str, x: int, y: int) -> Dict[str, Any]:
     # 現在座標と移動先座標が同じならキャンセル
     current_x, current_y = await get_character_coordinate(character)
     if current_x == x and current_y == y:
-        print(f"[{character}] 現在座標と同じなので移動キャンセル: [{x}, {y}]")
+        print(f"\033[33m[{character}] 現在座標と同じなので移動キャンセル: [{x}, {y}]\033[0m")
         return None
 
     url = f"{settings.artifacts_url}/my/{character}/action/move"
@@ -67,6 +67,18 @@ async def movement(character: str, x: int, y: int) -> Dict[str, Any]:
 # gather（採取系）
 # -----------------------------------------------------
 async def gather(character: str) -> Dict[str, Any]:
+    GATHERABLE_TILES = {
+        (-1, 0),
+        (2, 0),
+        (2, 2),
+        (4, 2),
+    }
+    current_x, current_y = await get_character_coordinate(character)
+    if (current_x, current_y) not in GATHERABLE_TILES:
+        print(
+            f"\033[33m[{character}] 現在地 [{current_x}, {current_y}] は採取不可マスのためキャンセル\033[0m"
+        )
+        return None
     url = f"{settings.artifacts_url}/my/{character}/action/gathering"
     headers = {
         "Accept": "application/json",
@@ -139,7 +151,7 @@ async def unequip(character: str) -> Dict[str, Any]:
 async def fight(character: str) -> Dict[str, Any]:
     current_x, current_y = await get_character_coordinate(character)
     if not ((current_x == 0 and current_y == 1) or (current_x == 0 and current_y == 2)):
-        print(f"[{character}] 現在地 [{current_x}, {current_y}] は戦闘可能マスではないためキャンセル")
+        print(f"\033[33m[{character}] 現在地 [{current_x}, {current_y}] は戦闘可能マスではないためキャンセル\033[0m")
         return None
     
     url = f"{settings.artifacts_url}/my/{character}/action/fight"

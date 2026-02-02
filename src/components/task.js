@@ -22,6 +22,7 @@ export default function Task({ player }) {
     };
 
     useEffect(() => {
+        let isMounted = true
         const fetchTask = async () => {
             const { data, error } = await supabase
                 .from('tasks')
@@ -29,32 +30,31 @@ export default function Task({ player }) {
                 .eq('number', numberToWatch)
                 .single();
 
-            if (error) {
-                console.error('Failed to fetch task', error.message);
-            } else {
+            if (!error && isMounted) {
                 setTask(data);
             }
         };
         fetchTask();
 
         const channel = supabase
-            .channel('task-updates')
+            .channel(`task-updates-${numberToWatch}`)
             .on(
                 'postgres_changes',
                 {
                     event: 'UPDATE',
                     schema: 'public',
                     table: 'tasks',
-                    match: { number: numberToWatch },
                 },
                 (payload) => {
-                    const newData = payload.new;
-                    setTask(newData);
+                    if (payload.new?.number === numberToWatch) {
+                        setTask(payload.new)
+                    }
                 }
             )
             .subscribe();
 
         return () => {
+            isMounted = false
             supabase.removeChannel(channel);
         };
     }, [numberToWatch]);
@@ -68,8 +68,8 @@ export default function Task({ player }) {
     }
 
     return (
-        <div style={containerStyle}>
-            <div style={contentStyle}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div style={{ fontSize: '3rem' }}>
                 <p>TASK : {task.name}</p>
             </div>
         </div>
