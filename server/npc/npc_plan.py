@@ -1,6 +1,6 @@
 import asyncio
 import time
-from supabase_client import supabase
+from npc import state
 from api.llm import call_llm_plan, call_llm_json, call_llm_task
 from api.mmo import fetch_character_logs
 from services.util import get_task_by_npc_id, get_inventory
@@ -19,7 +19,10 @@ from npc.artifacts import (
 # 初期プラン生成
 # ======================
 async def generate_initial_plan(npc_id: str, name: str):
-    task = await get_task_by_npc_id(npc_id)
+    if state.current_game_mode == "1":
+        task = state.current_task_name
+    else:
+        task = await get_task_by_npc_id(npc_id)
     if not task:
         return None
 
@@ -46,7 +49,10 @@ async def generate_next_plan(npc_id: str, name: str):
         for i, e in enumerate(entries)
     )
     inventory = await get_inventory(name)
-    initial_task = await get_task_by_npc_id(npc_id)
+    if state.current_game_mode == "1":
+        initial_task = state.current_task_name
+    else:
+        initial_task = await get_task_by_npc_id(npc_id)
     if not initial_task:
         return None
 
@@ -137,6 +143,6 @@ async def call_api_with_plan(
                 await heal(name)
 
         except Exception as e:
-            print(f"\033[31m[{npc_id}] アクション実行中にエラー: {e}\033[0m")
+            print(f"\033[33m[{npc_id}] アクション実行中にエラー: {e}\033[0m")
 
     return f"[{npc_id}] plan 完了"

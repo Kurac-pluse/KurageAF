@@ -28,7 +28,7 @@ const TASK_KEYWORDS = [
     "Ash Wood：木材",
     "Chicken：鶏 (肉/卵)",
     "Copper Ore：銅鉱石",
-    "Cooled Chicken：調理した鶏肉",
+    "Cooked Chicken：調理した鶏肉",
     "Cow：牛 (肉/牛乳)",
     "Fried Eggs：目玉焼き",
     "Gudgeon：ガジョン (魚)",

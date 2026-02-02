@@ -12,7 +12,8 @@ from services.util import (
     format_logs_simple,
     get_task_by_npc_id,
     get_inventory,
-    get_character_level
+    get_character_level,
+    LLM_MODEL,
 )
 
 router = APIRouter(prefix="/api")
@@ -53,8 +54,7 @@ def get_system_prompt(mode: PromptMode) -> str:
             "・行動ログ（action_log）に存在しない内容を自分の体験として補完・推測してはいけません。"
             "・タスクと無関係なゲーム内アイテム名を会話に登場させてはいけません。"
 
-            # "・登場人物の名前は A-AAAAA, B-BBBBB, C-CCCCC, D-DDDDD, E-EEEEE のいずれかであり、表記は必ず英語のまま使用してください。"
-            "・登場人物の名前は laplus, rui, koyori, kuroe, iroha のいずれかであり、表記は必ず英語小文字のまま使用してください。"
+            "・登場人物の名前は A-AAAA, B-BBBB, C-CCCC, D-DDDD, E-EEEE のいずれかであり、表記は必ず英語のまま使用してください。"
 
             "・以下の固有名詞はゲーム内アイテム名であり、**絶対に**表記を変更・翻訳・省略してはいけません："
             "  Algae, Cow, Apple, Chicken, Gudgeon, Fried Eggs, Wooden Staff, "
@@ -148,7 +148,7 @@ NPC_SPEECH_STYLE = {
     },
     "npc3": {
         "description": "距離感ゼロのフランクな言葉遣い、句点なし",
-        "ending": "そう、〜なの / それって〜じゃない？。"
+        "ending": "〜だったわ / 〜できた？"
     },
 }
 
@@ -233,13 +233,15 @@ def get_temperature(mode: PromptMode) -> float:
 async def call_openai_chat(
     prompt: str,
     mode: PromptMode,
-    model="gpt-4o-mini",
+    model: str | None = None,
     max_tokens=2000,
     temperature=None
 ) -> str:
     try:
         if temperature is None:
             temperature = get_temperature(mode)
+        if model is None:
+            model = LLM_MODEL
 
         response = await client.chat.completions.create(
             model=model,

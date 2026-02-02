@@ -7,3 +7,7 @@ class QueryRequestConv(BaseModel):
     turn: int
     sender: str
     receiver: str
+
+class StartExperimentRequest(BaseModel):
+    task_name: str
+    game_mode: str

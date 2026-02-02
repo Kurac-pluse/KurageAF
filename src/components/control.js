@@ -1,14 +1,39 @@
-import { HStack, Button, Input } from '@chakra-ui/react';
+import { HStack, VStack, Button, Input, Select } from '@chakra-ui/react';
 import { names, pilot } from '../api/info';
 import supabase from '../supabaseClient';
 import { createSession } from '../api/chat';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Control = () => {
     const [sessionName, setSessionName] = useState(() => localStorage.getItem('session_name') || '');
-    const [errorMessage, setErrorMessage] = useState('');
-    const [successMessage, setSuccessMessage] = useState('');
+    const [sessionError, setSessionError] = useState('');
+    const [taskError, setTaskError] = useState('');
+    const [sessionSuccess, setSessionSuccess] = useState('');
+    const [taskSuccess, setTaskSuccess] = useState('');
+    const [tasks, setTasks] = useState([]);
+    const [selectedTask, setSelectedTask] = useState('');
 
+    // task一覧取得
+    useEffect(() => {
+        const fetchTasks = async () => {
+            const { data, error } = await supabase
+                .from('tasks')
+                .select('id, name, number')
+                .order('number', { ascending: true });
+            if (error) {
+                console.error('タスク取得失敗:', error);
+                return;
+            }
+            setTasks(data);
+        };
+        fetchTasks();
+    }, []);
+
+    // ------------------------------------------
+    // 処理関数
+    // ------------------------------------------
+
+    // ①タスクのシャッフル
     const shuffleTaskNumbers = async() => {
         // 1. 全タスクを取得
         const { data: tasks, error } = await supabase
@@ -39,18 +64,21 @@ const Control = () => {
                 console.error(`タスクID ${taskId} の更新失敗:`, updateError);
             }
         }
-        console.log(shuffledNumbers);
-        console.log("完了");
+        // console.log(shuffledNumbers);
+        // console.log("完了");
     }
 
+    // ①キャラや会話順などすべてをシャッフル
     const shuffle = async () => {
         try {
-            setErrorMessage(''); // まずエラーをリセット
-            setSuccessMessage(''); // 成功用メッセージもリセット
+            setSessionError('');
+            setTaskError('');
+            setSessionSuccess('');
+            setTaskSuccess('');
 
             // 空チェック
             if (!sessionName) {
-                setErrorMessage('セッション名を入力してください');
+                setSessionError('セッション名を入力してください');
                 return;
             }
 
@@ -63,19 +91,19 @@ const Control = () => {
 
             if (checkError) {
                 console.error(checkError);
-                setErrorMessage('セッション名の確認中にエラーが発生しました');
+                setSessionError('セッション名の確認中にエラーが発生しました');
                 return;
             }
 
             if (existing.length > 0) {
-                setErrorMessage('そのセッション名は既に使われています');
+                setSessionError('そのセッション名は既に使われています');
                 return;
             }
 
             // session 作成
             const sessionId = await createSession(sessionName);
             if (!sessionId) {
-                setErrorMessage('セッションの作成に失敗しました');
+                setSessionError('セッションの作成に失敗しました');
                 return;
             }
 
@@ -132,18 +160,82 @@ const Control = () => {
             if (convError) throw convError;
 
             await shuffleTaskNumbers();
-            setSuccessMessage('Session作成完了');
+            setSessionSuccess('Session作成完了');
             // window.location.reload();
         } catch (error) {
             console.error('シャッフルエラー:', error.message);
         }
     };
 
-    const startGame = async () => {
+    // ②FastAPIにgameのリセットを依頼
+    async function gameRestart() {
+        const url = process.env.REACT_APP_SERVER_URL + "/api/mmo/game_restart";
+
+        const response = await fetch(url, {
+            method: "POST",
+            headers: { Accept: "application/json" },
+        });
+        if (!response.ok) {
+            throw new Error(await response.text());
+        }
+        return await response.json();
+    }
+
+    // ③④FastAPIにflag管理を依頼
+    async function gameStart(taskName, modeNum) {
+        const url = process.env.REACT_APP_SERVER_URL + "/api/mmo/start";
+
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                task_name: taskName,
+                game_mode: modeNum,
+            }),
+        });
+
+        if (!response.ok) {
+            throw new Error(await response.text());
+        }
+
+        return await response.json();
+    }
+
+    // ------------------------------------------
+    // handle
+    // ------------------------------------------
+
+    // ②GAME RESET
+    const handleGameReset = async () => {
         try {
+            setSessionError('');
+            setTaskError('');
+            setSessionSuccess('');
+            setTaskSuccess('');
+
+            await gameRestart();   // ← 成功 or throw
+
+            setSessionSuccess('ゲームをリセットしました');
+        } catch (error) {
+            console.error('GAME RESET error:', error);
+            setSessionError('ゲームのリセットに失敗しました');
+        }
+    };
+
+    // ③GAME START
+    const handleGameStart = async () => {
+        try {
+            setSessionError('');
+            setTaskError('');
+            setSessionSuccess('');
+            setTaskSuccess('');
+
             // 入力チェック
             if (!sessionName) {
-                setErrorMessage('セッション名を入力してください');
+                setSessionError('セッション名を入力してください');
                 return;
             }
 
@@ -155,97 +247,126 @@ const Control = () => {
                 .single();
 
             if (error || !session) {
-                setErrorMessage('指定されたセッションが見つかりません');
+                setSessionError('指定されたセッションが見つかりません');
                 return;
             }
 
-            setErrorMessage('');
             const sessionId = session.id;
 
             // 他セッションを finished
             await supabase
-            .from('sessions')
-            .update({ status: 'finished' })
-            .neq('id', sessionId);
+                .from('sessions')
+                .update({ status: 'finished' })
+                .neq('id', sessionId);
 
             // この session を running
             await supabase
-            .from('sessions')
-            .update({ status: 'running' })
-            .eq('id', sessionId);
+                .from('sessions')
+                .update({ status: 'running' })
+                .eq('id', sessionId);
 
-            // ③ timer 開始
-            const now = new Date().toISOString();
-            await supabase.from('timer').update({
-                start_time: now,
-                is_running: true,
-            }).eq('id', 1);
+            // FastAPI に start を依頼
+            await gameStart("", "0");
 
-            setSuccessMessage('ゲームを開始しました');
+            setSessionSuccess('ゲームを開始しました');
         } catch (error) {
-            console.error('ゲーム開始エラー:', error.message);
-            setErrorMessage('ゲーム開始に失敗しました');
+            console.error('ゲーム開始エラー:', error);
+            setSessionError('ゲーム開始に失敗しました');
         }
     };
 
-    // FastAPIにgameのリセットを依頼
-    async function game_restart() {
-        const url = process.env.REACT_APP_SERVER_URL + "/api/mmo/game_restart";
-
-        const response = await fetch(url, {
-            method: "POST",
-            headers: { Accept: "application/json" },
-        });
-
-        if (!response.ok) {
-            throw new Error(await response.text());
-        }
-
-        return await response.json();
-    }
-
-    const handleGameReset = async () => {
+    // ④EX3
+    const handleStartNpcTask = async () => {
         try {
-            setErrorMessage('');
-            setSuccessMessage('');
+            setSessionError('');
+            setTaskError('');
+            setSessionSuccess('');
+            setTaskSuccess('');
 
-            await game_restart();   // ← 成功 or throw
+            if (!selectedTask) {
+                setTaskError('タスクを選択してください');
+                return;
+            }
 
-            setSuccessMessage('ゲームをリセットしました');
+            // FastAPI に start を依頼
+            await gameStart(selectedTask, "1");
+
+            setTaskSuccess(`タスク「${selectedTask}」を開始しました`);
         } catch (error) {
-            console.error('GAME RESET error:', error);
-            setErrorMessage('ゲームのリセットに失敗しました');
+            console.error(error);
+            setTaskError('タスク開始に失敗しました');
         }
     };
 
+    // ------------------------------------------
+    // JSX
+    // ------------------------------------------
     return (
-        <HStack spacing={4} wrap="wrap">
-            <Input
-            placeholder="例: Aさん, Bさん"
-            value={sessionName}
-            isInvalid={!!errorMessage}
-            onChange={(e) => {
-                setSessionName(e.target.value);
-                localStorage.setItem('session_name', e.target.value);
-                setErrorMessage(''); // 入力中にエラー解除
-            }}
-        />
+        <>
+        <VStack align="start" spacing={4}>
+            <HStack spacing={4} wrap="wrap">
+                <Input
+                    placeholder="例: Aさん, Bさん"
+                    value={sessionName}
+                    isInvalid={!!sessionError}
+                    onChange={(e) => {
+                        setSessionName(e.target.value);
+                        localStorage.setItem('session_name', e.target.value);
+                        setSessionError(''); // 入力中にエラー解除
+                        setSessionSuccess('');
+                    }}
+                />
 
-        <Button onClick={shuffle}>MAKE SESSION</Button>
-        <Button onClick={startGame}>GAME START</Button>
-        <Button onClick={handleGameReset}>GAME RESET</Button>
+                <Button onClick={shuffle}>MAKE SESSION</Button>
+                <Button onClick={handleGameStart}>GAME START</Button>
+                <Button onClick={handleGameReset}>GAME RESET</Button>
 
-        {errorMessage && (
-            <div style={{ color: 'red', fontSize: '0.9em' }}>
-                {errorMessage}
-            </div>
-        )}
-        {successMessage && (
-            <div style={{ color: 'green', fontSize: '0.9em' }}>
-                {successMessage}
-            </div>
-        )}
-        </HStack>
+                {sessionError && (
+                    <div style={{ color: 'red', fontSize: '0.9em' }}>
+                        {sessionError}
+                    </div>
+                )}
+                {sessionSuccess && (
+                    <div style={{ color: 'green', fontSize: '0.9em' }}>
+                        {sessionSuccess}
+                    </div>
+                )}
+            </HStack>
+
+            <HStack spacing={4} mt={4}>
+                <Select
+                    placeholder="実行するタスクを選択してください"
+                    value={selectedTask}
+                    onChange={(e) => {
+                        setSelectedTask(e.target.value);
+                        setTaskError('');
+                        setTaskSuccess('')
+                    }}
+                    width="360px"
+                    isInvalid={!!taskError}
+                >
+                    {tasks.map(task => (
+                        <option key={task.id} value={task.name}>
+                            {task.name}
+                        </option>
+                    ))}
+                </Select>
+                <Button colorScheme="teal" onClick={handleStartNpcTask}>
+                    選択したタスクで実験開始
+                </Button>
+                {taskError && (
+                    <div style={{ color: 'red', fontSize: '0.9em' }}>
+                        {taskError}
+                    </div>
+                )}
+                {taskSuccess && (
+                    <div style={{ color: 'green', fontSize: '0.9em' }}>
+                        {taskSuccess}
+                    </div>
+                )}
+            </HStack>
+        </VStack>
+        </>
     );
 };
 
