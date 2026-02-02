@@ -200,7 +200,6 @@ const Control = () => {
         if (!response.ok) {
             throw new Error(await response.text());
         }
-
         return await response.json();
     }
 
@@ -275,7 +274,7 @@ const Control = () => {
         }
     };
 
-    // ④EX3
+    // ④EX3-AI
     const handleStartNpcTask = async () => {
         try {
             setSessionError('');
@@ -298,9 +297,37 @@ const Control = () => {
         }
     };
 
+    // ⑤EX3-human
+    const handleAddDb = async () => {
+        try {
+            setSessionError('');
+            setTaskError('');
+            setSessionSuccess('');
+            setTaskSuccess('');
+            const url = process.env.REACT_APP_SERVER_URL + "/api/mmo/save";
+
+            const response = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                },
+            });
+            if (!response.ok) {
+                throw new Error(await response.text());
+            } else {
+                setSessionSuccess("ログをDBに保存しました");
+            }
+        } catch (error) {
+            console.error(error);
+            setSessionError('DBへの保存に失敗しました');
+        }
+    }
+
     // ------------------------------------------
     // JSX
     // ------------------------------------------
+
     return (
         <>
         <VStack align="start" spacing={4}>
@@ -319,7 +346,8 @@ const Control = () => {
 
                 <Button onClick={shuffle}>MAKE SESSION</Button>
                 <Button onClick={handleGameStart}>GAME START</Button>
-                <Button onClick={handleGameReset}>GAME RESET</Button>
+                <Button colorScheme="teal" onClick={handleGameReset}>GAME RESET</Button>
+                <Button onClick={handleAddDb}>ADD DB</Button>
 
                 {sessionError && (
                     <div style={{ color: 'red', fontSize: '0.9em' }}>
@@ -351,7 +379,7 @@ const Control = () => {
                         </option>
                     ))}
                 </Select>
-                <Button colorScheme="teal" onClick={handleStartNpcTask}>
+                <Button onClick={handleStartNpcTask}>
                     選択したタスクで実験開始
                 </Button>
                 {taskError && (

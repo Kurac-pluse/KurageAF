@@ -8,8 +8,9 @@ from datetime import datetime, timezone
 from services.util import (
     fetch_character_logs,
     fetch_characters_info,
+    save_logs_and_finish,
     INITIAL_NAMES,
-    INITIAL_SKINS
+    INITIAL_SKINS,
 )
 
 router = APIRouter(prefix="/api/mmo")
@@ -116,6 +117,20 @@ async def start_experiment(req: StartExperimentRequest):
     except Exception as e:
         print("[EX ERROR]", e)
         return {"status": "error"}
+
+@router.post("/save")
+async def save_DB():
+    try:
+        await save_logs_and_finish(source="human")
+
+        return {
+            "status": "ok",
+            "message": "logs saved as human_operation"
+        }
+
+    except Exception as e:
+        print("[SAVE ERROR]", e)
+        raise HTTPException(status_code=500, detail=str(e))
 
 @router.get("/logs/{character}")
 async def get_character_logs(character: str):

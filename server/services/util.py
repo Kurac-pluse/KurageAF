@@ -197,11 +197,16 @@ async def get_character_level(character: str) -> str:
         print(f"[get_character_level] error: {e}")
         return "0"
 
-async def save_logs_and_finish():
+async def save_logs_and_finish(source: str = "llm"):
     print("[LOG] save logs start...")
 
     try:
         supabase = get_supabase()
+        if source == "human":
+            llm_label = "human_operation"
+        else:
+            llm_label = LLM_MODEL
+
         # 全キャラ取得
         characters = await fetch_characters_info()
         if not characters:
@@ -221,7 +226,7 @@ async def save_logs_and_finish():
             rows.append({
                 "character_name": character_name,
                 "action_log": log_str,
-                "llm": LLM_MODEL,
+                "llm": llm_label,
                 # created_at は default now()
             })
 
@@ -237,7 +242,7 @@ async def save_logs_and_finish():
                 .execute()
         )
 
-        print(f"[LOG] saved {len(rows)} npc action logs")
+        print(f"[LOG] saved {len(rows)} npc action logs ({llm_label})")
 
     except Exception as e:
         print("[save_logs_and_finish ERROR]", e)
