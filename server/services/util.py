@@ -14,6 +14,9 @@ CHAR_IDS = ["player1", "player2", "npc1", "npc2", "npc3"]
 # 初期キャラクター設定（実験条件として固定）
 INITIAL_NAMES = ["A-AAAA", "B-BBBB", "C-CCCC", "D-DDDD", "E-EEEE"]
 INITIAL_SKINS = ["men1", "women2", "women3", "men2", "women1"]
+TASK1 = "Appleを入手"
+TASK2 = "Copper Oreを入手"
+TASK = TASK2
 
 # IDからキャラクター名に変換
 async def get_char_name_by_id(npc_id: str) -> str | None:
@@ -227,6 +230,7 @@ async def save_logs_and_finish(source: str = "llm"):
                 "character_name": character_name,
                 "action_log": log_str,
                 "llm": llm_label,
+                "task": TASK,
                 # created_at は default now()
             })
 

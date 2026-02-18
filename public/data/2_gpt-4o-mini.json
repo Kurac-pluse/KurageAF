@@ -1,0 +1,5157 @@
+[
+  [
+    {
+      "timestamp": "2026/02/02 14:46:15",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:44",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:13",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:44:42",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:44:11",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:40",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:09",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:42:38",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:42:07",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:41:36",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:41:25",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:40:54",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 14:40:43",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 14:40:12",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:39:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:39:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:39",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:28",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:38:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 14:46:17",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:46",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:14",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:44:43",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:44:12",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:41",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:09",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:42:38",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:42:27",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:41:56",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 14:41:45",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 14:41:14",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:40:43",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:40:12",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:39:41",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:39:10",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:28",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:38:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 14:46:07",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:36",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:25",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:44:54",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 14:44:43",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 14:44:12",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:41",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:10",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:42:39",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:42:07",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:41:36",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:41:05",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:40:54",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:40:23",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 14:40:12",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 14:39:41",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:39:10",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:39",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:28",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:38:18",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 14:46:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:48",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:37",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:45:06",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 14:44:55",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 14:44:24",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:53",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:22",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:42:51",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:42:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:41:48",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:41:17",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:40:46",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:40:14",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:39:43",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:39:12",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:41",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:30",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:38:18",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 14:46:10",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:38",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:45:07",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:44:36",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:44:04",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:53",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:43:22",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 14:43:11",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 14:42:40",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:42:29",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:41:58",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 14:41:47",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 14:41:16",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:40:45",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:40:14",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:39:43",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:39:12",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:41",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 14:38:30",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 14:38:18",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:18:09",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:17:38",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:17:27",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:16:56",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:16:45",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:16:14",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:43",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:12",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:14:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:14:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:13:38",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:13:07",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:12:56",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:12:25",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:12:14",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:11:43",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:11:12",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:10:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:10:30",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:10:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:17:55",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:17:24",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:17:13",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:16:42",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:16:31",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:16:00",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:49",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:15:18",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:07",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:14:36",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:14:25",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:13:54",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:13:43",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:13:12",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:12:41",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:12:10",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:11:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:11:08",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:10:37",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:10:26",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:10:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:17:51",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:17:20",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:16:49",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:16:38",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:16:07",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:56",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:15:25",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:14:54",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:14:23",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:14:17",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (2,0) via path: (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:14:09",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,1) via path: (2,0) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 15:13:38",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:13:07",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:12:56",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:12:25",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:12:14",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:11:43",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:11:12",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:10:41",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:10:30",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:10:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:17:58",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:17:27",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:16:56",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:16:25",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:54",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:43",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:15:12",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:01",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:14:30",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:13:59",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:13:48",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:13:17",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:13:06",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:12:35",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:12:04",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:11:33",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:11:02",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:10:51",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:10:40",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,2) to (2,2) via path: (0,2) -> (1,2) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:10:34",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,1) to (0,2) via path: (0,1) -> (0,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:10:28",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (0,1) via path: (0,0) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/02/02 15:10:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:17:57",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:17:46",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:17:15",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:16:44",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:16:13",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:42",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:15:11",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:14:40",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:14:29",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:13:58",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:13:47",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:13:16",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:12:45",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:12:14",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:11:43",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:11:12",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:10:41",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:10:30",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:10:17",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:39:08",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:57",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:38:26",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:15",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:37:44",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:13",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:36:42",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:36:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:35:39",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:35:28",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:34:57",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:34:46",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:34:15",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:34:04",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:33:33",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:33:22",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:32:51",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:32:20",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:49",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:38",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:31:28",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:39:17",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:45",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:14",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:43",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:32",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:37:01",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:36:50",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:36:19",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:35:48",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:35:37",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:35:06",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:34:55",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:34:24",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:33:53",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:33:22",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:32:51",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:32:20",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:38",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:31:29",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:39:20",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:48",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:17",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:46",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:35",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:37:04",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:36:53",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:36:22",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:35:51",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:35:20",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:34:49",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:34:18",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:34:07",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:33:36",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:33:25",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:32:54",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:32:23",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:52",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:41",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:31:29",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:39:21",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:50",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:47",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:16",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:05",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:36:34",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:36:23",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:35:52",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:35:41",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:35:10",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:34:59",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:34:28",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:33:57",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:33:26",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:32:55",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:32:24",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:53",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:42",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:31:29",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 15:39:05",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:34",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:38:03",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:32",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:37:01",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:36:30",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:35:59",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:35:28",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:34:57",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:34:25",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:33:54",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:33:23",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:32:52",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:32:21",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:50",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:31:39",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:31:29",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:00:29",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:59:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:59:27",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:56",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:24",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:57:53",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:57:22",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:57:11",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:56:40",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:56:29",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:55:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:55:27",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:55:16",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:54:45",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:54:34",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:54:03",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:53:32",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:53:01",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:52:50",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:52:41",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:00:22",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:59:51",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:59:40",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:59:09",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:58",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:58:27",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:16",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:57:45",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:57:34",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:57:03",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:56:52",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:56:21",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:56:10",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:55:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:55:08",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:54:37",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:54:05",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:53:34",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:53:03",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:52:52",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:52:41",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:00:31",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:00:20",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:59:49",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:59:18",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:47",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:36",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:58:05",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:57:54",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:57:23",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:56:52",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:56:41",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:56:10",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:55:59",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:55:28",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:55:17",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:54:46",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:54:35",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:54:04",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:53:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:53:02",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:52:51",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:52:41",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:00:27",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:59:56",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:59:25",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:54",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:23",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:12",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:57:41",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:57:30",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:56:59",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:56:48",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:56:17",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:56:06",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:55:35",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:55:04",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:54:33",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:54:01",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:53:30",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:52:59",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:52:48",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:52:42",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:00:39",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:00:28",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:59:57",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:59:26",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:55",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:44",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:58:13",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:58:02",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:57:31",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:57:00",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:56:49",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:56:18",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 15:56:07",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 15:55:36",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:55:05",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:54:34",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:54:03",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:53:32",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:53:01",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 15:52:50",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 15:52:42",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:19:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:19:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:59",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:18:28",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:17",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:17:46",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:17:15",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:44",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:33",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:16:02",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:15:51",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:15:20",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:14:49",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:14:38",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:14:07",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:13:56",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:13:25",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:54",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:23",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:12",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:12:02",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:20:00",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:19:49",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:19:18",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:47",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:16",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:05",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:17:34",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:17:23",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:16:52",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:21",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:10",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:15:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:15:28",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:14:57",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:14:26",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:13:55",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:13:23",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:52",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:21",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:10",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:12:03",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:19:39",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:19:08",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:57",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:18:26",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:15",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:17:44",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:17:13",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:42",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:31",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:16:00",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:15:49",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:15:18",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:14:47",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:14:36",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:14:05",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:13:54",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:13:23",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:52",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:21",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:10",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:12:03",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:20:03",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:19:52",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:19:21",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:50",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:08",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:17:37",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:17:26",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:16:55",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:24",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:15:53",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:15:22",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:14:50",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:14:39",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:14:08",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:13:57",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:13:26",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:55",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:24",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:13",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:12:03",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:19:42",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:19:11",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:40",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:18:29",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:17:58",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:17:47",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:17:16",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:45",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:14",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:16:03",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:15:32",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:15:21",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:14:50",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:14:39",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:14:08",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:13:57",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:13:26",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:55",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:24",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:12:13",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:12:03",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:09:03",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:08:32",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:08:00",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:07:29",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:27",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:55",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:44",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:05:13",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:02",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:04:31",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:04:20",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:03:49",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:38",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:03:07",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:02:36",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:02:05",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:34",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:23",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:01:14",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:09:00",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:08:29",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:07:58",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:07:27",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:55",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:44",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:06:13",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:02",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:05:31",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:20",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:04:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:04:38",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:04:07",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:36",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:05",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:02:34",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:02:03",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:32",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:21",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:01:14",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:09:12",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:08:41",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:08:09",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:07:38",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:07:07",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:36",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:04",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:02",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:04:30",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:59",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:48",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:03:17",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:06",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:02:35",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:02:04",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:22",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:01:14",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:08:51",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:08:20",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:07:49",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:07:38",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:07:07",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:56",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:06:25",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:54",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:23",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:12",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:04:41",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:04:30",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:03:59",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:48",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:03:17",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:06",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:02:34",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:02:03",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:32",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:21",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:01:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:09:10",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:08:39",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:08:28",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:07:57",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:07:26",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:55",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:44",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:06:13",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:06:02",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:05:31",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:05:20",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:04:49",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:04:38",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:04:07",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:36",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:03:05",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:02:34",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:02:03",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:32",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:01:21",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:01:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:28:26",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:27:55",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:27:24",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:26:53",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:26:21",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:50",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:19",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:08",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:24:37",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:24:26",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:23:55",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:23:24",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:23:13",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:22:42",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:22:31",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:22:00",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:21:29",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:20:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:20:47",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:20:40",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:28:31",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:28:20",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:27:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:27:38",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:27:07",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:26:36",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:26:05",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:54",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:25:23",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:12",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:24:41",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:24:10",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:23:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:23:08",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:22:36",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:22:05",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:21:34",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:21:02",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:20:51",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:20:40",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:28:38",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:28:07",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:27:56",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:27:25",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:27:14",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:26:43",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:26:32",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:26:01",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:50",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:25:19",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:08",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:24:37",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:24:26",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:23:55",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:23:24",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:23:13",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:22:42",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:22:31",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:22:00",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:21:29",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:20:58",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:20:47",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:20:40",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:28:41",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:28:10",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:27:39",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:27:07",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:26:36",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:26:25",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:25:54",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:43",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:25:12",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:24:41",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:24:10",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:23:38",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:23:07",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:22:36",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:22:04",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:21:33",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:21:02",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:20:51",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:20:40",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:28:30",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:28:19",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:27:48",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:27:37",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:27:06",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:26:35",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:26:04",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:32",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:25:01",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:24:50",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:24:19",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:24:08",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:23:37",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:23:06",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:22:35",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:22:04",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:21:33",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:21:02",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:20:51",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:20:41",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:37:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:37:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:36:38",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:36:07",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:36",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:25",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:34:54",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:34:43",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:34:12",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:33:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:33:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:32:39",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:32:08",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:31:36",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:31:05",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:34",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:03",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:29:52",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:29:42",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:37:41",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:37:09",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:36:58",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:36:27",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:36:16",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:35:45",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:34",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:35:03",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:34:52",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:34:21",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:34:10",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:33:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:33:28",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:32:57",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:32:26",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:32:15",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:31:44",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:31:33",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:31:02",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:31",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:00",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:29:49",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:29:42",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:37:40",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:37:09",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:36:38",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:36:07",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:36",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:04",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:34:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:34:22",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:33:51",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:33:40",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:33:09",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:32:38",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:32:07",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:31:36",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:31:05",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:34",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:03",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:29:52",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:29:42",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:37:20",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:37:09",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:36:38",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:36:27",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:35:56",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:45",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:35:14",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:03",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:34:32",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:34:01",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:33:50",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:33:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:33:08",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:32:37",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:32:06",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:31:35",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:31:03",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:32",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:01",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:29:50",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:29:43",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:37:41",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:37:30",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:36:59",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:36:28",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:57",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:46",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:35:15",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:35:04",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:34:33",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:34:02",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:33:51",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:33:20",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:33:09",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:32:38",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:32:07",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:31:36",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:31:05",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:34",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:30:03",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:29:52",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:29:43",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:45:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:45:47",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:45:16",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:45:05",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:44:34",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:44:03",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:32",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:21",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:42:50",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:39",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:42:08",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:41:57",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:41:26",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:41:15",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:40:44",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:40:33",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:40:02",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:39:51",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:39:20",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:49",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:18",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:07",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:37:58",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:45:55",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:45:23",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:44:52",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:44:21",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:18",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:47",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:15",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:04",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:41:33",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:41:22",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:40:51",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:40:20",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:39:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:39:18",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:47",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:16",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:05",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:37:58",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:45:58",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:45:27",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:44:56",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:44:25",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:54",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:22",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:51",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:20",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:09",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:41:38",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:41:27",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:40:56",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:40:25",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:39:54",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:39:23",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:52",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:21",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:10",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:37:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:45:45",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:45:34",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:45:03",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:44:52",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:44:21",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:50",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:48",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:17",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:06",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:41:35",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:41:24",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:40:53",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:40:22",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:39:51",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:39:20",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:49",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:18",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:07",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:37:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:45:43",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:45:32",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:45:01",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:44:30",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:59",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:43:28",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:57",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:42:26",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:41:54",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:41:23",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:40:52",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:40:21",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:39:49",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:39:18",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:47",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:16",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:38:05",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:37:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:54:06",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:53:34",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:53:03",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:52:32",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:52:00",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:51:49",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:51:18",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:51:07",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:50:36",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:25",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:49:54",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:49:43",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:49:12",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:48:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:48:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:38",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:07",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:36",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:25",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:46:14",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:54:12",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:53:41",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:53:10",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:52:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:52:08",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:51:37",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:51:06",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:34",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:23",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:49:52",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:49:41",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:49:10",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:48:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:48:08",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:37",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:06",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:35",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:24",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:46:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:54:16",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:54:05",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:53:34",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:53:03",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:52:32",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:52:00",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:51:29",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:58",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:47",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:50:16",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:05",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:49:34",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:49:23",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:48:52",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:48:41",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:48:10",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:39",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:08",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:37",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:26",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:46:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:54:11",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:53:40",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:53:29",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:52:58",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:52:47",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:52:16",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:51:45",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:51:14",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:42",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:11",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:49:40",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:49:08",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:48:37",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:48:06",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:35",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:04",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:33",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:22",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:46:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 16:54:01",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:53:50",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:53:19",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:53:08",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:52:37",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:52:06",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:51:35",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:51:03",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:32",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:50:21",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:49:50",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 16:49:39",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (2,2) via path: (2,0) -> (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 16:49:08",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:48:37",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:48:06",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:35",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:47:04",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:33",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:46:22",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (2,0) via path: (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:46:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ]
+]

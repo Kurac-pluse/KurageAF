@@ -7,6 +7,9 @@ import pandas as pd
 from supabase_client import get_supabase
 import re
 
+# TARGET_TASK = "Appleを入手"
+TARGET_TASK = "Copper Oreを入手"
+
 # ============================
 # ログパース
 # ============================
@@ -49,10 +52,15 @@ def parse_multiline_log(raw_log: str):
 # ============================
 # 出力先
 # ============================
+# OUTPUT_FILES = {
+    # "human_operation": "1_human.json",
+    # "gpt-4o-mini": "1_gpt-4o-mini.json",
+    # "gpt-3.5-turbo": "1_gpt-3.5-turbo.json",
+# }
 OUTPUT_FILES = {
-    "human_operation": "human.json",
-    "gpt-4o-mini": "gpt-4o-mini.json",
-    "gpt-3.5-turbo": "gpt-3.5-turbo.json",
+    "human_operation": "2_human.json",
+    "gpt-4o-mini": "2_gpt-4o-mini.json",
+    "gpt-3.5-turbo": "2_gpt-3.5-turbo.json",
 }
 
 # ============================
@@ -60,7 +68,8 @@ OUTPUT_FILES = {
 # ============================
 supabase = get_supabase()
 res = supabase.table("npc_action_logs") \
-    .select("action_log, llm") \
+    .select("action_log, llm, task") \
+    .eq("task", TARGET_TASK) \
     .range(0, 100000) \
     .execute()
 
