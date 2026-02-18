@@ -1,0 +1,5602 @@
+[
+  [
+    {
+      "timestamp": "2026/02/02 17:03:30",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:59",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:28",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:57",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:36",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:01:29",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:23",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:02",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:00:30",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:59:59",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:59:28",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:57",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:41",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:58:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:57:54",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:57:50",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 16:57:19",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:48",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:17",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:46",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:40",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:55:32",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:03:20",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:18",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:47",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:26",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:01:19",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:00:57",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:00:53",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:00:22",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:59:51",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:59:20",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:28",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:58:21",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:15",
+      "action_type": "crafting",
+      "details": "B-BBBB crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 16:57:54",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 16:57:50",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 16:57:19",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:48",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:17",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:46",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:40",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:55:32",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:03:30",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:59",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:28",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:57",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:36",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:01:29",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:23",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:02",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:00:30",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:59:59",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:59:28",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:57",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:41",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:58:10",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:57:54",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:57:50",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 16:57:19",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:48",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:17",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:46",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:40",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:55:32",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:03:24",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:53",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:22",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:11",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,1) to (-1,0) via path: (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:01:40",
+      "action_type": "fight",
+      "details": "D-DDDD won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:29",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (0,1) via path: (2,1) -> (1,1) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:01:25",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:19",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,1) via path: (2,2) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:01:12",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (2,2) via path: (2,1) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 17:01:08",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:02",
+      "action_type": "crafting",
+      "details": "D-DDDD crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:00:41",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:00:09",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:59:37",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:59:06",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:35",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:19",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:57:54",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:57:50",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 16:57:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:48",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:17",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:46",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:40",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:55:32",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:03:31",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:03:00",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:02:29",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:58",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:37",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:01:30",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:24",
+      "action_type": "crafting",
+      "details": "E-EEEE crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:01:03",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:00:31",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:00:00",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:59:29",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:58",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:58:42",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:58:11",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 16:57:55",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:57:51",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 16:57:20",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:49",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:56:18",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:47",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 16:55:40",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 16:55:33",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:21:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:20:39",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:20:18",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:20:11",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:49",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:19:45",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:14",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:18:43",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:18:12",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:20",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:17:13",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:07",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:46",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:16:42",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:11",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:40",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:09",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:37",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:05",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:34",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:28",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:13:21",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:20:55",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:20:24",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:53",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:32",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:19:25",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:19",
+      "action_type": "crafting",
+      "details": "B-BBBB crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:18:58",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:18:26",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:55",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:24",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:53",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:37",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:15:59",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:43",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:15:39",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:08",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:37",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:06",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:35",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:29",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:13:21",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:21:17",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:20:46",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:20:15",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:44",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:23",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:19:16",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:10",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:04",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (2,1) via path: (2,0) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:18:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:18:02",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:31",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:00",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:44",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:16:40",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:09",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:38",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:07",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:36",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:04",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:27",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:13:21",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:21:04",
+      "action_type": "fight",
+      "details": "D-DDDD won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/02/02 17:20:33",
+      "action_type": "fight",
+      "details": "D-DDDD won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/02/02 17:20:06",
+      "action_type": "fight",
+      "details": "D-DDDD won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:55",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (0,1) via path: (2,1) -> (1,1) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:19:51",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:30",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:19:26",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:18:55",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:18:24",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:53",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:22",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:41",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:20",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:16:14",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:08",
+      "action_type": "crafting",
+      "details": "D-DDDD crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:47",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:15:43",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:12",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:41",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:10",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:39",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:33",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:13:22",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:21:19",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:20:48",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:20:17",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:46",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:25",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:19:18",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:19:12",
+      "action_type": "crafting",
+      "details": "E-EEEE crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:18:51",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:18:19",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:48",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:17:17",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:46",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:16:30",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:15:59",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:43",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:15:39",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:15:08",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:37",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:14:06",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:35",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:13:29",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:13:22",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:29:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:29:27",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:56",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:25",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:04",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:27:57",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:51",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:30",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:26:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:26:27",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:56",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:25",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:09",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:38",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:24:22",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:18",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:47",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:16",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:45",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:14",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:08",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:21:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:29:50",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:29:19",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:48",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:17",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:56",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:27:48",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:26",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:27:22",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:26:51",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:26:20",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:18",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:24:57",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:50",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:24:44",
+      "action_type": "crafting",
+      "details": "B-BBBB crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:24:23",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:19",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:48",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:17",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:46",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:15",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:09",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:21:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:29:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:29:02",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:31",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:00",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:39",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:27:31",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:25",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:04",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:26:32",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:26:01",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:30",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:24:59",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:24:43",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:19",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:15",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:44",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:13",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:42",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:11",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:05",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:21:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:29:37",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (4,2) to (-1,0) via path: (4,2) -> (3,2) -> (2,2) -> (1,2) -> (0,2) -> (-1,2) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:29:06",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (gudgeon_spot) with the skill fishing."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:45",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (4,2) via path: (2,0) -> (2,1) -> (2,2) -> (3,2) -> (4,2)"
+    },
+    {
+      "timestamp": "2026/02/02 17:28:14",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:03",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,2) to (2,0) via path: (2,2) -> (2,1) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:27:32",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:06",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,2) via path: (-1,0) -> (-1,1) -> (-1,2) -> (0,2) -> (1,2) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 17:26:34",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:26:03",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:32",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:01",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:24:45",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:22",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:18",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:47",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:16",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:45",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:14",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:08",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:21:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:30:00",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:29:29",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:58",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:27",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:28:06",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:27:59",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:53",
+      "action_type": "crafting",
+      "details": "E-EEEE crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:27:32",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:27:00",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:26:29",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:58",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:27",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:25:11",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:40",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:24:24",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:24:20",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:49",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:23:18",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:47",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:16",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:22:10",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:21:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:41:59",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:41:28",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:57",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:26",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:05",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:39:58",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:52",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:31",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:38:59",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:38:28",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:57",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:26",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:10",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:36:39",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:36:23",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:36:19",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:48",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:17",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:46",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:15",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:09",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:33:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:41:44",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:41:12",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:41",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:10",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:23",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:38:45",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:38:29",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:38:25",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:54",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:23",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:36:52",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:36:21",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:18",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:46",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:15",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:09",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:33:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:41:58",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:41:27",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:56",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:25",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:04",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:39:57",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:51",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:30",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:38:58",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:38:27",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:56",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:25",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:09",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:36:38",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:36:22",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:36:18",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:47",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:16",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:45",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:14",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:08",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:33:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:41:56",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:41:25",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:54",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:23",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:02",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:39:54",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:48",
+      "action_type": "crafting",
+      "details": "D-DDDD crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:27",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:38:55",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:38:24",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:53",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:22",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:06",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:36:35",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:36:19",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:36:15",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:44",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:13",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:42",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:11",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:05",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:33:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:41:37",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:41:06",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:35",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:40:04",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:43",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:39:36",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:30",
+      "action_type": "crafting",
+      "details": "E-EEEE crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:39:09",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:38:37",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:38:06",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:35",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:37:04",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:36:48",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:36:24",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:36:20",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:49",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:35:18",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:47",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:16",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:34:10",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:33:59",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:50:47",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:50:16",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:49:45",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:49:24",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:49:16",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:49:10",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:49",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:48:17",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:47:46",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:47:15",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:44",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:28",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:57",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:45:41",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:37",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:45:06",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:44:35",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:44:04",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:33",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:27",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:43:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:50:49",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:50:18",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:50:02",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (1,1) to (-1,0) via path: (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:49:45",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,2) to (1,1) via path: (2,2) -> (1,2) -> (1,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:49:14",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (sunflower_field) with the skill alchemy."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:47",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,2) via path: (-1,0) -> (-1,1) -> (-1,2) -> (0,2) -> (1,2) -> (2,2)"
+    },
+    {
+      "timestamp": "2026/02/02 17:48:15",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:47:44",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:47:13",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:42",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:26",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:55",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 17:45:39",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:35",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:45:04",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:44:33",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:44:02",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:31",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:25",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:43:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:50:52",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:50:21",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:49:50",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:49:19",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:58",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:48:51",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:45",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:24",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:47:52",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:47:21",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:50",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:19",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:03",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:37",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:33",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:45:02",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:44:31",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:44:00",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:29",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:23",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:43:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:50:50",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:50:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:49:48",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:49:17",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:56",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:48:48",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:42",
+      "action_type": "crafting",
+      "details": "D-DDDD crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:21",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:47:49",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:47:18",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:47",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:16",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:00",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:36",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:32",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:45:01",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:44:30",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:59",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:28",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:22",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:43:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:50:53",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:50:22",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:49:51",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:49:20",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:59",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:48:51",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:45",
+      "action_type": "crafting",
+      "details": "E-EEEE crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:48:24",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:47:52",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:47:21",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:50",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:19",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:46:03",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:39",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:45:35",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:45:04",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:44:33",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:44:02",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:31",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:43:25",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:43:15",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:59:29",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:27",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:56",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:35",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:57:27",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:06",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:57:02",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:56:31",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:56:00",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:29",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:37",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:54:30",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:24",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:03",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:53:59",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:53:28",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:57",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:26",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:55",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:49",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:51:38",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:59:17",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:46",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:15",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:44",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:23",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:57:16",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:10",
+      "action_type": "crafting",
+      "details": "B-BBBB crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:56:49",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:56:17",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:46",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:15",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:44",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:28",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:54:03",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:53:59",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:53:28",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:57",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:26",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:55",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:49",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:51:38",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:59:14",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:43",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:12",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:41",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:20",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:57:14",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:08",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:56:47",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:56:15",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:44",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:13",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:42",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:26",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:54:01",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:53:57",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:53:26",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:55",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:24",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:53",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:47",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:51:38",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:59:35",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:59:13",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:59:09",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:38",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:07",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:36",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:05",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:56:44",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:56:36",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:56:30",
+      "action_type": "crafting",
+      "details": "D-DDDD crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:56:09",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:56:05",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:34",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:03",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:32",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:01",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:53:29",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:58",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:26",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:55",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:49",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:51:39",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 17:59:27",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:56",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:35",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:58:28",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:58:06",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:58:02",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:31",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:57:00",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:56:29",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:58",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:37",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:55:29",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:23",
+      "action_type": "crafting",
+      "details": "E-EEEE crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 17:55:02",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 17:54:58",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 17:54:27",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:53:56",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:53:25",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:54",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:52:22",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:51",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 17:51:45",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 17:51:39",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:17:24",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:16:53",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:16:22",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:51",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:30",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:15:24",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:18",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:14:57",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:14:25",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:54",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:23",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:12:52",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:12:36",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:12:05",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 18:11:49",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:11:45",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:11:14",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:43",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:12",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:35",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:09:28",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:17:14",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:03",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,1) to (-1,0) via path: (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:16:32",
+      "action_type": "fight",
+      "details": "B-BBBB won the fight against Chicken."
+    },
+    {
+      "timestamp": "2026/02/02 18:16:21",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (0,1) via path: (2,1) -> (1,1) -> (0,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:16:16",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:54",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:15:50",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:19",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:14:48",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:14:17",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:46",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:25",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:13:18",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:12",
+      "action_type": "crafting",
+      "details": "B-BBBB crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:06",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (2,1) via path: (2,0) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:12:35",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 18:12:04",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 18:11:48",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:11:44",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:11:13",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:42",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:11",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:39",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:33",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:09:28",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:08:16",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:45",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:14",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:43",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:22",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:06:14",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:52",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:05:48",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:17",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:46",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:15",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:44",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:23",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:03:14",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:08",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:02:47",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:02:43",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:02:12",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:41",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:10",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:39",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:33",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:00:21",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:08:08",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:37",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:06",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:35",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:14",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:06:08",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:46",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:05:42",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:11",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:40",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:09",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:38",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:17",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:03:09",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:03",
+      "action_type": "crafting",
+      "details": "B-BBBB crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:02:42",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:02:38",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:02:07",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:36",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:05",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:34",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:28",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:00:21",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:08:20",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:59",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:07:52",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:30",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:07:26",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:55",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:24",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:53",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:22",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:01",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:04:54",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:48",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:26",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:03:54",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:23",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:07",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:02:43",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:02:39",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:02:08",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:37",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:06",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:35",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:29",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:00:21",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:08:21",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:50",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:48",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:27",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:06:19",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:13",
+      "action_type": "crafting",
+      "details": "D-DDDD crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:52",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:05:20",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:49",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:18",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:47",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:31",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:03:00",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 18:02:44",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:02:40",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:02:09",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:38",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:07",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:36",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:30",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:00:21",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:08:02",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:31",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:07:00",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:29",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:06:08",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:06:01",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:55",
+      "action_type": "crafting",
+      "details": "E-EEEE crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:05:34",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:05:02",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:31",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:04:00",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:29",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:03:13",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:02:47",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:02:43",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:02:12",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:41",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:01:10",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:39",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:00:33",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:00:21",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:17:06",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:16:35",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:16:04",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:12",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:15:05",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:14:59",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:14:38",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:14:06",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:35",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:04",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:12:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:12:17",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:11:53",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:11:49",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:11:18",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:47",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:16",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:45",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:39",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:09:28",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:17:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:16:48",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:16:17",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:46",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:25",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:15:17",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:14:54",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:14:50",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:14:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:48",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:27",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:13:21",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:15",
+      "action_type": "crafting",
+      "details": "D-DDDD crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:12:54",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:12:50",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:12:19",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:11:48",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:11:17",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:46",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:14",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:43",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:37",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:09:28",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:17:02",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:16:31",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:16:10",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:16:04",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:58",
+      "action_type": "crafting",
+      "details": "E-EEEE crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:15:37",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:15:05",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:14:34",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:14:03",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:32",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:13:16",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:12:53",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:12:49",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:12:18",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:11:47",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:11:16",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:45",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:10:13",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:42",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:09:36",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:09:28",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:25:32",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:25:01",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:24:30",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:59",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:38",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:23:31",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:09",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:23:05",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:22:34",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:22:03",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:32",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:01",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:40",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:20:33",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:27",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:06",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:20:02",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:19:31",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:19:00",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:18:29",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:58",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:52",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:17:42",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:25:32",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:25:01",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:24:30",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:59",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:38",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:23:32",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:10",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:23:06",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:22:35",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:22:04",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:33",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:02",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:41",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:20:34",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:28",
+      "action_type": "crafting",
+      "details": "B-BBBB crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:07",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:20:03",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:19:32",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:19:01",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:18:30",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:59",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:53",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:17:42",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:25:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:25:02",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:24:41",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:24:31",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:24:10",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:24:06",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:35",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:04",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:22:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:22:02",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:41",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:21:33",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:27",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:06",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:21:02",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:31",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:00",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:19:29",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:18:58",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:18:26",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:55",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:49",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:17:43",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:25:40",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:25:09",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:24:38",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:24:07",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:46",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:23:39",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:33",
+      "action_type": "crafting",
+      "details": "D-DDDD crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:12",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:22:40",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:22:09",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:38",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:07",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:51",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:20:20",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:04",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:20:00",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:19:29",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:18:58",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:18:27",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:56",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:50",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:17:43",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:25:17",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:24:46",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:24:15",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:44",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:23:23",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:22:53",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:22:21",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:50",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:21:19",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:48",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:20:32",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:20:07",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:20:03",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:19:32",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:19:01",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:18:30",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:59",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:17:53",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:17:43",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:36:04",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:33",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:02",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:34:31",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:34:10",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:34:03",
+      "action_type": "equip",
+      "details": "A-AAAA equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:57",
+      "action_type": "crafting",
+      "details": "A-AAAA crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:36",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:33:04",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:33",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:02",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:31:31",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:31:15",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:30:44",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 18:30:28",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:30:24",
+      "action_type": "unequip",
+      "details": "A-AAAA unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:29:53",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:29:22",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:51",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:20",
+      "action_type": "gathering",
+      "details": "A-AAAA gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:14",
+      "action_type": "movement",
+      "details": "A-AAAA moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:28:07",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:36:06",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:35",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:04",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:34:33",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:34:12",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:34:05",
+      "action_type": "equip",
+      "details": "B-BBBB equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:59",
+      "action_type": "crafting",
+      "details": "B-BBBB crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:38",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:33:06",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:35",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:04",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:31:33",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:31:17",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:30:46",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 18:30:30",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:30:26",
+      "action_type": "unequip",
+      "details": "B-BBBB unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:29:55",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:29:24",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:53",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:22",
+      "action_type": "gathering",
+      "details": "B-BBBB gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:16",
+      "action_type": "movement",
+      "details": "B-BBBB moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:28:07",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:36:01",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:40",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:35:29",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:08",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:35:04",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:34:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:34:02",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:31",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:00",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:39",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:32:32",
+      "action_type": "equip",
+      "details": "C-CCCC equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:26",
+      "action_type": "crafting",
+      "details": "C-CCCC crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:05",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:31:33",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:31:02",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:30:31",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:30:00",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:29:44",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:29:13",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:57",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:28:53",
+      "action_type": "unequip",
+      "details": "C-CCCC unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:22",
+      "action_type": "gathering",
+      "details": "C-CCCC gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:16",
+      "action_type": "movement",
+      "details": "C-CCCC moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:28:07",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:36:06",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:35",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:04",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:34:33",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:34:12",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:34:05",
+      "action_type": "equip",
+      "details": "D-DDDD equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:59",
+      "action_type": "crafting",
+      "details": "D-DDDD crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:38",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:33:06",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:35",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:04",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:31:33",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:31:17",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:30:46",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (copper_rocks) with the skill mining."
+    },
+    {
+      "timestamp": "2026/02/02 18:30:30",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:30:26",
+      "action_type": "unequip",
+      "details": "D-DDDD unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:29:55",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:29:24",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:53",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:22",
+      "action_type": "gathering",
+      "details": "D-DDDD gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:16",
+      "action_type": "movement",
+      "details": "D-DDDD moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:28:07",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ],
+  [
+    {
+      "timestamp": "2026/02/02 18:35:52",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:31",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,1) to (-1,0) via path: (2,1) -> (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:35:23",
+      "action_type": "equip",
+      "details": "E-EEEE equipped wooden_staff."
+    },
+    {
+      "timestamp": "2026/02/02 18:35:17",
+      "action_type": "crafting",
+      "details": "E-EEEE crafted wooden_staff x1."
+    },
+    {
+      "timestamp": "2026/02/02 18:34:56",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1) -> (2,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:34:24",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:53",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:33:22",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:51",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:20",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:32:04",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (1,1) to (-1,0) via path: (1,1) -> (0,1) -> (-1,1) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:31:37",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (1,1) via path: (-1,0) -> (-1,1) -> (0,1) -> (1,1)"
+    },
+    {
+      "timestamp": "2026/02/02 18:31:04",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:30:48",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (2,0) to (-1,0) via path: (2,0) -> (1,0) -> (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:30:32",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (-1,0) to (2,0) via path: (-1,0) -> (0,0) -> (1,0) -> (2,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:30:28",
+      "action_type": "unequip",
+      "details": "E-EEEE unequipped wooden_stick."
+    },
+    {
+      "timestamp": "2026/02/02 18:29:57",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:29:26",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:55",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:24",
+      "action_type": "gathering",
+      "details": "E-EEEE gathered a resource (ash_tree) with the skill woodcutting."
+    },
+    {
+      "timestamp": "2026/02/02 18:28:18",
+      "action_type": "movement",
+      "details": "E-EEEE moved from (0,0) to (-1,0) via path: (0,0) -> (-1,0)"
+    },
+    {
+      "timestamp": "2026/02/02 18:28:07",
+      "action_type": "spawn",
+      "details": "The character arrives in the region"
+    }
+  ]
+]

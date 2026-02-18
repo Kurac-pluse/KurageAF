@@ -1,77 +1,164 @@
 import json
 import pandas as pd
 import numpy as np
-from datetime import datetime
+import re
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # ==========================================
 # 設定
 # ==========================================
-IDLE_THRESHOLD = 5  # IDLE判定の秒数
+IDLE_THRESHOLD = 10  # 秒
 
 FILES = {
-    "Target": "target.json",           # 複数ターゲット（例3個）
-    "Human": "human.json",
-    "GPT-4o-mini": "gpt-4o-mini.json",
-    "GPT-3.5-turbo": "gpt-3.5-turbo.json"
+    "Target": "2_target.json",
+    "Human": "2_human.json",
+    "GPT-4o-mini": "2_gpt-4o-mini.json",
+    "GPT-3.5-turbo": "2_gpt-3.5-turbo.json"
 }
 
 # ==========================================
-# JSONログ → 行動シーケンス文字列に変換
+# マップ（座標 → 意味）
+# ==========================================
+LOCATION_MAP = {
+    (-1, 0): "ash_tree",
+    (2, 0): "copper_rocks",
+    (1, 1): "workshop",
+    (2, 1): "workshop",
+    (0, 1): "chicken",
+    (0, 2): "cow",
+    (2, 2): "sunflower_field",
+    (4, 2): "gudgeon_spot",
+}
+
+# ==========================================
+# 中間ファイル出力
+# ==========================================
+def save_sequences_to_txt(label, sequences):
+    out_file = f"2_debug_sequences_{label}.txt"
+
+    with open(out_file, "w", encoding="utf-8") as f:
+        for i, seq in enumerate(sequences):
+            f.write(f"--- Session {i+1} ---\n")
+            for token in seq.split():
+                f.write(token + "\n")
+            f.write("\n")
+
+    print(f"📝 中間ファイル保存: {out_file}")
+
+# ==========================================
+# resource / item / enemy 抽出
+# ==========================================
+def extract_resource(details):
+    m = re.search(r"resource\s\((.*?)\)", details)
+    return m.group(1) if m else None
+
+def extract_skill(details):
+    m = re.search(r"skill\s(\w+)", details)
+    return m.group(1) if m else None
+
+def extract_item(pattern, details):
+    m = re.search(pattern, details)
+    return m.group(1) if m else None
+
+def extract_enemy(details):
+    m = re.search(r"against\s([\w_]+)", details)
+    return m.group(1) if m else None
+
+# ==========================================
+# イベント分類（完全対応）
+# ==========================================
+def classify_event(action, details):
+    details = details.lower()
+
+    # ---- gathering ----
+    if action == "gathering":
+        res = extract_resource(details) or "unknown"
+        skill = extract_skill(details) or "unknown"
+        return f"gather_{res}_{skill}"
+
+    # ---- movement（目的地付き） ----
+    if action == "movement":
+        coords = re.findall(r"\((-?\d+),(-?\d+)\)", details)
+        if len(coords) >= 2:
+            x2, y2 = map(int, coords[-1])
+            dest = LOCATION_MAP.get((x2, y2), f"coord_{x2}_{y2}")
+            return f"move_to_{dest}"
+        return "move_unknown"
+
+    # ---- crafting ----
+    if action == "crafting":
+        item = extract_item(r"crafted\s([\w_]+)", details) or "unknown"
+        return f"craft_{item}"
+
+    # ---- equip ----
+    if action == "equip":
+        item = extract_item(r"equipped\s([\w_]+)", details) or "unknown"
+        return f"equip_{item}"
+
+    # ---- unequip ----
+    if action == "unequip":
+        item = extract_item(r"unequipped\s([\w_]+)", details) or "unknown"
+        return f"unequip_{item}"
+
+    # ---- fight ----
+    if action == "fight":
+        enemy = extract_enemy(details) or "unknown"
+        result = "win" if "won" in details else "lose"
+        return f"fight_{result}_{enemy}"
+
+    # ---- rest / spawn ----
+    if action in ["rest", "spawn"]:
+        return action
+
+    # ---- fallback ----
+    return action
+
+# ==========================================
+# JSON → 行動シーケンス文字列
 # ==========================================
 def events_to_sequence(event_list, idle_threshold=5):
     if not event_list:
         return ""
 
     df = pd.DataFrame(event_list)
-    df['timestamp'] = pd.to_datetime(df['timestamp'], format='%Y/%m/%d %H:%M:%S')
-    df = df.sort_values('timestamp').reset_index(drop=True)
+    df["timestamp"] = pd.to_datetime(df["timestamp"])
+    df = df.sort_values("timestamp").reset_index(drop=True)
 
-    final_sequence = []
+    seq = []
 
     for i in range(len(df)):
-        final_sequence.append(df.loc[i, 'action_type'])
-        if i < len(df) - 1:
-            diff = (df.loc[i+1, 'timestamp'] - df.loc[i, 'timestamp']).total_seconds()
-            if diff >= idle_threshold:
-                idle_count = int(diff // idle_threshold)
-                final_sequence.extend(['IDLE'] * idle_count)
+        token = classify_event(df.loc[i, "action_type"], df.loc[i, "details"])
+        seq.append(token)
 
-    return " ".join(final_sequence)
+        if i < len(df) - 1:
+            diff = (df.loc[i+1, "timestamp"] - df.loc[i, "timestamp"]).total_seconds()
+            idle_count = int(diff // idle_threshold)
+            seq.extend(["IDLE"] * idle_count)
+
+    return " ".join(seq)
 
 # ==========================================
-# JSON 読み込み & シーケンス化
+# JSON 読み込み
 # ==========================================
 def load_and_process(filepath, is_group=False):
     sequences = []
 
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+    with open(filepath, "r", encoding="utf-8") as f:
+        data = json.load(f)
 
-        if is_group:
-            # グループ形式: [ [log1], [log2], ... ]
-            for log in data:
-                sequences.append(events_to_sequence(log, IDLE_THRESHOLD))
-        else:
-            # 単一ターゲット形式: [log]
-            sequences.append(events_to_sequence(data, IDLE_THRESHOLD))
-
-    except FileNotFoundError:
-        print(f"エラー: ファイルが見つかりません -> {filepath}")
-        return []
-
-    except json.JSONDecodeError:
-        print(f"エラー: JSON形式が不正です -> {filepath}")
-        return []
+    if is_group:
+        for log in data:
+            sequences.append(events_to_sequence(log, IDLE_THRESHOLD))
+    else:
+        sequences.append(events_to_sequence(data, IDLE_THRESHOLD))
 
     return sequences
 
 # ==========================================
 # 類似度計算
 # ==========================================
-def calc_avg_sim(label, group_seqs, target_vec, vectorizer):
+def calc_avg_sim(group_seqs, target_vec, vectorizer):
     if not group_seqs:
         return 0.0
     group_vecs = vectorizer.transform(group_seqs)
@@ -83,47 +170,51 @@ def calc_avg_sim(label, group_seqs, target_vec, vectorizer):
 # ==========================================
 print("データを読み込み中...")
 
-# ターゲットは3個 → is_group=True
 target_seqs = load_and_process(FILES["Target"], is_group=True)
 human_seqs = load_and_process(FILES["Human"], is_group=True)
-gpt4o_mini_seqs = load_and_process(FILES["GPT-4o-mini"], is_group=True)
-gpt35_turbo_seqs = load_and_process(FILES["GPT-3.5-turbo"], is_group=True)
+gpt4o_seqs = load_and_process(FILES["GPT-4o-mini"], is_group=True)
+gpt35_seqs = load_and_process(FILES["GPT-3.5-turbo"], is_group=True)
+
+save_sequences_to_txt("Target", target_seqs)
+save_sequences_to_txt("Human", human_seqs)
+save_sequences_to_txt("GPT-4o-mini", gpt4o_seqs)
+save_sequences_to_txt("GPT-3.5-turbo", gpt35_seqs)
 
 if not target_seqs:
-    print("ターゲットデータがないため終了します。")
+    print("ターゲットデータなし")
     exit()
 
 # ==========================================
-# ベクトル化（全データを語彙にする）
+# ベクトル化
 # ==========================================
-all_sequences = target_seqs + human_seqs + gpt4o_mini_seqs + gpt35_turbo_seqs
+all_sequences = target_seqs + human_seqs + gpt4o_seqs + gpt35_seqs
 
 vectorizer = CountVectorizer(
     ngram_range=(1, 2),
-    token_pattern=r'(?u)\b\w+\b'
+    token_pattern=r"(?u)\b\w+\b"
 )
+
 vectorizer.fit(all_sequences)
 
-# 複数ターゲットをベクトル化 → 平均ベクトルを作成
+# ターゲット平均ベクトル
 target_vecs = vectorizer.transform(target_seqs)
-target_vec_mean = target_vecs.mean(axis=0)
-target_vec_mean = np.asarray(target_vec_mean)  # ndarrayに変換
-target_vec_mean = np.atleast_2d(target_vec_mean)  # 1行ベクトルとして扱う
+target_vec_mean = np.asarray(target_vecs.mean(axis=0))
+target_vec_mean = np.atleast_2d(target_vec_mean)
 
 # ==========================================
-# スコア計算（平均ターゲットと比較）
+# スコア算出
 # ==========================================
-score_human = calc_avg_sim("Human", human_seqs, target_vec_mean, vectorizer)
-score_gpt4o_mini = calc_avg_sim("GPT-4o-mini", gpt4o_mini_seqs, target_vec_mean, vectorizer)
-score_gpt35_turbo = calc_avg_sim("GPT-3.5-turbo", gpt35_turbo_seqs, target_vec_mean, vectorizer)
+score_human = calc_avg_sim(human_seqs, target_vec_mean, vectorizer)
+score_gpt4o = calc_avg_sim(gpt4o_seqs, target_vec_mean, vectorizer)
+score_gpt35 = calc_avg_sim(gpt35_seqs, target_vec_mean, vectorizer)
 
 # ==========================================
-# 結果出力
+# 出力
 # ==========================================
-print("\n" + "=" * 50)
-print(f"実験結果: 行動軌跡の類似度 (IDLE閾値={IDLE_THRESHOLD}秒)")
-print("=" * 50)
-print(f"Target(平均) vs Human Group           : {score_human:.4f}")
-print(f"Target(平均) vs GPT-4o-mini (提案)      : {score_gpt4o_mini:.4f}")
-print(f"Target(平均) vs GPT-3.5-turbo (比較)    : {score_gpt35_turbo:.4f}")
-print("=" * 50)
+print("\n" + "=" * 55)
+print(f"行動類似度（IDLE閾値 = {IDLE_THRESHOLD} 秒）")
+print("=" * 55)
+print(f"Target vs Human        : {score_human:.4f}")
+print(f"Target vs GPT-4o-mini  : {score_gpt4o:.4f}")
+print(f"Target vs GPT-3.5-turbo: {score_gpt35:.4f}")
+print("=" * 55)
